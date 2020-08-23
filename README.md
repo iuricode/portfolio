@@ -1,4 +1,4 @@
-# 🦩 Portfolio feito com o pré-processador Sass<br>
+# 🦩 Portfólio feito com o pré-processador Sass<br>
 
 ## 📱 Resultado de como ficou<br>
 ![Resultado final do projeto](resultado.jpg)
