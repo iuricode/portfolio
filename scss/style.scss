@@ -1,0 +1,318 @@
+//Importanto font 'Poppins' do Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//Minhas variáveis
+$fontPrincipal: 'Poppins', sans-serif;
+//Cores
+$corPrincipal: #4070f4;
+$corSegundaria: #0e2431;
+//Hover
+$hoverPrincipal: #3460da;
+$hoverSegundaria: #091a24;
+//Cor para texto
+$textoSegundaria: #142f3f;
+//Espaçamentos
+$espacamentoLaterais: 50px 150px;
+$tamanhoArticlesMaior: 60%;
+$tamanhoArticlesMenor: 40%;
+
+//Mixins
+@mixin botao {
+  background-color: $corPrincipal;
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  font: {
+    size: 16px;
+    weight: 700;
+    family: $fontPrincipal;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $hoverPrincipal;
+  }
+}
+@mixin texto {
+  line-height: 30px;
+  color: $textoSegundaria;
+}
+@mixin alinhamentoTitulo {
+  text-align: center;
+  margin-top: 20px;
+  font: {
+    size: 30px;
+  }
+}
+
+//Zerando as configurações dos navegadores
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $corSegundaria;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $corSegundaria;
+}
+body {
+  font-family: $fontPrincipal;
+  color: $corSegundaria;
+}
+//Nav | Menu
+nav {
+  width: 100%;
+  padding: 20px 150px;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px rgba(44, 44, 44, 0.267);
+  position: fixed;
+  top: 0;
+  left: 0;
+  h2 {
+    font: {
+      weight: 600;
+      size: 18px;
+    }
+  }
+  ul {
+    li {
+      display: inline-block;
+      padding: 0px 20px;
+      a {
+        text-transform: capitalize;
+        font: {
+          weight: 600;
+          size: 18px;
+        }
+        &:hover {
+          color: $hoverSegundaria;
+        }
+      }
+    }
+  }
+}
+
+//Header | Home
+header {
+  padding: $espacamentoLaterais;
+  display: flex;
+  margin-top: 75px;
+  overflow: hidden;
+  #apresentacaoTexto {
+    width: $tamanhoArticlesMaior;
+    padding-right: 25px;
+    h2 {
+      font: {
+        size: 36px;
+      }
+      span {
+        color: $corPrincipal;
+        font: {
+          size: 38px;
+        }
+      }
+    }
+    button {
+      @include botao;
+    }
+    .midiasSociais {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 75px;
+      color: $corSegundaria;
+      i {
+        font: {
+          size: 24px;
+        }
+        &:hover {
+          cursor: pointer;
+          color: $hoverSegundaria;
+        }
+      }
+    }
+  }
+  #apresentacaoFoto {
+    width: $tamanhoArticlesMenor;
+    background-color: $corPrincipal;
+  }
+}
+
+//Main | Sections > Sobre > Trabalhos > Contato
+main {
+  //Sobre
+  #sobre {
+    padding: $espacamentoLaterais;
+    #sobreMim {
+      display: flex;
+      padding: 25px 0px;
+    }
+    #sobreFoto {
+      background-color: $corPrincipal;
+      width: $tamanhoArticlesMenor;
+    }
+    #sobreTexto {
+      width: $tamanhoArticlesMaior;
+      padding-left: 25px;
+      h3 {
+        padding-bottom: 20px;
+        font: {
+          size: 30px;
+        }
+      }
+      p {
+        @include texto();
+      }
+    }
+    button {
+      @include botao();
+    }
+  }
+  //Skills
+  #skills {
+    padding: $espacamentoLaterais;
+    h2 {
+      @include alinhamentoTitulo();
+    }
+    #conhecimentos {
+      display: flex;
+      padding: 25px 0px;
+      #infoSkills {
+        width: $tamanhoArticlesMaior;
+        padding-right: 50px;
+        p {
+          @include texto();
+        }
+        #flexConhecimentos {
+          margin-top: 25px;
+          article {
+            box-shadow: 0px 0px 3px $corPrincipal;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: {
+              radius: 5px 5px 0px 0px;
+              bottom: 5px solid $corPrincipal;
+              width: 50%;
+            }
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+      #skillsFoto {
+        background-color: $corPrincipal;
+        width: $tamanhoArticlesMenor;
+      }
+    }
+  }
+  //Trabalhos
+  #trabalhos {
+    padding: $espacamentoLaterais;
+    h2 {
+      @include alinhamentoTitulo();
+    }
+    #flexbox {
+      padding: 25px 0px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      article {
+        height: 300px;
+        flex-grow: 1;
+        flex-basis: 300px;
+        background-color: $corPrincipal;
+        margin: 10px;
+        border-radius: 5px;
+        &:hover {
+          background-color: $hoverPrincipal;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  //Contato
+  #contato {
+    text-align: center;
+    padding: $espacamentoLaterais;
+    h2 {
+      @include alinhamentoTitulo();
+    }
+    #areaContato {
+      width: 500px;
+      margin: 0 auto;
+      padding: 25px 0px;
+    }
+    input {
+      border: 1px solid $corSegundaria;
+      width: 100%;
+      display: block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-family: $fontPrincipal;
+      margin-bottom: 15px;
+      font: {
+        size: 16px;
+        weight: 300;
+      }
+    }
+    textarea {
+      @extend input;
+    }
+    button {
+      @include botao;
+    }
+  }
+}
+
+//Footer | Rodapé
+footer {
+  padding: $espacamentoLaterais;
+  background-color: $corSegundaria;
+  text-align: center;
+  h4 {
+    color: #fff;
+    font: {
+      size: 18px;
+    }
+  }
+  p {
+    color: #fff;
+    padding: 25px;
+    font: {
+      weight: 200;
+    }
+  }
+  #midiasSociaisFooter {
+    margin: 0 auto;
+    i {
+      padding: 0px 20px;
+      color: #fff;
+      font: {
+        size: 24px;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $hoverPrincipal;
+      }
+    }
+  }
+}
