@@ -1,7 +1,7 @@
 # 🦩 Portfolio feito com o pré-processador Sass<br>
 
 ## 📱 Resultado de como ficou<br>
-![Resultado final do projeto](image/resultado.jpg)
+![Resultado final do projeto](resultado.jpg)
 
 ## 🚀 Tecnologias<br>
 Esse projeto foi desenvolvido com as seguintes tecnologias: HTML5, SASS (e convertido para CSS3).
