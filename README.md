@@ -7,6 +7,9 @@
 ## 🚀 Tecnologias<br>
 Esse projeto foi desenvolvido com as seguintes tecnologias: HTML5, SASS (e convertido para CSS3).
 
+## 🌻 Informações<br>
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/portfolio-sass)
+
 ## 🌳 Observação<br>
 Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro!
 
