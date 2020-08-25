@@ -8,15 +8,11 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias: HTML5, SASS (e convertido para CSS3).
 
 ## 🌳 Observação<br>
-Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro!
+Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro!<br><br>
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/portfolio-sass?label=tamanho%20do%20repo)
 
 ## 💻 Projeto<br>
 Com todas essas informações, criei um portfólio usando ele, nele usei fazias coisas como variáveis, mixins, include, extend e outras coisas que o Sass disponibiliza para a gente.
-
-## 🌻 Informações<br>
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/portfolio-sass?label=tamanho%20do%20repo)
-![GitHub stars](https://img.shields.io/github/stars/iuricode/portfolio-sass?label=Estrela&style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/iuricode?label=Seguir&style=social)
 
 ## 📝 Licença<br>
 O uso não autorizado e/ou duplicação deste material sem permissão expressa e por escrito.<br>
