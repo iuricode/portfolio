@@ -2,7 +2,6 @@
 
 ## 📱 Resultado de como ficou<br>
 ![Resultado final do projeto](resultado.jpg)
-<strong>Acesse esse link para visitar o projeto online:</strong> https://iuricode.github.io/portfolio-sass/
 
 ## 🚀 Tecnologias<br>
 Esse projeto foi desenvolvido com as seguintes tecnologias: HTML5, SASS (e convertido para CSS3).
