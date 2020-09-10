@@ -74,6 +74,7 @@ body {
   font-family: $fontPrincipal;
   color: $corSegundaria;
 }
+
 //Nav | Menu
 nav {
   width: 100%;
@@ -85,6 +86,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   h2 {
     font: {
       weight: 600;
@@ -118,6 +120,7 @@ header {
   #apresentacaoTexto {
     width: $tamanhoArticlesMaior;
     padding-right: 25px;
+
     h2 {
       font: {
         size: 36px;
@@ -151,7 +154,14 @@ header {
   }
   #apresentacaoFoto {
     width: $tamanhoArticlesMenor;
-    background-color: $corPrincipal;
+   transform: scaleX(-1);
+   position: relative;
+  }
+  #apresentacaoFoto img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -163,9 +173,10 @@ main {
     #sobreMim {
       display: flex;
       padding: 25px 0px;
+         align-items: center;
     }
     #sobreFoto {
-      background-color: $corPrincipal;
+    
       width: $tamanhoArticlesMenor;
     }
     #sobreTexto {
@@ -194,6 +205,8 @@ main {
     #conhecimentos {
       display: flex;
       padding: 25px 0px;
+      align-items: center;
+
       #infoSkills {
         width: $tamanhoArticlesMaior;
         padding-right: 50px;
@@ -219,7 +232,7 @@ main {
         }
       }
       #skillsFoto {
-        background-color: $corPrincipal;
+        transform: scaleX(-1);
         width: $tamanhoArticlesMenor;
       }
     }
@@ -257,7 +270,7 @@ main {
       @include alinhamentoTitulo();
     }
     #areaContato {
-      width: 500px;
+      width: 600px;
       margin: 0 auto;
       padding: 25px 0px;
     }
@@ -267,6 +280,7 @@ main {
       display: block;
       padding: 5px 10px;
       border-radius: 5px;
+      border-color: #ddd;
       font-family: $fontPrincipal;
       margin-bottom: 15px;
       font: {
@@ -281,6 +295,24 @@ main {
       @include botao;
     }
   }
+}
+
+// Scroll
+
+.scrollTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: $corPrincipal;
+  padding: 14px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+  border-radius: 10%;
+}
+.scrollTop i {
+  font-size: 20px;
+  color: #fff;
 }
 
 //Footer | Rodapé
