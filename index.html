@@ -5,27 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Iuri Silva</title>
-  <!--Meu Style CSS-->
-  <link rel="stylesheet" href="css/style.css" />
   <!--Ícones do Font Awesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--Meu Style CSS-->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <!--Menu-->
-  <nav>
-    <h2>Iuri Silva</h2>
-    <ul>
-      <li><a href="#home">início</a></li>
-      <li><a href="#sobre">sobre</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#trabalhos">trabalhos</a></li>
-      <li><a href="#contato">contato</a></li>
-    </ul>
-  </nav>
+  <div class="cabecalho">
+    <a href="#">
+      <h1 class="logo">Portfólio</h1>
+    </a>
+    <div class="btn-menu"><i class="fa fa-bars"></i></div>
+    <nav class="menu">
+      <a class="btn-close"><i class="fa fa-close"></i></a>
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#meusConhecimentos">Conhecimentos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!--Header-->
-  <header id="home">
+  <header>
     <article id="apresentacaoTexto">
       <h2>
         Olá,<br />
@@ -42,7 +47,7 @@
       </article>
     </article>
     <article id="apresentacaoFoto">
-      <img src="image/eu1.png" alt="">
+      <img src="image/iuriProgramando.png" alt="">
     </article>
   </header>
 
@@ -52,15 +57,15 @@
     <section id="sobre">
       <section id="sobreMim">
         <article id="sobreFoto">
-          <img src="image/eu3.png" alt="">
+          <img src="image/iuriAndando.png" alt="">
         </article>
         <article id="sobreTexto">
           <h3>Sobre mim</h3>
-          <p>Estou cursando Desenvolvimento de Sistemas na ETEC e Sistema para Internet na FATEC, além disso sou formado
-            em Técnico em
-            Informática.</p><br>
+          <p>Estou cursando Desenvolvimento de Sistemas e Sistema para Internet, além disso sou formado
+            em Técnico em Informática.</p><br>
 
-          <p>Amo programação e poesia, estou disponível para trabalhos freelas, pronto para participar em novos projetos
+          <p>Amo programação e estou disponível para trabalhos freelas, pronto para participar em novos
+            projetos
             e aprender ainda mais sobre esse mundo do desenvolvimento.</p>
 
           <a href="curriculo.zip" download><button>Baixar CV</button></a>
@@ -69,76 +74,177 @@
     </section>
 
     <!--Skilss-->
-    <section id="skills">
-      <h2>Skills</h2>
-      <section id="conhecimentos">
-        <article id="infoSkills">
+    <section id="meusConhecimentos">
+      <h2 id="textSkill">Conhecimentos</h2>
+      <div>
+        <article>
+          <img src="image/logoHTML.png" alt="" class="imageIcone" />
+          <h2>HTML</h2>
           <p>
-            Aqui estão as minhas skills como o foco na área do front-end
+            HTML é uma linguagem de marcação utizada na construção de página
+            web
           </p>
-          <section id="flexConhecimentos">
-            <article>HTML <span>90%</span></article>
-            <article>CSS <span>80%</span></article>
-            <article>JavaScript <span>40%</span></article>
-            <article>ReactJS <span>10%</span></article>
-            <article>Sass <span>80%</span></article>
-            <article>Bootstrap <span>60%</span></article>
-            <article>Materialize <span>70%</span></article>
-            <article>UI Design <span>70%</span></article>
-          </section>
         </article>
-        <article id="skillsFoto">
-          <img src="image/eu2.png" alt="">
+
+        <article>
+          <img src="image/logoCSS.png" alt="" class="imageIcone" />
+          <h2>CSS</h2>
+          <p>
+            O CSS define como serão exibidos os lementos contidos no código
+          </p>
         </article>
-      </section>
+
+        <article>
+          <img src="image/logoSass.png" alt="" class="imageIcone" />
+          <h2>Sass</h2>
+          <p>
+            Sass é a linguagem de extensão CSS de nível profissional mais madura, estável e poderosa do mundo
+          </p>
+        </article>
+
+        <article>
+          <img src="image/logoJS.png" alt="" class="imageIcone" />
+          <h2>JavaScript</h2>
+          <p>
+            Com o JS, fazemos mudanças dinamicamente na apresentações visuais
+            das páginas
+          </p>
+        </article>
+
+        <article>
+          <img src="image/logoBootstrap.png" alt="" class="imageIcone" />
+          <h2>Bootstrap</h2>
+          <p>
+            Frameprojeto com código fonte aberto para desenvolvimento de site
+            amigável e responsivo
+          </p>
+        </article>
+
+        <article>
+          <img src="image/logoReact.png" alt="" class="imageIcone" />
+          <h2>ReactJS</h2>
+          <p>
+            React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
+          </p>
+        </article>
+
+        <article>
+          <img src="image/logoMaterialize.png" alt="" class="imageIcone" />
+          <h2>Materialize</h2>
+          <p>
+            Materialize é um frameprojeto responsivo baseado no Material Design que foi
+            utilizado pela Google
+          </p>
+        </article>
+
+        <article>
+          <img src="image/logoUI.png" alt="" class="imageIcone" />
+          <h2>UI Design</h2>
+          <p>
+            Ser um UI Designer é tornar a interação do utilizador o mais
+            simples e eficiente possível
+          </p>
+        </article>
+      </div>
     </section>
 
-    <!--Trabahos-->
-    <section id="trabalhos">
-      <h2>Trabalhos</h2>
-      <section id="flexbox">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-    </section>
-
-    <!--Contato-->
-    <section id="contato">
-      <h2>Contato</h2>
-      <article id="areaContato">
-        <input type="text" placeholder="Digite seu nome" />
-        <input type="email" name="" id="" placeholder="Digite seu email" />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Digite o motivo do contato"></textarea>
-        <button>Enviar</button>
+    <!--Projetos-->
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <article>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </article>
     </section>
 
-    <!--scroll top-->
+    <!--Serviços-->
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <article>
+        <div>
+          <img src="image/criacao-de-sites.png" alt="" class="imageIcone">
+          <h2>Criação de Sites</h2>
+          <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais focado em
+            resultados</p>
+        </div>
+
+        <div>
+          <img src="image/responsivo.png" alt="" class="imageIcone">
+          <h2>Sites responsivos</h2>
+          <p>Criação de sites responsivos para a melhor visualização em dispositivos móveis com
+            qualidade em todas as telas</p>
+        </div>
+
+        <div>
+          <img src="image/layouts.png" alt="" class="imageIcone">
+          <h2>Layouts</h2>
+          <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento</p>
+        </div>
+
+        <div>
+          <img src="image/seo.png" alt="" class="imageIcone">
+          <h2>SEO e Analytics</h2>
+          <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas
+            buscas</p>
+        </div>
+
+        <div>
+          <img src="image/marketing.png" alt="" class="imageIcone">
+          <h2>E-mail Marketing</h2>
+          <p>Criação e ativação de campanhas por e-mail, gerando leeds e capacitando para um
+            melhor desempenho</p>
+        </div>
+
+        <div>
+          <img src="image/tecnologias.png" alt="" class="imageIcone">
+          <h2>Tecnologias</h2>
+          <p>Desenvolvimento através das melhores linguagens e tecnologias disponíveis na criação do seu projeto</p>
+        </div>
+
+        <div>
+          <img src="image/design-grafico.png" alt="" class="imageIcone">
+          <h2>Design Gráfico</h2>
+          <p>Realização da comunicação visual impressa do seu projeto ou seu negócio</p>
+        </div>
+
+        <div>
+          <img src="image/redes-sociais.png" alt="" class="imageIcone">
+          <h2>Redes Sociais</h2>
+          <p>Não deixe sua empresa de fora das redes sociais, divulge seu negócio e apareça para seu
+            público-alvo</p>
+        </div>
+      </article>
+    </section>
+
+    <!--Scroll top-->
     <div id="stop" class="scrollTop">
       <span>
         <a href=""><i class="fa fa-arrow-up"></i></a>
       </span>
     </div>
+
   </main>
 
   <!--Footer-->
   <footer>
-    <h4>Iuri Silva</h4>
-    <p>Todos os direitos autorais reservados</p>
+    <p>Orgulhosamente criado por Iuri Silva</p>
     <article id="midiasSociaisFooter">
       <i class="fa fa-facebook"></i>
       <i class="fa fa-twitter"></i>
       <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
     </article>
   </footer>
+
   <!--Jquery para o menu e scroll-->
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <!--Meus Scritps-->
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
