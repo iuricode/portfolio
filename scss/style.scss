@@ -9,12 +9,12 @@ $corSegundaria: #0e2431;
 //Hover
 $hoverPrincipal: #3460da;
 $hoverSegundaria: #091a24;
-//Cor para texto
-$textoSegundaria: #142f3f;
 //Espaçamentos
 $espacamentoLaterais: 50px 150px;
 $tamanhoArticlesMaior: 60%;
 $tamanhoArticlesMenor: 40%;
+// Unidades responsivos
+$espacoResponsivo: 20px;
 
 //Mixins
 @mixin botao {
@@ -37,11 +37,12 @@ $tamanhoArticlesMenor: 40%;
 }
 @mixin texto {
   line-height: 30px;
-  color: $textoSegundaria;
+  color: $corSegundaria;
 }
 @mixin alinhamentoTitulo {
   text-align: center;
   margin-top: 20px;
+  color: $corSegundaria;
   font: {
     size: 30px;
   }
@@ -76,39 +77,69 @@ body {
 }
 
 //Nav | Menu
-nav {
-  width: 100%;
-  padding: 20px 150px;
-  display: flex;
-  background-color: #fff;
-  justify-content: space-between;
-  box-shadow: 0px 0px 3px rgba(44, 44, 44, 0.267);
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 1% 10%;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  h2 {
-    font: {
-      weight: 600;
-      size: 18px;
-    }
+  top:0;
+  left:0;
+	background-color: #fff;
+	z-index: 6;
+}
+.logo{
+	width: 200px;
+	height: 50px;
+	float: left;
+	font-size: 22px;
+	color: #000;
+	font-weight: 600;
+	line-height: 56px;
+}
+h1 span{
+	color: #f00;
+}
+.btn-menu{
+	float: right;
+	text-align: center;
+	color: #000;
+	cursor: pointer;
+	font-size: 2em;
+	line-height: 56px;
+	background-color: transparent;
+}
+.menu{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+  background-color: rgba(64,112,244, 0.9);
+	top: 0;
+	left: 0;
+  display: none;
+  ul{
+    text-align: center;
+    width: 100%;
+    float: left;
   }
-  ul {
-    li {
-      display: inline-block;
-      padding: 0px 20px;
-      a {
-        text-transform: capitalize;
-        font: {
-          weight: 600;
-          size: 18px;
-        }
-        &:hover {
-          color: $hoverSegundaria;
-        }
+  li{
+    padding: 3%;
+    a{
+	    color: #fff;
+      padding: 2% 3%;
+      font: {
+        size: 1.5em;
+        weight: 600;
       }
     }
   }
+}
+.btn-close{
+	float: right;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2em;
+	margin-right: 10%;
+	margin-top: 2%;
 }
 
 //Header | Home
@@ -117,10 +148,17 @@ header {
   display: flex;
   margin-top: 75px;
   overflow: hidden;
+  @media screen and (max-width:1000px){
+    padding: 20px;
+  }
   #apresentacaoTexto {
     width: $tamanhoArticlesMaior;
     padding-right: 25px;
-
+    @media screen and (max-width:1000px){
+      width: 100%;
+      text-align: center;
+      padding-right: 0px;
+    }
     h2 {
       font: {
         size: 36px;
@@ -150,38 +188,56 @@ header {
           color: $hoverSegundaria;
         }
       }
+      @media screen and (max-width:1000px){
+        padding: 40px 0px;
+        margin: 0 auto;
+      }
     }
   }
   #apresentacaoFoto {
     width: $tamanhoArticlesMenor;
-   transform: scaleX(-1);
-   position: relative;
-  }
-  #apresentacaoFoto img{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    transform: scaleX(-1);
+    position: relative;
+    img{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width:1000px){
+      display: none;
+    }
   }
 }
 
-//Main | Sections > Sobre > Trabalhos > Contato
+//Main | Sections > Sobre mim > Conhecimentos > Projetos > Serviços
 main {
   //Sobre
   #sobre {
     padding: $espacamentoLaterais;
+    background-color: #fafafa;
+    @media screen and (max-width:1000px){
+      padding: 20px;
+    }
     #sobreMim {
       display: flex;
       padding: 25px 0px;
-         align-items: center;
+      align-items: center;
     }
     #sobreFoto {
-    
       width: $tamanhoArticlesMenor;
+      @media screen and (max-width:1000px){
+        display: none;
+      }
     }
     #sobreTexto {
       width: $tamanhoArticlesMaior;
       padding-left: 25px;
+      @media screen and (max-width:1000px){
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+      }
       h3 {
         padding-bottom: 20px;
         font: {
@@ -196,109 +252,129 @@ main {
       @include botao();
     }
   }
-  //Skills
-  #skills {
-    padding: $espacamentoLaterais;
+  
+  //Projetos
+  #projetos {
+    padding: 70px;
+    background-color: #fafafa;
     h2 {
       @include alinhamentoTitulo();
     }
-    #conhecimentos {
-      display: flex;
-      padding: 25px 0px;
-      align-items: center;
-
-      #infoSkills {
-        width: $tamanhoArticlesMaior;
-        padding-right: 50px;
-        p {
-          @include texto();
-        }
-        #flexConhecimentos {
-          margin-top: 25px;
-          article {
-            box-shadow: 0px 0px 3px $corPrincipal;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: {
-              radius: 5px 5px 0px 0px;
-              bottom: 5px solid $corPrincipal;
-              width: 50%;
-            }
-            span {
-              float: right;
-            }
-          }
-        }
-      }
-      #skillsFoto {
-        transform: scaleX(-1);
-        width: $tamanhoArticlesMenor;
-      }
-    }
-  }
-  //Trabalhos
-  #trabalhos {
-    padding: $espacamentoLaterais;
-    h2 {
-      @include alinhamentoTitulo();
-    }
-    #flexbox {
+    article {
       padding: 25px 0px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      article {
+      div {
         height: 300px;
         flex-grow: 1;
         flex-basis: 300px;
         background-color: $corPrincipal;
         margin: 10px;
         border-radius: 5px;
+        box-shadow: 0px 0px 15px rgb(160, 160, 160);
+        transition: all 0.5s;
         &:hover {
-          background-color: $hoverPrincipal;
-          cursor: pointer;
+          transform: scale(1.05);
+          box-shadow: 0px 3px 0px $corPrincipal;
         }
       }
     }
+    //reponsividade no flexbox
+    @media screen and (max-width:800px){
+        padding: 10px;
+    }
   }
-  //Contato
-  #contato {
-    text-align: center;
-    padding: $espacamentoLaterais;
-    h2 {
+
+  //Conhecimentos
+  #meusConhecimentos {
+    width: 100%;
+    padding: 70px;
+    overflow: hidden;
+    h2{
       @include alinhamentoTitulo();
     }
-    #areaContato {
-      width: 600px;
-      margin: 0 auto;
-      padding: 25px 0px;
+    div {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin-top: 25px;
     }
-    input {
-      border: 1px solid $corSegundaria;
-      width: 100%;
-      display: block;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border-color: #ddd;
-      font-family: $fontPrincipal;
-      margin-bottom: 15px;
-      font: {
-        size: 16px;
-        weight: 300;
+    article {
+      text-align: center;
+      height: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 10px;
+      flex-basis: 250px;
+      flex-grow: 1;
+      box-shadow: 0px 0px 20px rgb(231, 231, 231);
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 3px 0px $corPrincipal;
+      }
+      h2 {
+        padding: 20px 0px;
+        font-size: 20px;
+      }
+      p {
+        line-height: 30px;
       }
     }
-    textarea {
-      @extend input;
+    //reponsividade no flexbox
+    @media screen and (max-width:800px){
+        padding: 10px;
     }
-    button {
-      @include botao;
+  }
+
+  //Serviços
+  #servicos {
+    padding: 70px;
+    h2 {
+       @include alinhamentoTitulo();
     }
+    article {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    div {
+      text-align: center;
+      height: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 10px;
+      flex-basis: 250px;
+      flex-grow: 1;
+      box-shadow: 0px 0px 20px rgb(231, 231, 231);
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 3px 0px $corPrincipal;
+      }
+      h2{
+        font-size: 20px;
+        padding: 20px 0px;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    //reponsividade no flexbox
+    @media screen and (max-width:800px){
+        padding: 10px;
+    }
+  }
+  .imageIcone {
+    width: 50px;
   }
 }
 
 // Scroll
-
 .scrollTop {
   position: fixed;
   right: 20px;
@@ -309,27 +385,23 @@ main {
   transition: all 0.4s ease-in-out 0s;
   cursor: pointer;
   border-radius: 10%;
+  i {
+    font-size: 20px;
+    color: #fff;
+  }
 }
-.scrollTop i {
-  font-size: 20px;
-  color: #fff;
-}
+//Fim do Main
 
 //Footer | Rodapé
 footer {
-  padding: $espacamentoLaterais;
+  padding: 50px 10px;
   background-color: $corSegundaria;
   text-align: center;
-  h4 {
-    color: #fff;
-    font: {
-      size: 18px;
-    }
-  }
   p {
     color: #fff;
     padding: 25px;
     font: {
+      size: 14px;
       weight: 200;
     }
   }
@@ -348,3 +420,43 @@ footer {
     }
   }
 }
+
+//Responsividade do Menu em tela cheia
+@media screen and (min-width:1100px){
+	.btn-menu{
+		display: none;
+	}
+	.btn-close{
+		display: none;
+	}
+	.cabecalho{
+		background-color: #fff;
+		box-shadow: 0px 0px 3px rgba(44, 44, 44, 0.267);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+	}
+	.menu{
+		width: auto; 
+		height: 56px; 
+		line-height: 56px;
+		float: right;
+		background-color: #fff;
+		display: block !important; 
+    position: static;
+    li{
+      padding: 0; 
+      float: left;
+      a{
+        color: $corSegundaria;
+        padding: 20px;
+        font: {
+          size: 18px;
+          weight:600;
+        }
+	    }
+	  }
+	}
+}
+
