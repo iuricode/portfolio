@@ -116,6 +116,9 @@ header #apresentacaoTexto {
 }
 @media screen and (max-width: 1000px) {
   header #apresentacaoTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
     padding-right: 0px;
@@ -214,6 +217,9 @@ main #sobre #sobreTexto {
 @media screen and (max-width: 1000px) {
   main #sobre #sobreTexto {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 0px;
     text-align: center;
   }
@@ -311,6 +317,7 @@ main #meusConhecimentos article {
   transition: all 0.5s;
 }
 main #meusConhecimentos article:hover {
+  cursor: pointer;
   transform: scale(1.05);
   box-shadow: 0px 3px 0px #4070f4;
 }
