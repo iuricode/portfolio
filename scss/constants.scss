@@ -48,3 +48,7 @@ $espacoResponsivo: 20px;
     size: 30px;
   }
 }
+
+@mixin putTransition($transitionDuration: .2s) {
+  transition: all $transitionDuration ease-in-out;
+}

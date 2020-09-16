@@ -1,3 +1,5 @@
+@import "./constants.scss";
+
 //Nav | Menu
 .cabecalho{
   width: 100%;
@@ -45,6 +47,8 @@ h1 span{
   }
   li{
     padding: 3%;
+    border-bottom: 3px solid #FFF;
+    @include putTransition();
     a{
       color: #fff;
       padding: 2% 3%;
@@ -52,6 +56,9 @@ h1 span{
         size: 1.5em;
         weight: 600;
       }
+    }
+    &:hover {
+      border-bottom: 3px solid $corPrincipal;
     }
   }
 }
