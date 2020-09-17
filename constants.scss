@@ -1,0 +1,54 @@
+//Minhas variáveis
+//Fonte
+$fontPrincipal: 'Poppins', sans-serif;
+//Cores
+$corPrincipal: #4070f4;
+$corSegundaria: #0e2431;
+//Hover
+$hoverPrincipal: #3460da;
+$hoverSegundaria: #091a24;
+//Espaçamentos
+$espacamentoLaterais: 50px 150px;
+$tamanhoArticlesMaior: 60%;
+$tamanhoArticlesMenor: 40%;
+//Unidades responsivos
+$espacoResponsivo: 20px;
+
+//Mixins
+@mixin botao {
+  background-color: $corPrincipal;
+  color: #fff;
+  padding: 15px;
+  width: 200px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  font: {
+    size: 16px;
+    weight: 700;
+    family: $fontPrincipal;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $hoverPrincipal;
+  }
+}
+@mixin texto {
+  line-height: 30px;
+  color: $corSegundaria;
+}
+@mixin alinhamentoTitulo {
+  text-align: center;
+  margin-top: 20px;
+  color: $corSegundaria;
+  font: {
+    size: 30px;
+  }
+}
+@mixin putTransition($transitionDuration: .2s) {
+  transition: all $transitionDuration ease-in-out;
+}
