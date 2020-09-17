@@ -49,38 +49,5 @@ $(document).ready(function () {
         );
         return false;
     });
-
-    const techs = [{
-        name: 'html5',
-        url: 'https://html5.org/'
-    }, {
-        name: 'css',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-    }, {
-        name: 'js',
-        url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference',
-    }, {
-        name: 'sass',
-        url: 'https://sass-lang.com/'
-    }, {
-        name: 'bs',
-        url: 'https://getbootstrap.com/',
-    }, {
-        name: 'react',
-        url: 'https://pt-br.reactjs.org/',
-    }, {
-        name: 'materialize',
-        url: 'https://materializecss.com/',
-    }, {
-        name: 'ui',
-        url: 'https://figma.com/'
-    }]
-
-    techs.forEach(tech => {
-        $('.'+tech.name).on('click', () => {
-            window.open(tech.url)
-        })
-    });
-
 });
 
