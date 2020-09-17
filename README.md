@@ -10,3 +10,7 @@ Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes
 
 ## 💻 Projeto<br>
 Usando meus novos conhecimentos em Sass, criei o meu portfólio.
+
+## 🌈 Seja um dos contribuidores<br>
+Quer fazer parte desse projeto? É simples!
+Faço um Fork nele colocando suas modificações e depois mande uma solicitação.
