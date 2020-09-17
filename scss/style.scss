@@ -1,160 +1,24 @@
-//Importanto font 'Poppins' do Google fonts
+//Importando fonte 'Poppins' do Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-//Minhas variáveis
-$fontPrincipal: 'Poppins', sans-serif;
-//Cores
-$corPrincipal: #4070f4;
-$corSegundaria: #0e2431;
-//Hover
-$hoverPrincipal: #3460da;
-$hoverSegundaria: #091a24;
-//Espaçamentos
-$espacamentoLaterais: 50px 150px;
-$tamanhoArticlesMaior: 60%;
-$tamanhoArticlesMenor: 40%;
-// Unidades responsivos
-$espacoResponsivo: 20px;
-
-//Mixins
-@mixin botao {
-  background-color: $corPrincipal;
-  color: #fff;
-  padding: 15px;
-  width: 150px;
-  border-radius: 10px;
-  border: none;
-  margin-top: 30px;
-  font: {
-    size: 16px;
-    weight: 700;
-    family: $fontPrincipal;
-  }
-  &:hover {
-    cursor: pointer;
-    background-color: $hoverPrincipal;
-  }
-}
-@mixin texto {
-  line-height: 30px;
-  color: $corSegundaria;
-}
-@mixin alinhamentoTitulo {
-  text-align: center;
-  margin-top: 20px;
-  color: $corSegundaria;
-  font: {
-    size: 30px;
-  }
-}
-
-//Zerando as configurações dos navegadores
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-ul,
-ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: $corSegundaria;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $corSegundaria;
-}
-body {
-  font-family: $fontPrincipal;
-  color: $corSegundaria;
-}
-
-//Nav | Menu
-.cabecalho{
-	width: 100%;
-	float: left;
-	padding: 1% 10%;
-  position: fixed;
-  top:0;
-  left:0;
-	background-color: #fff;
-	z-index: 6;
-}
-.logo{
-	width: 200px;
-	height: 50px;
-	float: left;
-	font-size: 22px;
-	color: #000;
-	font-weight: 600;
-	line-height: 56px;
-}
-h1 span{
-	color: #f00;
-}
-.btn-menu{
-	float: right;
-	text-align: center;
-	color: #000;
-	cursor: pointer;
-	font-size: 2em;
-	line-height: 56px;
-	background-color: transparent;
-}
-.menu{
-	width: 100%;
-	height: 100%;
-	position: fixed;
-  background-color: rgba(64,112,244, 0.9);
-	top: 0;
-	left: 0;
-  display: none;
-  ul{
-    text-align: center;
-    width: 100%;
-    float: left;
-  }
-  li{
-    padding: 3%;
-    a{
-	    color: #fff;
-      padding: 2% 3%;
-      font: {
-        size: 1.5em;
-        weight: 600;
-      }
-    }
-  }
-}
-.btn-close{
-	float: right;
-	color: #fff;
-	cursor: pointer;
-	font-size: 2em;
-	margin-right: 10%;
-	margin-top: 2%;
-}
+//Importando arquivos Scss
+@import "./constants.scss";
+@import "./zero_config.scss";
+@import "./nav_menu.scss";
 
 //Header | Home
 header {
-  padding: $espacamentoLaterais;
   display: flex;
-  margin-top: 75px;
+  height: 100vh;
+  padding: 150px;
   overflow: hidden;
-  @media screen and (max-width:1000px){
-    padding: 20px;
-  }
   #apresentacaoTexto {
     width: $tamanhoArticlesMaior;
     padding-right: 25px;
+    flex-direction: column;
     @media screen and (max-width:1000px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       text-align: center;
       padding-right: 0px;
@@ -210,14 +74,14 @@ header {
   }
 }
 
-//Main | Sections > Sobre mim > Conhecimentos > Projetos > Serviços
+//Main | Sections > Sobre mim > Projetos > Serviços > Conhecimentos
 main {
   //Sobre
   #sobre {
     padding: $espacamentoLaterais;
     background-color: #fafafa;
     @media screen and (max-width:1000px){
-      padding: 20px;
+      padding: 70px 20px;
     }
     #sobreMim {
       display: flex;
@@ -235,6 +99,9 @@ main {
       padding-left: 25px;
       @media screen and (max-width:1000px){
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-left: 0px;
         text-align: center;
       }
@@ -255,8 +122,7 @@ main {
   
   //Projetos
   #projetos {
-    padding: 70px;
-    background-color: #fafafa;
+    padding:70px;
     h2 {
       @include alinhamentoTitulo();
     }
@@ -276,61 +142,18 @@ main {
         transition: all 0.5s;
         &:hover {
           transform: scale(1.05);
-          box-shadow: 0px 3px 0px $corPrincipal;
         }
       }
     }
     //reponsividade no flexbox
     @media screen and (max-width:800px){
-        padding: 10px;
-    }
-  }
-
-  //Conhecimentos
-  #meusConhecimentos {
-    width: 100%;
-    padding: 70px;
-    overflow: hidden;
-    h2{
-      @include alinhamentoTitulo();
-    }
-    div {
-      display: flex;
-      height: auto;
-      flex-wrap: wrap;
-      margin-top: 25px;
-    }
-    article {
-      text-align: center;
-      height: auto;
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 15px;
-      margin: 10px;
-      flex-basis: 250px;
-      flex-grow: 1;
-      box-shadow: 0px 0px 20px rgb(231, 231, 231);
-      transition: all 0.5s;
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 3px 0px $corPrincipal;
-      }
-      h2 {
-        padding: 20px 0px;
-        font-size: 20px;
-      }
-      p {
-        line-height: 30px;
-      }
-    }
-    //reponsividade no flexbox
-    @media screen and (max-width:800px){
-        padding: 10px;
+        padding: 70px 10px;
     }
   }
 
   //Serviços
   #servicos {
+    background-color: #fafafa;
     padding: 70px;
     h2 {
        @include alinhamentoTitulo();
@@ -351,11 +174,6 @@ main {
       flex-basis: 250px;
       flex-grow: 1;
       box-shadow: 0px 0px 20px rgb(231, 231, 231);
-      transition: all 0.5s;
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 3px 0px $corPrincipal;
-      }
       h2{
         font-size: 20px;
         padding: 20px 0px;
@@ -366,11 +184,71 @@ main {
     }
     //reponsividade no flexbox
     @media screen and (max-width:800px){
-        padding: 10px;
+        padding: 70px 10px;
     }
   }
   .imageIcone {
     width: 50px;
+  }
+  //Conhecimentos
+  #meusConhecimentos {
+    width: 100%;
+    padding: 70px;
+    overflow: hidden;
+    h2{
+      @include alinhamentoTitulo();
+    }
+    div {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+    article {
+      text-align: center;
+      height: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 10px;
+      flex-basis: 250px;
+      flex-grow: 1;
+      box-shadow: 0px 0px 20px rgb(231, 231, 231);
+      transition: all 0.5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      h2 {
+        padding: 10px 0px;
+        font-size: 20px;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    //reponsividade no flexbox
+    @media screen and (max-width:800px){
+        padding: 70px 10px;
+    }
+    //Nivel de conhecimento(estrelas)
+    .estrelaConhecimento {
+      background: url("../image/star.png") repeat-x;
+      font-size: 0;
+      height: 21px;
+      line-height: 0;
+      overflow: hidden;
+      text-indent: -999em;
+      width: 110px;
+      margin: 10px auto;
+    }
+    .nivelConhecimento {
+      background: url("../image/star.png") repeat-x;
+      background-position: 0 100%;
+      float: left;
+      height: 21px;
+      display: block;
+   }
   }
 }
 
