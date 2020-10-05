@@ -1,6 +1,7 @@
 # 🦩 Meu Portfólio<br>
 
 ![Resultado final do projeto](image/resultado.jpg)
+![Resultado final do projeto](image/resultado2.jpg)
 
 ## 🚀 Tecnologias<br>
 Esse projeto foi desenvolvido com as seguintes tecnologias: HTML5, SASS (e convertido para CSS3), JS e Jquery.
