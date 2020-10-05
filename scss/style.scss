@@ -4,17 +4,23 @@
 @import "./constants.scss";
 @import "./zero_config.scss";
 @import "./nav_menu.scss";
+@import "./dark_mode.scss";
 
 //Header | Home
 header {
   display: flex;
+  align-items: center;
   height: 100vh;
   padding: 150px;
   overflow: hidden;
+  @media screen and (max-width:1000px){
+    padding: 75px;
+  }
   #apresentacaoTexto {
     width: $tamanhoArticlesMaior;
     padding-right: 25px;
     flex-direction: column;
+
     @media screen and (max-width:1000px){
       display: flex;
       flex-direction: column;
@@ -25,13 +31,21 @@ header {
     }
     h2 {
       font: {
-        size: 36px;
+        size: 16px;
+        weight: 400;
+        line-height: 150%;
+        color: rgb(56, 56, 56);
       }
-      span {
-        color: $corPrincipal;
+      #nome {
+        text-transform: uppercase;
         font: {
-          size: 38px;
+          size: 2.5rem;
+          weight: 900;
         }
+      }
+      #profissao{
+        font-size: 1.06rem;
+        text-transform: uppercase;
       }
     }
     button {
@@ -104,6 +118,7 @@ main {
         align-items: center;
         padding-left: 0px;
         text-align: center;
+           color: $corSegundaria;
       }
       h3 {
         padding-bottom: 20px;
@@ -112,7 +127,7 @@ main {
         }
       }
       p {
-        @include texto();
+        line-height: 30px;
       }
     }
     button {
@@ -131,17 +146,53 @@ main {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      text-align: left;
       div {
-        height: 300px;
+        height: 250px;
         flex-grow: 1;
         flex-basis: 300px;
-        background-color: $corPrincipal;
+        background-color: #fafafa;
+        padding: 40px;
         margin: 10px;
         border-radius: 5px;
-        box-shadow: 0px 0px 15px rgb(160, 160, 160);
-        transition: all 0.5s;
-        &:hover {
-          transform: scale(1.05);
+        box-shadow: 0px 0px 10px rgb(202, 202, 202);
+        position: relative;
+        h3{
+          font-size: 1.4rem;
+        }
+        p{
+          padding: 10px 0px;
+          font-size: 0.9rem;
+        }
+        .botoes-projetos{
+          position: absolute;
+          bottom: 40px;
+          left: 40px;
+        }
+        a{
+          margin-right: 10px;
+        }
+        .aovivo-button{
+          background-color: $corPrincipal;
+          padding: 10px 20px;
+          color:#fff;
+          border:0;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+        .github-button{
+          width: 35px;
+          height: 35px;
+          font-size: 20px;
+          border-radius: 50%;
+          background-color: $corPrincipal;
+          color:#fff;
+          border:0;
+          border-radius: 50%;
+          cursor: pointer;
         }
       }
     }
@@ -333,8 +384,12 @@ footer {
           size: 18px;
           weight:600;
         }
-	    }
-	  }
+      }
+      button{
+        color: #000;
+      }
+    }
+    
 	}
 }
 

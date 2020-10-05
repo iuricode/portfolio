@@ -1,0 +1,57 @@
+@import "./constants.scss";
+
+//Dark Body
+body.dark {
+    background-color: $corPrincipalDark;
+    color: $corBrancaDark;
+}
+//Dark Menu
+body.dark nav, body.dark .cabecalho a, body.dark .cabecalho, body.dark .cabecalho .logo, body.dark .cabecalho i{
+    background-color: $corSegundariaDark;
+    color: $corBrancaDark;
+    box-shadow: none;
+}
+//Dark Header
+body.dark header h2{
+    color: $corBrancaDark
+}
+//Dark Sobre
+body.dark #sobre, body.dark #servicos{
+    background-color: $corSegundariaDark;
+    color: $corBrancaDark;
+}
+body.dark #sobre h3, body.dark #sobre p{
+    color: $corBrancaDark;
+}
+//Dark Projetos
+body.dark #projetos h2{
+    color: $corBrancaDark;
+}
+body.dark #projetos div{
+    background-color: $corSegundariaDark;
+    box-shadow: none;
+}
+body.dark #projetos div h3, body.dark #projetos div p{
+    color: $corBrancaDark
+}
+//Dark Serviços
+body.dark #servicos div{
+    background-color: $corPrincipalDark;
+    box-shadow: none;
+}
+body.dark #servicos h2, body.dark #servicos div p{
+    color: $corBrancaDark
+}
+//Dark Conhecimentos
+body.dark #meusConhecimentos article{
+    background-color: $corSegundariaDark;
+    box-shadow: none;
+}
+body.dark #meusConhecimentos h2, body.dark #meusConhecimentos article{
+    color: $corBrancaDark
+}
+//Dark Footer
+body.dark footer{
+    background-color: $corSegundariaDark;
+    color: $corBrancaDark
+}
