@@ -4,22 +4,17 @@
 ![Resultado final do projeto](image/resultado.jpg)
 ![Resultado final do projeto](image/resultado2.jpg)
 
-## 📱 Visualização Celular
-
-![Resultado final do projeto](image/resultadoMobile.jpeg)
-![Resultado final do projeto](image/resultadoMobile2.jpeg)
-
 ## 🌳 Observação<br>
 Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro. Nele usei fazias coisas como variáveis, mixins, include, extend e outras coisas que o Sass disponibiliza para a gente.<br><br>
 
 ## 📚 Seções
 O site é composto por 5 diferentes seções:
 
-- **Seção Header:** 
-- **Seção Sobre Mim:**
-- **Seção Projetos:** 
+- **Seção Header:** Nele temos um avatar do meu github e um breve apresentação;
+- **Seção Sobre Mim:** Nessa seção tenho um apresentação de um avatar só que andando e uma descrição dizendo sobre mim e além disso, temos botão para baixar meu currículo;
+- **Seção Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Seção Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
-- **Seção Conhecimentos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
+- **Seção Conhecimentos:** Aqui apresentamos meus conhecimentos no front-end e algumas estrelas para simbolizar meu nível de conhecimento sobre a linguagem;
 
 ## 🛠 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
@@ -33,7 +28,7 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Adicionar currículo;
-- [ ] Adicionar Dark Mode (tema escuro); 
+- [x] Adicionar Dark Mode (tema escuro); 
 - [ ] Animação em meus conhecimentos;
 - [ ] Efeitos do fundo das seções;
 - [ ] Animação no menu;  
