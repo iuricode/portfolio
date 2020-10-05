@@ -282,24 +282,6 @@ main {
     @media screen and (max-width:800px){
         padding: 70px 10px;
     }
-    //Nivel de conhecimento(estrelas)
-    .estrelaConhecimento {
-      background: url("../image/star.png") repeat-x;
-      font-size: 0;
-      height: 21px;
-      line-height: 0;
-      overflow: hidden;
-      text-indent: -999em;
-      width: 110px;
-      margin: 10px auto;
-    }
-    .nivelConhecimento {
-      background: url("../image/star.png") repeat-x;
-      background-position: 0 100%;
-      float: left;
-      height: 21px;
-      display: block;
-   }
   }
 }
 
