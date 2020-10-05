@@ -1,12 +1,13 @@
-# 🦩 Meu Portfólio<br>
+# 🍣 Meu Portfólio<br>
 
-## 🖥 Preview 
+## 🖥 Visualização
 ![Resultado final do projeto](image/resultado.jpg)
 ![Resultado final do projeto](image/resultado2.jpg)
 
-## 📱 Preview Mobile
-![Resultado final do projeto](image/resultadoMobile.jpg)
-![Resultado final do projeto](image/resultadoMobile2.jpg)
+## 📱 Visualização Celular
+
+![Resultado final do projeto](image/resultadoMobile.jpeg)
+![Resultado final do projeto](image/resultadoMobile2.jpeg)
 
 ## 🌳 Observação<br>
 Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro. Nele usei fazias coisas como variáveis, mixins, include, extend e outras coisas que o Sass disponibiliza para a gente.<br><br>
