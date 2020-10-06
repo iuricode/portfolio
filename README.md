@@ -16,6 +16,8 @@ O site é composto por 5 diferentes seções:
 - **Seção Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Seção Conhecimentos:** Aqui apresentamos meus conhecimentos no front-end e algumas estrelas para simbolizar meu nível de conhecimento sobre a linguagem;
 
+![Telas](image/ConjuntoTelas.png)
+
 ## 🛠 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - Visual Studio Code;
@@ -26,6 +28,8 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 ## 📌 Ajustes e melhorias
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+(Próxima atualização: 10/10/2020)
 
 - [x] Adicionar currículo;
 - [x] Adicionar Dark Mode (tema escuro); 
