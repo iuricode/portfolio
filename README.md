@@ -31,6 +31,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Adicionar Dark Mode (tema escuro); 
 - [x] Efeito flutuante;
 - [ ] Animação no menu;  
+- [ ] Melhoria na responsividade; 
 ---
 
 ## 🌈 Seja um dos contribuidores<br>
@@ -38,5 +39,5 @@ Quer fazer parte desse projeto? É simples!
 Faço um Fork nele colocando suas modificações e depois mande uma solicitação.
 
 <p align= center>
-🏰 Orgulhosamente feito por <strong>Iuri Silva</strong>
+Orgulhosamente feito por <strong>🏰 Iuri Silva</strong>
 </p>
