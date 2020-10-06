@@ -29,8 +29,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 
 - [x] Adicionar currículo;
 - [x] Adicionar Dark Mode (tema escuro); 
-- [ ] Animação em meus conhecimentos;
-- [ ] Efeitos do fundo das seções;
+- [x] Efeito flutuante;
 - [ ] Animação no menu;  
 ---
 
