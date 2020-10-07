@@ -4,7 +4,7 @@
 ![Resultado final do projeto](image/resultado.jpg)
 
 ## 🌳 Projeto<br>
-O objetivo do projeto é colocar meus projetos, informações sobre mim, informar meus conhecimentos e disponibilizar meu currículo.<br><br>
+O objetivo do projeto é colocar meus projetos, informações sobre mim, informar meus conhecimentos, serviços e disponibilizar meu currículo, para a visualização dos clientes/empresas.<br><br>
 
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
