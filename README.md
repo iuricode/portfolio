@@ -4,11 +4,11 @@
 ![Resultado final do projeto](image/resultado.jpg)
 ![Resultado final do projeto](image/resultado2.jpg)
 
-## 🌳 Observação<br>
-Eu gostei de mais usar Sass, é um tecnologia para ser usado em projetos grandes pois, ela é bem melhor para modificações do que o CSS puro. Nele usei fazias coisas como variáveis, mixins, include, extend e outras coisas que o Sass disponibiliza para a gente.<br><br>
+## 🌳 Projeto<br>
+O objetivo do projeto é colocar meus projetos, informações sobre mim, informar meus conhecimentos e disponibilizar meu currículo.<br><br>
 
 ## 📚 Seções
-O site é composto por 5 diferentes seções:
+O site é composto por 5 seções diferentes:
 
 - **Seção Header:** Nele temos um avatar do meu github e um breve apresentação;
 - **Seção Sobre Mim:** Nessa seção tenho um apresentação de um avatar só que andando e uma descrição dizendo sobre mim e além disso, temos botão para baixar meu currículo;
@@ -39,9 +39,9 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 ---
 
 ## 🌈 Seja um dos contribuidores<br>
-Quer fazer parte desse projeto? É simples!
+Quer fazer parte desse projeto? É simples!<br>
 Faço um Fork nele colocando suas modificações e depois mande uma solicitação.
 
 <p align= center>
-Orgulhosamente feito por <strong>🏰 Iuri Silva</strong>
+🏰 Orgulhosamente feito por <strong>Iuri Silva</strong>
 </p>
