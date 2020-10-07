@@ -2,7 +2,6 @@
 
 ## 🖥 Visualização
 ![Resultado final do projeto](image/resultado.jpg)
-![Resultado final do projeto](image/resultado2.jpg)
 
 ## 🌳 Projeto<br>
 O objetivo do projeto é colocar meus projetos, informações sobre mim, informar meus conhecimentos e disponibilizar meu currículo.<br><br>
