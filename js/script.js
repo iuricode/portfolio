@@ -1,14 +1,6 @@
 //Animação menu responsivo
-$('.btn-menu').click(function () {
-    $('.menu').show();
-});
-
-$('.btn-close').click(function () {
-    $('.menu').hide();
-});
-
-$('nav ul li').click(function () {
-    $('.menu').hide();
+$('.btn-menu, .btn-close').on('click', function () {
+    $('.menu').slideToggle('slow');
 });
 
 //Scroll menu
@@ -96,7 +88,7 @@ if (localStorage.getItem('dark-mode')) {
 }
 
 // set new localStorage value
-localStorage.setItem('dark-mode', darkMode);
+localStorage.getItem('dark-mode', darkMode);
 
 if (localStorage.getItem('dark-mode') == 'dark') {
     // if the above is 'dark' then apply .dark to the body
