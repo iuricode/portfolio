@@ -28,7 +28,7 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 ## 📌 Ajustes e melhorias
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-(Próxima atualização: 10/10/2020)
+(Próxima atualização: 17/10/2020)
 
 - [x] Adicionar Dark Mode (tema escuro); 
 - [x] Efeito flutuante;
