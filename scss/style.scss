@@ -16,7 +16,6 @@ header {
   #apresentacaoTexto {
     padding: 150px;
     width: $tamanhoArticlesMaior;
-    padding-right: 25px;
     flex-direction: column;
     @media screen and (max-width:1000px){
       display: flex;
@@ -24,7 +23,7 @@ header {
       align-items: center;
       width: 100%;
       text-align: center;
-      padding-right: 0px;
+      padding: 0px;
     }
     h2 {
       font: {
