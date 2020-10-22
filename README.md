@@ -30,7 +30,8 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 
 (Próxima atualização: 28/10/2020)
 
-- [x] Adicionar Dark Mode (tema escuro); 
+- [x] Adicionar Dark Mode (tema escuro);
+- [x] Colocar projetos;
 - [x] Efeito flutuante;
 - [x] Animação no menu;  
 - [x] Responsividade;
@@ -42,7 +43,7 @@ Acessibilidade:
 - [ ] Etapa 4;
 ---
 
-<br>[⬆ Voltar ao topo](#-índice)<br>
+<br>[⬆ Voltar ao topo](#-seções)<br>
 
 ## 🌈 Contribuidores<br>
 <table>
