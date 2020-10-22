@@ -1,5 +1,5 @@
 //Animação menu responsivo
-$('.btn-menu, .btn-close').on('click', function () {
+$('.btn-menu, .btn-close, .menu ul li a').on('click', function () {
     $('.menu').slideToggle('slow');
 });
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
             {
                 scrollTop: 0,
             },
-            1000
+            1300
         );
         return false;
     });
