@@ -1,6 +1,10 @@
 //Animação menu responsivo
-$('.btn-menu, .btn-close, .menu ul li a').on('click', function () {
+$('.btn-menu, .btn-close').on('click', function () {
     $('.menu').slideToggle('slow');
+});
+
+$('nav ul li a').click(function () {
+    $('.menu').hide();
 });
 
 //Scroll menu
