@@ -1,10 +1,12 @@
-# 🍣 Meu Portfólio<br>
+<h1 align="center">
+🍣<br>Meu Portfólio
+</h1>
 
-## 🖥 Visualização
+<h4 align="center">
+Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao decorrer da minha carreira.
+</h4>
+
 ![Resultado final do projeto](image/resultado.jpg)
-
-## 🌳 Projeto<br>
-Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao decorrer da minha carreira.<br>
 
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
@@ -40,10 +42,34 @@ Acessibilidade:
 - [ ] Etapa 4;
 ---
 
-## ⛩ Seja um dos contribuidores<br>
-Quer fazer parte desse projeto? É simples!
-Faça um fork dele e coloque as suas modificações, depois mande um pull request.
+<br>[⬆ Voltar ao topo](#-índice)<br>
 
-<p align= center>
-🏰 Orgulhosamente feito por <strong>Iuri Silva</strong>
-</p>
+## 🌈 Contribuidores<br>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/iuricode">
+        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>Iuri Silva</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/BrianIto">
+        <img src="https://avatars3.githubusercontent.com/u/6891093" width="100px;" alt="Foto do Brian Ito no GitHub"/><br>
+        <sub>
+          <b>Brian Ito</b>
+        </sub>
+      </a><br>
+    </td>
+  </tr>
+</table>
+
+## ⛩ Seja um dos contribuidores<br>
+Quer fazer parte desse projeto? É simples!<br>
+Faça um fork dele e coloque as suas modificações, depois mande um pull request.<br>
+
+<h3 align="center">
+🏰<br>Orgulhosamente feito por <strong>Iuri Silva</strong>
+</h3>
