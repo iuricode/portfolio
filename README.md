@@ -37,7 +37,17 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Responsividade;
 
 Acessibilidade:
-- [ ] Etapa 1;
+- [x] Etapa 1;
+  ##### Marcação:
+  - Recomendação 1.2 – Organizar o código HTML de forma lógica e semântica;
+  - Recomendação 1.1 – Respeitar os Padrões Web;
+  - Recomendação 1.5 – Fornecer âncoras para ir direto a um bloco de conteúdo;
+  
+  ##### Comportamento:
+  - Recomendação 2.3 - Não criar páginas com atualização automática periódica;
+  - Recomendação 2.4 – Não utilizar redirecionamento automático de páginas;
+  - Recomendação 2.6 – Não incluir situações com intermitência de tela;<br><br>
+ 
 - [ ] Etapa 2;
 - [ ] Etapa 3;
 - [ ] Etapa 4;
