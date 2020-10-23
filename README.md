@@ -11,11 +11,11 @@ Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao d
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
 
-- **Seção Header:** Nele temos um avatar do meu github e um breve apresentação;
-- **Seção Sobre Mim:** Nessa seção tenho um apresentação de um avatar só que andando e uma descrição dizendo sobre mim;
-- **Seção Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
-- **Seção Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
-- **Seção Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
+- **Header:** Nele temos um avatar do meu github e um breve apresentação;
+- **Sobre Mim:** Nessa seção tenho um apresentação de um avatar só que andando e uma descrição dizendo sobre mim;
+- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
+- **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
+- **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
 
 ---
 
@@ -43,7 +43,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 ---
 
 ## 🕶 Acessibilidade
-- [x] Etapa 1;
+- [x] Etapa 1
   ##### Marcação:
   - Recomendação 1.1 – Respeitar os Padrões Web;
   - Recomendação 1.2 – Organizar o código HTML de forma lógica e semântica;
@@ -54,9 +54,9 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   - Recomendação 2.4 – Não utilizar redirecionamento automático de páginas;
   - Recomendação 2.6 – Não incluir situações com intermitência de tela;<br><br>
  
-- [ ] Etapa 2;
-- [ ] Etapa 3;
-- [ ] Etapa 4;
+- [ ] Etapa 2
+- [ ] Etapa 3
+- [ ] Etapa 4
 
 ---
 
