@@ -4,8 +4,8 @@
 @import "./nav_menu.scss";
 @import "./dark_mode.scss";
 
-//Header | Home
-header {
+//Apresentação | Home
+#apresentacaoPortfolio {
   display: flex;
   align-items: center;
   height: 100vh;
@@ -29,9 +29,8 @@ header {
       font: {
         size: 18px;
         weight: 400;
-        line-height: 130%;
-        color: rgb(56, 56, 56);
       }
+      color: rgb(56, 56, 56);
       #nome {
         text-transform: uppercase;
         font: {
