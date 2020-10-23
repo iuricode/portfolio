@@ -53,10 +53,25 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   - Recomendação 2.3 - Não criar páginas com atualização automática periódica;
   - Recomendação 2.4 – Não utilizar redirecionamento automático de páginas;
   - Recomendação 2.6 – Não incluir situações com intermitência de tela;<br><br>
- 
-- [ ] Etapa 2
-- [ ] Etapa 3
+  
+- [x] Etapa 2
+  ##### Conteúdo / Informação:
+  - Recomendação 3.1 – Identificar o idioma principal da página;
+  - Recomendação 3.3 – Oferecer um título descritivo e informativo à página;
+  - Recomendação 3.6 – Fornecer alternativa em texto para as imagens do sítio;<br><br>
+  
+- [x] Etapa 3
+  #### Apresentação / Design:
+  - Recomendação 4.1 - Oferecer contraste mínimo entre plano de fundo e primeiro plano;
+  - Recomendação 4.2 – Não utilizar apenas cor ou outras características sensoriais para diferenciar elementos;
+  
 - [ ] Etapa 4
+  #### Multimídia:
+  #### Formulários:
+  
+  <br><br>
+  
+Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendações de acessibilidade na eMAG.
 
 ---
 
