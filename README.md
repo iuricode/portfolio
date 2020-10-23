@@ -17,6 +17,8 @@ O site é composto por 5 seções diferentes:
 - **Seção Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Seção Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
 
+---
+
 ## 🛠 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - Visual Studio Code;
@@ -24,6 +26,8 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - JavaScript;
 - SASS (e convertido para CSS3);
 - JQuery;
+
+---
 
 ## 📌 Ajustes e melhorias
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
@@ -36,11 +40,13 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Animação no menu;  
 - [x] Responsividade;
 
-Acessibilidade:
+---
+
+## 🕶 Acessibilidade
 - [x] Etapa 1;
   ##### Marcação:
-  - Recomendação 1.2 – Organizar o código HTML de forma lógica e semântica;
   - Recomendação 1.1 – Respeitar os Padrões Web;
+  - Recomendação 1.2 – Organizar o código HTML de forma lógica e semântica;
   - Recomendação 1.5 – Fornecer âncoras para ir direto a um bloco de conteúdo;
   
   ##### Comportamento:
@@ -51,6 +57,7 @@ Acessibilidade:
 - [ ] Etapa 2;
 - [ ] Etapa 3;
 - [ ] Etapa 4;
+
 ---
 
 <br>[⬆ Voltar ao topo](#-seções)<br>
