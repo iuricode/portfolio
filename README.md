@@ -12,7 +12,7 @@ Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao d
 O site é composto por 5 seções diferentes:
 
 - **Header:** Nele temos um avatar do meu github e um breve apresentação;
-- **Sobre Mim:** Nessa seção tenho um apresentação de um avatar só que andando e uma descrição dizendo sobre mim;
+- **Sobre Mim:** Nessa seção tenho uma descrição dizendo um pouco sobre mim;
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
@@ -61,13 +61,13 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   - Recomendação 3.6 – Fornecer alternativa em texto para as imagens do sítio;<br><br>
   
 - [x] Etapa 3
-  #### Apresentação / Design:
+  ##### Apresentação / Design:
   - Recomendação 4.1 - Oferecer contraste mínimo entre plano de fundo e primeiro plano;
   - Recomendação 4.2 – Não utilizar apenas cor ou outras características sensoriais para diferenciar elementos;
   
 - [ ] Etapa 4
-  #### Multimídia:
-  #### Formulários:
+  ##### Multimídia:
+  ##### Formulários:
   
   <br><br>
   
