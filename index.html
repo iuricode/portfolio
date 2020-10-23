@@ -12,12 +12,13 @@
 </head>
 
 <body>
-  <!--Menu-->
-  <div class="cabecalho">
+  <!--Header-->
+  <header>
     <a href="#">
       <h1 class="logo">Portfólio</h1>
     </a>
     <div class="btn-menu"><i class="fa fa-bars"></i></div>
+    <!--Menu-->
     <nav class="menu">
       <a class="btn-close"><i class="fa fa-close"></i></a>
       <ul>
@@ -34,34 +35,36 @@
         </li>
       </ul>
     </nav>
-  </div>
-
-  <!--Header-->
-  <header>
-    <article id="apresentacaoTexto">
-      <h2>
-        Olá, eu sou o<br>
-        <span id="nome">Iuri Silva.</span><br>
-        <span>Desenvolvedor Front-end e UI Designer</span>
-      </h2>
-      <a href="https://github.com/iuricode" target="_blank">
-        Meu GitHub &nbsp;<i style="font-size: 30px" class="fa fa-github"></i>
-      </a>
-    </article>
-
-    <article id="apresentacaoFoto">
-      <img src="image/fundoEspaco.png" alt="" id="fundo">
-      <img src="image/fundoPessoa.png" class="object">
-    </article>
   </header>
 
   <!--Main-->
   <main>
+    <!--Apresentação Portfólio-->
+    <section id="apresentacaoPortfolio">
+      <article id="apresentacaoTexto">
+        <h2>
+          Olá, eu sou o<br>
+          <span id="nome">Iuri Silva.</span><br>
+          <span>Desenvolvedor Front-end e UI Designer</span>
+        </h2>
+        <a href="https://github.com/iuricode" target="_blank">
+          Meu GitHub &nbsp;<i style="font-size: 30px" class="fa fa-github"></i>
+        </a>
+      </article>
+
+      <article id="apresentacaoFoto">
+        <img src="image/fundoEspaco.png" alt="Imagem de um espaço com coisas flutando" id="fundo">
+        <img src="image/fundoPessoa.png"
+          alt="Imagem de ilustrativa de mim flutuando no espaço com um efeito de movimento" class="object">
+      </article>
+    </section>
+
     <!--Sobre-->
     <section id="sobre">
       <section id="sobreMim">
         <article id="sobreFoto">
-          <img src="image/iuriProgramando.png" alt="">
+          <img src="image/iuriProgramando.png"
+            alt="Imagem ilustrativa de mim com uma máscara e um face feliz além disso, estou usando um notebook">
         </article>
         <article id="sobreTexto">
           <h3>Sobre mim</h3>
@@ -83,7 +86,6 @@
     <section id="projetos">
       <h2>Projetos</h2>
       <article>
-
         <div>
           <h3>Clones interfaces</h3>
           <p>📦 Repositório com clones de interfaces.</p>
@@ -152,53 +154,54 @@
       <h2>Serviços</h2>
       <article>
         <div>
-          <img src="image/criacao-de-sites.png" alt="" class="imageIcone">
+          <img src="image/criacao-de-sites.png" alt="Uma logo de uma pasta com arquivos de códigos" class="imageIcone">
           <h2>Criação de Sites</h2>
           <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais focado em
             resultados</p>
         </div>
 
         <div>
-          <img src="image/responsivo.png" alt="" class="imageIcone">
+          <img src="image/responsivo.png" alt="Uma logo de um notebook e um celular" class="imageIcone">
           <h2>Sites responsivos</h2>
           <p>Criação de sites responsivos para a melhor visualização em dispositivos móveis com
             qualidade em todas as telas</p>
         </div>
 
         <div>
-          <img src="image/layouts.png" alt="" class="imageIcone">
+          <img src="image/layouts.png" alt="Uma logo de uma criação de layouts" class="imageIcone">
           <h2>Layouts</h2>
           <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento</p>
         </div>
 
         <div>
-          <img src="image/seo.png" alt="" class="imageIcone">
+          <img src="image/seo.png" alt="Uma logo de um gráfico" class="imageIcone">
           <h2>SEO e Analytics</h2>
           <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas
             buscas</p>
         </div>
 
         <div>
-          <img src="image/marketing.png" alt="" class="imageIcone">
+          <img src="image/marketing.png" alt="Uma logo de uma carta aberta com um auto falante saindo dele"
+            class="imageIcone">
           <h2>E-mail Marketing</h2>
           <p>Criação e ativação de campanhas por e-mail, gerando leads e capacitando para um
             melhor desempenho</p>
         </div>
 
         <div>
-          <img src="image/tecnologias.png" alt="" class="imageIcone">
+          <img src="image/tecnologias.png" alt="Uma logo de um notebook" class="imageIcone">
           <h2>Tecnologias</h2>
           <p>Desenvolvimento através das melhores linguagens e tecnologias disponíveis na criação do seu projeto</p>
         </div>
 
         <div>
-          <img src="image/design-grafico.png" alt="" class="imageIcone">
+          <img src="image/design-grafico.png" alt="Uma logo de monitor com materiais na tela" class="imageIcone">
           <h2>Design Gráfico</h2>
           <p>Realização da comunicação visual impressa do seu projeto ou seu negócio</p>
         </div>
 
         <div>
-          <img src="image/redes-sociais.png" alt="" class="imageIcone">
+          <img src="image/redes-sociais.png" alt="Uma logo de um celular usando redes sociais" class="imageIcone">
           <h2>Redes Sociais</h2>
           <p>Não deixe sua empresa de fora das redes sociais, divulgue seu negócio e apareça para seu
             público-alvo</p>
@@ -211,49 +214,49 @@
       <h2 id="textSkill">Conhecimentos</h2>
       <div>
         <article class="html5">
-          <img src="image/logoHTML.png" alt="" class="imageIcone" />
+          <img src="image/logoHTML.png" alt="Logo do HTML5" class="imageIcone" />
           <h2>HTML5</h2>
           <p>2 anos de experiência</p>
         </article>
 
         <article class="css">
-          <img src="image/logoCSS.png" alt="" class="imageIcone" />
+          <img src="image/logoCSS.png" alt="Logo do CSS3" class="imageIcone" />
           <h2>CSS3</h2>
           <p>2 anos de experiência</p>
         </article>
 
         <article class="sass">
-          <img src="image/logoSass.png" alt="" class="imageIcone" />
+          <img src="image/logoSass.png" alt="Logo do Sass" class="imageIcone" />
           <h2>Sass</h2>
           <p>5 meses de experiência</p>
         </article>
 
         <article class="js">
-          <img src="image/logoJS.png" alt="" class="imageIcone" />
+          <img src="image/logoJS.png" alt="Logo do JavaScript" class="imageIcone" />
           <h2>JavaScript</h2>
           <p>3 meses de experiência</p>
         </article>
 
         <article class="bs">
-          <img src="image/logoBootstrap.png" alt="" class="imageIcone" />
+          <img src="image/logoBootstrap.png" alt="Logo do Bootstrap" class="imageIcone" />
           <h2>Bootstrap</h2>
           <p>1 ano de experiência</p>
         </article>
 
         <article class="react">
-          <img src="image/logoReact.png" alt="" class="imageIcone" />
+          <img src="image/logoReact.png" alt="Logo do React" class="imageIcone" />
           <h2>ReactJS</h2>
           <p>1 mês de experiência</p>
         </article>
 
         <article class="materialize">
-          <img src="image/logoMaterialize.png" alt="" class="imageIcone" />
+          <img src="image/logoMaterialize.png" alt="Logo do Materialize" class="imageIcone" />
           <h2>Materialize</h2>
           <p>1 ano de experiência</p>
         </article>
 
         <article class="ui">
-          <img src="image/logoUI.png" alt="" class="imageIcone" />
+          <img src="image/logoUI.png" alt="Logo do Figma representando que sei UI Design" class="imageIcone" />
           <h2>UI Design</h2>
           <p>2 meses de experiência</p>
         </article>
