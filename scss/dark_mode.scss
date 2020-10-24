@@ -6,14 +6,14 @@ body.dark {
     color: $corBrancaDark;
 }
 //Dark Menu
-body.dark nav, body.dark .cabecalho a, body.dark .cabecalho, body.dark .cabecalho .logo, body.dark .cabecalho i{
+body.dark nav, body.dark header a, body.dark header, body.dark header .logo, body.dark header i{
     background-color: $corSegundariaDark;
     color: $corBrancaDark;
     box-shadow: none;
 }
-//Dark Header
-body.dark header h2{
-    color: $corBrancaDark
+//Dark Apresentação
+body.dark #apresentacaoPortfolio #apresentacaoTexto h2{
+    color: $corBrancaDark;
 }
 //Dark Sobre
 body.dark #sobre, body.dark #servicos{

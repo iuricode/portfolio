@@ -1,7 +1,7 @@
 @import "./constants.scss";
 
 //Nav | Menu
-.cabecalho{
+header{
   width: 100%;
   float: left;
   padding: 1% 10%;
@@ -53,7 +53,7 @@ h1 span{
       padding: 2% 3%;
       font: {
         size: 1.5em;
-        weight: 600;
+        weight: 400;
       }
     }
     button{
@@ -79,3 +79,49 @@ h1 span{
   margin-right: 10%;
   margin-top: 2%;
 }
+
+
+
+//Responsividade do Menu em tela cheia
+@media screen and (min-width:1100px){
+	.btn-menu{
+		display: none;
+	}
+	.btn-close{
+		display: none;
+	}
+	header{
+		background-color: #fff;
+		box-shadow: 0px 0px 3px rgba(44, 44, 44, 0.267);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+	}
+	.menu{
+		width: auto; 
+		height: 56px; 
+		line-height: 56px;
+		float: right;
+		background-color: #fff;
+		display: block !important; 
+    position: static;
+    li{
+      padding: 0; 
+      float: left;
+      a{
+        color: $corSegundaria;
+        padding: 15px;
+        font: {
+          size: 16px;
+          weight:400;
+        }
+      }
+      button{
+        color: #000;
+      }
+    }
+    
+	}
+}
+

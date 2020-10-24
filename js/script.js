@@ -3,7 +3,7 @@ $('.btn-menu, .btn-close').on('click', function () {
     $('.menu').slideToggle('slow');
 });
 
-$('nav ul li a').click(function () {
+$('nav ul li').click(function () {
     $('.menu').hide();
 });
 
@@ -62,8 +62,8 @@ $(document).ready(function () {
         name: 'bs',
         url: 'https://getbootstrap.com/',
     }, {
-        name: 'react',
-        url: 'https://pt-br.reactjs.org/',
+        name: 'wp',
+        url: 'https://br.wordpress.com/',
     }, {
         name: 'materialize',
         url: 'https://materializecss.com/',
