@@ -119,3 +119,7 @@ $('.light-button').on('click', function () {
     // set stored value to 'light'
     localStorage.setItem('dark-mode', 'light');
 });
+
+function botaoContato() {
+    alert('Desculpe, o formulário ainda não está funcionando. Tente mais tarde ou mande um email em: iuricodebrasil@gmail.com');
+}

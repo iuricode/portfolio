@@ -116,6 +116,9 @@ h1 span{
           size: 16px;
           weight:400;
         }
+        &:hover{
+          border-bottom: 3px solid $corPrincipal;
+        }
       }
       button{
         color: #000;

@@ -16,12 +16,14 @@ O site é composto por 5 seções diferentes:
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
+- **Contato:** Aqui temos uma seção para o cliente entrar em contato de forma mais rápida;
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
-- Visual Studio Code;
+- Visual Studio Code (Editor de código);
+- Scout App (Compilador do Sass);
 - HTML5;
 - JavaScript;
 - SASS (e convertido para CSS3);
@@ -32,13 +34,13 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 ## 📌 Ajustes e melhorias
 O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-(Próxima atualização: 28/10/2020)
-
 - [x] Adicionar Dark Mode (tema escuro);
 - [x] Colocar projetos;
 - [x] Efeito flutuante;
 - [x] Animação no menu;  
 - [x] Responsividade;
+- [x] Seção de contato;
+- [ ] Funcionamento da contato;
 
 ---
 
@@ -63,13 +65,22 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Etapa 3
   ##### Apresentação / Design:
   - Recomendação 4.1 - Oferecer contraste mínimo entre plano de fundo e primeiro plano;
-  - Recomendação 4.2 – Não utilizar apenas cor ou outras características sensoriais para diferenciar elementos;
+  - Recomendação 4.2 – Não utilizar apenas cor ou outras características sensoriais para diferenciar elementos;<br><br>
   
-- [ ] Etapa 4
+- [x] Etapa 4
   ##### Multimídia:
+  - Recomendação 5.5 – Fornecer controle de animação;<br><br>
+
   ##### Formulários:
+  - Recomendação 6.1 – Fornecer alternativa em texto para os botões de imagem de formulários;
+  - Recomendação 6.2 – Associar etiquetas aos seus campos;
+  - Recomendação 6.3 – Estabelecer uma ordem lógica de navegação;
+  - Recomendação 6.4 – Não provocar automaticamente alteração no contexto;
+  - Recomendação 6.5 – Fornecer instruções para entrada de dados;
+  - Recomendação 6.6 – Identificar e descrever erros de entrada de dados e confirmar o envio das informações;
+  - Recomendação 6.7 – Agrupar campos de formulário;
+  - Recomendação 6.8 – Fornecer estratégias de segurança específicas ao invés de CAPTCHA;<br><br>
   
-  <br><br>
   
 Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendações de acessibilidade na eMAG.
 

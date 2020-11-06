@@ -50,8 +50,16 @@ body.dark #meusConhecimentos article{
 body.dark #meusConhecimentos h2, body.dark #meusConhecimentos article, body.dark #meusConhecimentos p{
     color: $corBrancaDark
 }
+//Dark Contato
+body.dark #contato{
+    background-color: $corSegundariaDark;
+}
+body.dark #contato #camposContato{
+    background-color: $corPrincipalDark;
+    box-shadow: none;
+}
 //Dark Footer
 body.dark footer{
-    background-color: $corSegundariaDark;
+    background-color: $corPrincipalDark;
     color: $corBrancaDark
 }

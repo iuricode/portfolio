@@ -282,6 +282,9 @@ main {
   .imageIcone {
     width: 50px;
   }
+  .imageIcones {
+    width: 100px;
+  }
   //Conhecimentos
   #meusConhecimentos {
     width: 100%;
@@ -325,6 +328,128 @@ main {
     }
   }
 }
+
+label{
+  margin-bottom: 10px;
+}
+//Contato
+#contato {
+  background-color: #fafafa;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fieldset{
+    border: none;
+  }
+  #agradecimento{
+    width: 30%;
+    height: 300px;
+    background-color: $corPrincipal;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    position: relative;
+    div{
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2{
+      color: #fff;
+    }
+    h4{
+      color: #fff;
+    }
+  }
+  #camposContato{
+    background-color: #fff;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(231, 231, 231);
+    padding: 30px;
+    #campoFlex{
+      display: flex;
+      justify-content: space-between;
+    }
+    .campoPadrao{
+      width: 47%;
+    }
+    input{
+      border: none;
+      background-color: #f0f0f0;
+      padding-left: 15px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    textarea{
+      border: none;
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .campos{
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+  #campoDois{
+    margin-top: 20px;
+    #campoMensagem{
+      width: 100%;
+      height: 150px;
+      border-radius: 5px;
+    }
+  }
+  button{
+    margin-top: 20px;
+    background-color: $corPrincipal;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: {
+      size:18px;
+      weight: 700;
+    }
+    &:hover{
+      background-color: $hoverPrincipal;
+    }
+  }
+}
+@media screen and (max-width:1100px){
+  #contato{
+    padding: 70px 20px;
+    #agradecimento{
+      display: none;
+    }
+    #camposContato{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width:650px){
+  #contato{
+    #camposContato{
+       #campoFlex{
+        flex-wrap: wrap;
+        #espacoResponsivo{
+          margin-top: 20px;
+        }
+      }
+      .campoPadrao{
+        width: 100%;
+      }
+    }
+  }
+}
+
 
 // Scroll
 .scrollTop {
