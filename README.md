@@ -40,7 +40,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Animação no menu;  
 - [x] Responsividade;
 - [x] Seção de contato;
-- [ ] Funcionamento da contato;
+- [ ] Funcionamento do contato;
 
 ---
 
@@ -69,7 +69,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   
 - [x] Etapa 4
   ##### Multimídia:
-  - Recomendação 5.5 – Fornecer controle de animação;<br><br>
+  - Recomendação 5.5 – Fornecer controle de animação;<br>
 
   ##### Formulários:
   - Recomendação 6.1 – Fornecer alternativa em texto para os botões de imagem de formulários;
