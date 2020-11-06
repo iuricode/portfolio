@@ -78,8 +78,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   - Recomendação 6.4 – Não provocar automaticamente alteração no contexto;
   - Recomendação 6.5 – Fornecer instruções para entrada de dados;
   - Recomendação 6.6 – Identificar e descrever erros de entrada de dados e confirmar o envio das informações;
-  - Recomendação 6.7 – Agrupar campos de formulário;
-  - Recomendação 6.8 – Fornecer estratégias de segurança específicas ao invés de CAPTCHA;<br><br>
+  - Recomendação 6.7 – Agrupar campos de formulário;<br><br>
   
   
 Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendações de acessibilidade na eMAG.
