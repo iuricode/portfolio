@@ -9,7 +9,7 @@ Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao d
 ![Resultado final do projeto](image/resultado.jpg)
 
 ## 📚 Seções
-O site é composto por 5 seções diferentes:
+O site é composto por 6 seções diferentes:
 
 - **Header:** Nele temos um avatar do meu github e um breve apresentação;
 - **Sobre Mim:** Nessa seção tenho uma descrição dizendo um pouco sobre mim;
@@ -40,7 +40,6 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Animação no menu;  
 - [x] Responsividade;
 - [x] Seção de contato;
-- [ ] Funcionamento da contato;
 
 ---
 
@@ -69,7 +68,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
   
 - [x] Etapa 4
   ##### Multimídia:
-  - Recomendação 5.5 – Fornecer controle de animação;<br><br>
+  - Recomendação 5.5 – Fornecer controle de animação;<br>
 
   ##### Formulários:
   - Recomendação 6.1 – Fornecer alternativa em texto para os botões de imagem de formulários;

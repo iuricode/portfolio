@@ -285,6 +285,7 @@ main {
   .imageIcones {
     width: 100px;
   }
+
   //Conhecimentos
   #meusConhecimentos {
     width: 100%;
@@ -320,6 +321,23 @@ main {
       }
       p {
         line-height: 30px;
+      }
+      .estrelaConhecimento {
+        background: url("../image/star.png") repeat-x;
+        font-size: 0;
+        height: 21px;
+        line-height: 0;
+        overflow: hidden;
+        text-indent: -999em;
+        width: 110px;
+        margin: 10px auto;
+      }
+      .nivelConhecimento {
+        background: url("../image/star.png") repeat-x;
+        background-position: 0 100%;
+        float: left;
+        height: 23px;
+        display: block;
       }
     }
     //reponsividade no flexbox
@@ -380,7 +398,6 @@ label{
     }
     input{
       border: none;
-      background-color: #f0f0f0;
       padding-left: 15px;
       margin-top: 10px;
       font-size: 14px;
@@ -396,6 +413,18 @@ label{
       width: 100%;
       height: 40px;
       border-radius: 5px;
+       background-color: #f0f0f0;
+    }
+    #captcha{
+      font-size: 20px;
+      float: right;
+      #campo {
+        width: 40px;
+        height: 30px;
+        background-color:#ddd;
+        padding-left: 15px;
+        border-radius: 5px;
+      }
     }
   }
   #campoDois{
@@ -406,7 +435,7 @@ label{
       border-radius: 5px;
     }
   }
-  button{
+  #botao{
     margin-top: 20px;
     background-color: $corPrincipal;
     color: #fff;

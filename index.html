@@ -112,14 +112,10 @@
             </a>
           </span>
         </div>
-        
+
         <div>
           <h3>Recursos gratuitos</h3>
-<<<<<<< HEAD
           <p>🌈 Um repositório com materiais gratuitos para a comunidade.</p>
-=======
-          <p>🌈 Um repositório com materiais gratuitos para sites e para estudos.</p>
->>>>>>> 7e6e4a8dda73dc695d750a76a7ef0386bb352dff
           <span class="botoes-projetos">
             <a href="https://github.com/iuricode/recursos-gratuitos" target="_blank">
               <button class="github-button"><i class="fa fa-github"></i></button>
@@ -131,7 +127,7 @@
           <h3>Em breve</h3>
           <p>Projeto em construção.</p>
         </div>
-        
+
         <div>
           <h3>Em breve</h3>
           <p>Projeto em construção.</p>
@@ -214,59 +210,68 @@
           <img src="image/logoHTML.png" alt="Logo do HTML5" class="imageIcone" />
           <h2>HTML5</h2>
           <p>2 anos de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:100%" class="nivelConhecimento"></span>
+          </div>
         </article>
 
         <article class="css">
           <img src="image/logoCSS.png" alt="Logo do CSS3" class="imageIcone" />
           <h2>CSS3</h2>
           <p>2 anos de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="js">
           <img src="image/logoJS.png" alt="Logo do JavaScript" class="imageIcone" />
           <h2>JavaScript</h2>
           <p>3 meses de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:40%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="sass">
           <img src="image/logoSass.png" alt="Logo do Sass" class="imageIcones" />
           <h2>Sass e Less</h2>
           <p>5 meses de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:70%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="bs">
           <img src="image/logoBootstrap.png" alt="Logo do Bootstrap" class="imageIcone" />
           <h2>Bootstrap</h2>
           <p>1 ano de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:70%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="materialize">
           <img src="image/logoMaterialize.png" alt="Logo do Materialize" class="imageIcone" />
           <h2>Materialize</h2>
           <p>1 ano de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="ui">
           <img src="image/logoUI.png" alt="Logo do Figma representando que sei UI Design" class="imageIcones" />
           <h2>UI/UX Design</h2>
           <p>4 meses de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
         </article>
 
         <article class="wp">
           <img src="image/logoWP.png" alt="Logo do WordPress" class="imageIcone" />
           <h2>WordPress</h2>
           <p>1 mês de experiência</p>
+          <div class="estrelaConhecimento"><span style="width:10%" class="nivelConhecimento"></span></div>
         </article>
 
       </div>
     </section>
 
     <!--Contato-->
-    <section id="contato">
+    <form id="contato" action="mailto:iuricodebrasil@gmail.com" method="post" enctype="text/plain">
       <article id="agradecimento">
         <div>
-          <h2>Obrigado</h2>
-          <h4>Não hesite em mandar-me uma mensagem</h4>
+          <h2>Obrigado pela visita!</h2>
+          <h4>Não hesite em mandar-me uma mensagem.</h4>
         </div>
       </article>
       <fieldset id="camposContato">
@@ -288,10 +293,13 @@
             required></textarea>
         </div>
 
-        <button onclick="botaoContato()">Enviar &nbsp;<i style="font-size: 20px" class="fa fa-paper-plane"></i></button>
-      </fieldset>
-    </section>
+        <input type="submit" value="Enviar" id="botao" onclick="testar()">
 
+        <div id="captcha">
+          Goo<input type="text" id="campo" required>le
+        </div>
+      </fieldset>
+    </form>
 
     <!--Scroll top-->
     <div id="stop" class="scrollTop">
