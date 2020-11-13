@@ -40,10 +40,7 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Animação no menu;  
 - [x] Responsividade;
 - [x] Seção de contato;
-<<<<<<< HEAD
-=======
-- [ ] Funcionamento do contato;
->>>>>>> ea5589f7a379e6e7385e25aa85e88302553d7acb
+- [x] Funcionamento do contato;
 
 ---
 
