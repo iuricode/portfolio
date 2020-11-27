@@ -63,7 +63,7 @@ $(document).ready(function () {
         url: 'https://getbootstrap.com/',
     }, {
         name: 'wp',
-        url: 'https://br.wordpress.com/',
+        url: 'https://vuejs.org/',
     }, {
         name: 'materialize',
         url: 'https://materializecss.com/',
