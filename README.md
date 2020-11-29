@@ -1,5 +1,5 @@
 <h1 align="center">
-🍣<br>Meu Portfólio
+📰<br>Meu Portfólio
 </h1>
 
 <h4 align="center">
