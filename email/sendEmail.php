@@ -6,15 +6,15 @@ $nome = $_POST['nome'];
 $mensagem = $_POST['mensagem'];
 
 //Define para quem vai o email
-$to = "afa00.papa@gmail.com";
+$to = "iuricodebrasil@gmail.com";
 
 //Configuração de cabeçalho
 $headers =  "Content-Type:text/html; charset=UTF-8\n";  //Tipagem de conteúdo
-$headers .= "From:  iuricode.com <contato@iuricode.com>\n";  //E-mail que aparecerá no provedor que o receber
-$headers .= "X-Sender:  <contato@iuricode.com>\n"; //Teoricamente o e-mail com o mesmo domínio do seu site (mas não é necessário)
+$headers .= "From:  iuricode <iuricodebrasil@gmail.com>\n";  //E-mail que aparecerá no provedor que o receber
+$headers .= "X-Sender:  <iuricodebrasil@gmail.com>\n"; //Teoricamente o e-mail com o mesmo domínio do seu site (mas não é necessário)
 $headers .= "X-Mailer: PHP  v".phpversion()."\n";  //Versão do PHP para o browser receber e o servidor interpretar
 $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";   //O ip do servidor [mas isto é automático]
-$headers .= "Return-Path:  <contato@iuricode.com>\n"; //Caso a mensagem volte ela voltará no nome de 'contato@iuricode.com' dando pra configurar uma msg padrão depois
+$headers .= "Return-Path:  <iuricodebrasil@gmail.com>\n"; //Caso a mensagem volte ela voltará no nome de 'contato@iuricode.com' dando pra configurar uma msg padrão depois
 $headers .= "MIME-Version: 1.0\n";  //Versão da tipagem MIME
 
 //Conteúdo e-mail
