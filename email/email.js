@@ -7,7 +7,6 @@ const captchaLetra = 'g';
 //     console.log('errado')
 // }
 // else{
-//      //Função a ser nomeada posteriormente
 //     requisicaoAjax();
 // }
 
