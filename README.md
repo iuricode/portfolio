@@ -28,6 +28,8 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - JavaScript;
 - SASS (e convertido para CSS3);
 - JQuery;
+- PHP;
+- Ajax;
 
 ---
 
@@ -103,6 +105,14 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
         <img src="https://avatars3.githubusercontent.com/u/6891093" width="100px;" alt="Foto do Brian Ito no GitHub"/><br>
         <sub>
           <b>Brian Ito</b>
+        </sub>
+      </a><br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/afaferz">
+        <img src="https://avatars3.githubusercontent.com/u/66867161" width="100px;" alt="Foto do afaferz Ito no GitHub"/><br>
+        <sub>
+          <b>Afaferz</b>
         </sub>
       </a><br>
     </td>
