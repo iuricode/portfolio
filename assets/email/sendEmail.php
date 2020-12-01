@@ -18,7 +18,7 @@ $headers .= "Return-Path:  <iuricodebrasil@gmail.com>\n"; //Caso a mensagem volt
 $headers .= "MIME-Version: 1.0\n";  //Versão da tipagem MIME
 
 //Conteúdo e-mail
-$subject = "E-mail portfólio - Iuricode"; //Assunto que aparecerá na sua caixa de e-mail
+$subject = "E-mail portfólio - iuricode"; //Assunto que aparecerá na sua caixa de e-mail
 $templateHTML = '<table style="margin-top: 3em; margin-bottom: 3em; font-family: "Times New Roman", Times, serif;" align="left" border="0" cellpadding="0" cellspacing="0" width="600" height="auto">
 <tr>
  <td style="padding: .75em">

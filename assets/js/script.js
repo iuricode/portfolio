@@ -47,29 +47,29 @@ $(document).ready(function () {
     });
     //Links dos meus conhecimentos
     const techs = [{
-        name: 'html5',
-        url: 'https://html5.org/'
-    }, {
-        name: 'css',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        name: 'htmlecss',
+        url: 'https://www.treinaweb.com.br/blog/o-que-e-e-como-comecar-com-html-e-css/'
     }, {
         name: 'js',
         url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference',
     }, {
-        name: 'sass',
-        url: 'https://sass-lang.com/'
+        name: 'sasseless',
+        url: 'https://www.zup.com.br/blog/o-que-sao-pre-processadores-css'
     }, {
-        name: 'bs',
+        name: 'bootstrap',
         url: 'https://getbootstrap.com/',
     }, {
-        name: 'wp',
+        name: 'vue',
         url: 'https://vuejs.org/',
     }, {
         name: 'materialize',
         url: 'https://materializecss.com/',
     }, {
-        name: 'ui',
-        url: 'https://figma.com/'
+        name: 'wordpress',
+        url: 'https://br.wordpress.com/',
+    }, {
+        name: 'uieux',
+        url: 'https://designculture.com.br/o-que-e-ui-design-e-ux-design'
     }]
 
     techs.forEach(tech => {
