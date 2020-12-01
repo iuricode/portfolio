@@ -6,7 +6,7 @@
 Portfólio criado com o intuito de mostrar meus recentes e futuros projetos ao decorrer da minha carreira.
 </h4>
 
-![Resultado final do projeto](image/resultado.jpg)
+![Resultado final do projeto](assets/image/resultado.jpg)
 
 ## 📚 Seções
 O site é composto por 6 seções diferentes:
