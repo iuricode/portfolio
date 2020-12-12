@@ -51,16 +51,16 @@ $(document).ready(function () {
         url: 'https://www.treinaweb.com.br/blog/o-que-e-e-como-comecar-com-html-e-css/'
     }, {
         name: 'js',
-        url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference',
+        url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/',
     }, {
-        name: 'sasseless',
-        url: 'https://www.zup.com.br/blog/o-que-sao-pre-processadores-css'
+        name: 'sass',
+        url: 'https://sass-lang.com/'
     }, {
         name: 'bootstrap',
         url: 'https://getbootstrap.com/',
     }, {
-        name: 'vue',
-        url: 'https://vuejs.org/',
+        name: 'reactjs',
+        url: 'https://pt-br.reactjs.org/',
     }, {
         name: 'materialize',
         url: 'https://materializecss.com/',
@@ -68,8 +68,8 @@ $(document).ready(function () {
         name: 'wordpress',
         url: 'https://br.wordpress.com/',
     }, {
-        name: 'uieux',
-        url: 'https://designculture.com.br/o-que-e-ui-design-e-ux-design'
+        name: 'figma',
+        url: 'https://www.figma.com/'
     }]
 
     techs.forEach(tech => {
