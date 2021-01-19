@@ -62,11 +62,11 @@ $(document).ready(function () {
         name: 'reactjs',
         url: 'https://pt-br.reactjs.org/',
     }, {
-        name: 'materialize',
-        url: 'https://materializecss.com/',
+        name: 'node',
+        url: 'https://nodejs.org/pt-br/',
     }, {
-        name: 'wordpress',
-        url: 'https://br.wordpress.com/',
+        name: 'typescript',
+        url: 'https://www.typescriptlang.org/pt/',
     }, {
         name: 'figma',
         url: 'https://www.figma.com/'
