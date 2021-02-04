@@ -62,8 +62,8 @@ $(document).ready(function () {
         name: 'reactjs',
         url: 'https://pt-br.reactjs.org/',
     }, {
-        name: 'node',
-        url: 'https://nodejs.org/pt-br/',
+        name: 'next',
+        url: 'https://nextjs.org/',
     }, {
         name: 'typescript',
         url: 'https://www.typescriptlang.org/pt/',
