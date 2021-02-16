@@ -124,8 +124,3 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
     </td>
   </tr>
 </table>
-
-
-<h3 align="center">
-🏰<br>Orgulhosamente feito por <strong>Iuri Silva</strong>
-</h3>
