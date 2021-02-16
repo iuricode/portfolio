@@ -112,11 +112,11 @@ $('.light-button').on('click', function () {
     localStorage.setItem('dark-mode', 'light');
 });
 
-//Contato
+/*
 valor = document.getElementById('campo').value
 
 function testar() {
     if (valor != 'g') {
         alert('Complete o nome "google" com uma letra para enviar!')
     }
-}
+}*/

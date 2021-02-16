@@ -16,16 +16,16 @@ O site é composto por 6 seções diferentes:
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
-- **Contato:** Aqui temos uma seção para o cliente entrar em contato de forma mais rápida;
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## 💼 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+
 - Visual Studio Code (Editor de código);
-- HTML5;
+- HTML;
 - JavaScript;
-- SASS (e convertido para CSS3);
+- SASS (Compilador em CSS);
 - JQuery;
 
 ---
@@ -39,11 +39,11 @@ O site ainda está em desenvolvimento e as próximas atualizações serão volta
 - [x] Animação no menu;  
 - [x] Responsividade;
 - [x] Seção de contato;
-- [x] Funcionamento do contato;
 
 ---
 
-## 🕶 Acessibilidade
+## 👨‍🦯 Acessibilidade
+
 - [x] Etapa 1
   ##### Marcação:
   - Recomendação 1.1 – Respeitar os Padrões Web;
@@ -84,7 +84,7 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
 
 ---
 
-<br>[⬆ Voltar ao topo](#-seções)<br>
+<br>[🔝 Voltar ao topo](#-seções)<br>
 
 ## 🦄 Autor<br>
 <table>
