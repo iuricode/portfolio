@@ -89,7 +89,7 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
 
 <br>[⬆ Voltar ao topo](#-seções)<br>
 
-## 🌈 Contribuidores<br>
+## 🦄 Autor<br>
 <table>
   <tr>
     <td align="center">
@@ -100,6 +100,12 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
         </sub>
       </a>
     </td>
+  </tr>
+</table>
+
+## 🌈 Contribuidores<br>
+<table>
+  <tr>
     <td align="center">
       <a href="https://github.com/BrianIto">
         <img src="https://avatars3.githubusercontent.com/u/6891093" width="100px;" alt="Foto do Brian Ito no GitHub"/><br>
@@ -119,9 +125,6 @@ Clique **[aqui](http://emag.governoeletronico.gov.br/)** para ver as recomendaç
   </tr>
 </table>
 
-## ⛩ Seja um dos contribuidores<br>
-Quer fazer parte desse projeto? É simples!<br>
-Faça um fork dele e coloque as suas modificações, depois mande um pull request.<br>
 
 <h3 align="center">
 🏰<br>Orgulhosamente feito por <strong>Iuri Silva</strong>
