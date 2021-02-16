@@ -23,13 +23,10 @@ O site é composto por 6 seções diferentes:
 ## 🛠 Tecnologias utilizadas
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - Visual Studio Code (Editor de código);
-- Scout App (Compilador do Sass);
 - HTML5;
 - JavaScript;
 - SASS (e convertido para CSS3);
 - JQuery;
-- PHP;
-- Ajax;
 
 ---
 
