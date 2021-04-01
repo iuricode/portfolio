@@ -182,7 +182,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
-  .nav-lis li {
+  .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
