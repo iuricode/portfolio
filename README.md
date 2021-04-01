@@ -8,7 +8,7 @@
 
 ![Resultado final do projeto](assets/image/preview.png)
 
-[**Clique para visitar o portfólio**](https://iuricode.vercel.app/)
+<h4 align="center"><a href="https://iuricode.vercel.app/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
