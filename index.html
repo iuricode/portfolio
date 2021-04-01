@@ -2,266 +2,255 @@
 <html lang="pt-br">
 
 <head>
-  <!--Metas tags-->
   <meta charset="UTF-8" />
-  <meta name="author" content="Iuri Silva">
-  <meta name="description" content="Sou especializado em desenvolvimento de websites, na área front-end e design!">
-  <meta name="keywords" content="sites, web, desenvolvimento, programador, iuricode, front-end, designer">
+  <meta name="author" content="Iuri Silva" />
+  <meta name="description" content="Desenvolvedor Front-End e UX Designer com 6 meses atuando como Freelancer." />
+  <meta name="keywords" content="sites, web, desenvolvimento, programador, iuricode, front-end, designer, ux, iuri, freelancer, freela, website" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="content-language" content="pt-br" />
-  <meta name="copyright" content="© 2020 iuricode" />
-  <meta property="og:image" content="image/iuriProgramando.png">
-  <meta http-equiv="refresh" content="600">
-  <title>Portfólio | Iuri Silva - Desenvolvedor Front-End e UI/UX Designer</title>
+  <meta name="copyright" content="iuricode 2021" />
+  <meta property="og:image" content="https://iuricode.vercel.app/assets/image/preview.png" />
+  <meta property="og:title" content="Portfólio | Iuri Silva - Desenvolvedor Front-End e UX Designer" />
+  <meta property="og:description" content="Desenvolvedor Front-End e UX Designer. 6 meses atuando como Freelancer." />
+  <title>Portfólio | Iuri Silva - Desenvolvedor Front-End e UX Designer</title>
   <!--Ícones do Font Awesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--Fonte-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet" /> 
   <!--Meu Style CSS-->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/scss/style.css" />
+  <link rel="shortcut icon" href="assets/image/iuricode.png" type="image/x-icon" />
 </head>
 
 <body>
-  <!--Header-->
+  <!--Menu-->
   <header>
-    <a href="#">
-      <h1 class="logo">Iuri Silva</h1>
-    </a>
-    <div class="btn-menu"><i class="fa fa-bars"></i></div>
-    <!--Menu-->
-    <nav class="menu">
-      <a class="btn-close"><i class="fa fa-close"></i></a>
-      <ul>
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#meusConhecimentos">Conhecimentos</a></li>
-        <!--Dark Mode-->
-        <li class="da">
-          <button class="dark-button"><i class="fa fa-moon-o"></i> </button>
-        </li>
-        <li class="da">
-          <button class="light-button" hidden="hidden"><i class="fa fa-sun-o"></i></button>
-        </li>
-      </ul>
-    </nav>
+    <div class="larguraMaxContainer">
+      <nav>
+          <h1 class="logo">Portfólio</h1>
+          <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+              <li><a href="#sobre">Sobre mim</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#conhecimentos">Conhecimentos</a></li>
+          </ul>
+      </nav>
+    </div>
   </header>
 
-  <!--Main-->
   <main>
-    <!--Apresentação Portfólio-->
+    <!--Home-->
     <section id="apresentacaoPortfolio">
-      <article id="apresentacaoTexto">
-        <h2>
-          Olá, eu sou o<br>
-          <span id="nome">Iuri Silva.</span><br>
-          <span>Desenvolvedor Front-End e UI/UX Designer.</span>
-        </h2>
-        <a href="https://github.com/iuricode" target="_blank">
-          <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;Meu GitHub
-        </a>
-      </article>
-
-      <article id="apresentacaoFoto">
-        <img src="assets/image/fundoEspaco.png" alt="Imagem de um espaço com coisas flutando" id="fundo">
-        <img src="assets/image/fundoPessoa.png"
-          alt="Imagem de ilustrativa de mim flutuando no espaço com um efeito de movimento" class="object">
-      </article>
-    </section>
-
-    <!--Sobre-->
-    <section id="sobre">
-      <section id="sobreMim">
-        <article id="sobreFoto">
-          <img src="assets/image/iuriProgramando.png"
-            alt="Imagem ilustrativa de mim com uma máscara e um face feliz além disso, estou usando um notebook">
-        </article>
-        <article id="sobreTexto">
-          <h3>Sobre mim</h3>
-          <p>Meu nome é Iuri, tenho 20 anos, moro no Brasil, especificamente em Guarantã-SP. Atualmente estou
-            estudando em uma universidade e em um curso técnico. Também tenho estudado bastante sozinho para aprender
-            novas tecnologias.</p>
-
-          <p>Iniciei como Desenvolvedor Front End em 2019. Desde então venho dedicando cerca de 6hrs por dia aos
-            estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.</p><br>
-          <a href="https://www.linkedin.com/in/iuricode/" target="_blank">
-            <i style="font-size: 22px" class="fa fa-linkedin"></i>&nbsp;Meu Linkedin
+      <div class="larguraMaxContainer">
+        <article id="apresentacaoTexto">
+          <h2>
+            Olá, eu sou o<br>
+            <span id="nome">Iuri Silva</span><br>
+            <span>Desenvolvedor Front-End e UX Designer.</span>
+          </h2>
+          <a href="https://github.com/iuricode" target="_blank">
+            <i style="font-size: 22px" class="fa fa-github"></i>&nbsp;Meu GitHub
           </a>
         </article>
-      </section>
+        <article id="apresentacaoFoto">
+          <img src="assets/image/espaco-ux.png" id="fundo">
+          <img src="assets/image/iuri-flutuando.png" class="object">
+        </article>
+      </div>
     </section>
 
+    <!--Sobre mim-->
+    <section id="sobre">
+      <div class="larguraMaxContainer">
+        <section id="sobreMim">
+          <article id="sobreFoto">
+            <img src="assets/image/iuricode.png">
+          </article>
+          <article id="sobreTexto">
+            <h2>Sobre mim</h2>
+            <p>
+              Meu nome é Iuri, tenho 20 anos, moro no Brasil, especificamente em Guarantã-SP. Atualmente estou
+              estudando em uma universidade e em um curso técnico. Também tenho estudado bastante sozinho para aprender
+              novas tecnologias.
+            </p>
+            <p>
+              Iniciei como Desenvolvedor Front End em 2019. Desde então venho dedicando cerca de 6hrs por dia aos
+              estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.
+            </p><br>
+            <a href="https://www.linkedin.com/in/iuricode/" target="_blank">
+              <i style="font-size: 22px" class="fa fa-linkedin"></i>&nbsp;Meu Linkedin
+            </a>
+          </article>
+        </section>
+      </div>
+    </section>
+ 
     <!--Projetos-->
     <section id="projetos">
-      <h2>Projetos</h2>
-      <article>
-        <div>
-          <h3>One page empresa</h3>
-          <p>🏬 One page com informações sobre uma empresa.</p>
-          <span class="botoes-projetos">
-            <a href="https://iuricode.github.io/one-page-company/" target="_blank">
-              <button class="aovivo-button"><i class="fa fa-link"></i> website</button>
-            </a>
-            <a href="https://github.com/iuricode/one-page-company" target="_blank">
-              <button class="aovivo-button"><i class="fa fa-github"></i> github</button>
-            </a>
-          </span>
-        </div>
-
-        <div>
-          <h3>Em breve</h3>
-          <p>Projeto em construção.</p>
-        </div>
-
-        <div>
-          <h3>Em breve</h3>
-          <p>Projeto em construção.</p>
-        </div>
-
-        <div>
-          <h3>Em breve</h3>
-          <p>Projeto em construção.</p>
-        </div>
-
-        <div>
-          <h3>Em breve</h3>
-          <p>Projeto em construção.</p>
-        </div>
-
-        <div>
-          <h3>Em breve</h3>
-          <p>Projeto em construção.</p>
-        </div>
-      </article>
-
-      <a href="https://github.com/iuricode?tab=repositories" target="_blank" id="linkRepo">Repositórios no GitHub</a>
+      <div class="larguraMaxContainer">
+        <h2>Projetos</h2>
+        <article>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+          <div>
+            <h3>Em breve</h3>
+            <p>Projeto em construção.</p>
+            <span>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-link"></i>&nbsp;Website</button>
+              </a>
+              <a href="#" target="_blank">
+                <button><i class="fa fa-github"></i>&nbsp;GitHub</button>
+              </a>
+            </span>
+          </div>
+        </article>
+        <a href="https://github.com/iuricode?tab=repositories" target="_blank">Repositórios no GitHub</a>
+      </div>
     </section>
 
     <!--Serviços-->
     <section id="servicos">
-      <h2>Serviços</h2>
-      <article>
-        <div>
-          <img src="assets/image/criacao-de-sites.png" alt="Uma logo de uma pasta com arquivos de códigos"
-            class="imageIcone">
-          <h2>Criação de Sites</h2>
-          <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais focado em
-            resultados</p>
-        </div>
-
-        <div>
-          <img src="assets/image/responsivo.png" alt="Uma logo de um notebook e um celular" class="imageIcone">
-          <h2>Sites responsivos</h2>
-          <p>Criação de sites responsivos para a melhor visualização em dispositivos móveis com
-            qualidade em todas as telas</p>
-        </div>
-
-        <div>
-          <img src="assets/image/layouts.png" alt="Uma logo de uma criação de layouts" class="imageIcone">
-          <h2>Layouts</h2>
-          <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento</p>
-        </div>
-
-        <div>
-          <img src="assets/image/seo.png" alt="Uma logo de um gráfico" class="imageIcone">
-          <h2>SEO e Analytics</h2>
-          <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas
-            buscas</p>
-        </div>
-
-        <div>
-          <img src="assets/image/marketing.png" alt="Uma logo de uma carta aberta com um auto falante saindo dele"
-            class="imageIcone">
-          <h2>E-mail Marketing</h2>
-          <p>Criação e ativação de campanhas por e-mail, gerando leads e capacitando para um
-            melhor desempenho</p>
-        </div>
-
-        <div>
-          <img src="assets/image/tecnologias.png" alt="Uma logo de um notebook" class="imageIcone">
-          <h2>Tecnologias</h2>
-          <p>Desenvolvimento através das melhores linguagens e tecnologias disponíveis na criação do seu projeto</p>
-        </div>
-
-        <div>
-          <img src="assets/image/design-grafico.png" alt="Uma logo de monitor com materiais na tela" class="imageIcone">
-          <h2>Design Gráfico</h2>
-          <p>Realização da comunicação visual impressa do seu projeto ou seu negócio</p>
-        </div>
-
-        <div>
-          <img src="assets/image/redes-sociais.png" alt="Uma logo de um celular usando redes sociais"
-            class="imageIcone">
-          <h2>Redes Sociais</h2>
-          <p>Não deixe sua empresa de fora das redes sociais, divulgue seu negócio e apareça para seu
-            público-alvo</p>
-        </div>
-      </article>
-    </section>
-
-    <!--Skills-->
-    <section id="meusConhecimentos">
-      <h2 id="textSkill">Conhecimentos</h2>
-      <div>
-        <article class="htmlecss">
-          <img src="assets/image/logoHTMLeCSS.png" alt="Logo do HTML e CSS" class="imageIcones" />
-          <h2>HTML e CSS</h2>
-          <p>2 anos de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:90%" class="nivelConhecimento"></span>
+      <div class="larguraMaxContainer">
+        <h2>Serviços</h2>
+        <article>
+          <div>
+            <span class="iconify" data-inline="false" data-icon="clarity:computer-line"></span>
+            <h3>Criação de Sites</h3>
+            <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.</p>
+          </div>
+          <div>
+            <span class="iconify" data-inline="false" data-icon="akar-icons:mobile-device"></span>
+            <h3>Sites Responsivos</h3>
+            <p>Criação de sites responsivos para a melhor visualização em todas as resoluções.</p>
+          </div>
+          <div>
+            <span class="iconify" data-inline="false" data-icon="clarity:design-line"></span>
+            <h3>UI/UX Design</h3>
+            <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento.</p>
+          </div>
+          <div>
+            <span class="iconify" data-inline="false" data-icon="bi:code-square"></span>
+            <h3>Código Semântico</h3>
+            <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas buscas.</p>
           </div>
         </article>
-
-        <article class="js">
-          <img src="assets/image/logoJS.png" alt="Logo do JavaScript" class="imageIcone" />
-          <h2>JavaScript</h2>
-          <p>1 ano de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:50%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="bootstrap">
-          <img src="assets/image/logoBootstrap.png" alt="Logo do Bootstrap" class="imageIcone" />
-          <h2>Bootstrap</h2>
-          <p>1 ano de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="sass">
-          <img src="assets/image/logoSass.png" alt="Logo do Sass" class="imageIcone" />
-          <h2>Sass</h2>
-          <p>5 meses de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="figma">
-          <img src="assets/image/logoUI.png" alt="Logo do Figma" class="imageIcone" />
-          <h2>UI/UX Design</h2>
-          <p>5 meses de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:90%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="reactjs">
-          <img src="assets/image/logoReactJS.png" alt="Logo do ReactJS" class="imageIcone" />
-          <h2>ReactJS</h2>
-          <p>1 mês de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:10%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="next">
-          <img src="assets/image/logoNext.png" alt="Logo do Node.js" class="imageIcone" />
-          <h2>Next.js</h2>
-          <p>1 mês de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:10%" class="nivelConhecimento"></span></div>
-        </article>
-
-        <article class="typescript">
-          <img src="assets/image/logoTypeScript.png" alt="Logo do TypeScript" class="imageIcone" />
-          <h2>TypeScript</h2>
-          <p>1 mês de experiência</p>
-          <div class="estrelaConhecimento"><span style="width:10%" class="nivelConhecimento"></span></div>
-        </article>
-
       </div>
     </section>
 
-    <!--Contato
+    <!--Skills-->
+    <section id="conhecimentos">
+      <div class="larguraMaxContainer">
+        <h2>Conhecimentos</h2>
+        <div>
+          <article class="htmlecss">
+            <div id="dualIcones">
+              <span class="iconify" data-inline="false" data-icon="icomoon-free:html-five"></span>
+              <span class="iconify" data-inline="false" data-icon="simple-icons:css3"></span>
+            </div>
+            <h3>HTML e CSS</h3>
+            <p>2 anos de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:90%" class="nivelConhecimento"></span></div>
+          </article>
+          <article class="js">
+            <span class="iconify" data-inline="false" data-icon="cib:js"></span>
+            <h3>JavaScript</h3>
+            <p>1 ano de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:50%" class="nivelConhecimento"></span></div>
+          </article>
+          <article class="bootstrap">
+            <span class="iconify" data-inline="false" data-icon="mdi:bootstrap"></span>
+            <h3>Bootstrap</h3>
+            <p>1 ano de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
+          </article>
+          <article class="sass">
+            <span class="iconify" data-inline="false" data-icon="fa-brands:sass"></span>
+            <h3>Sass</h3>
+            <p>5 meses de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:80%" class="nivelConhecimento"></span></div>
+          </article>
+          <article class="figma">
+            <span class="iconify" data-inline="false" data-icon="cib:figma"></span>
+            <h3>UI/UX Design</h3>
+            <p>5 meses de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:90%" class="nivelConhecimento"></span></div>
+          </article>
+          <article class="reactjs">
+            <span class="iconify" data-inline="false" data-icon="cib:react"></span>
+            <h3>ReactJS</h3>
+            <p>1 mês de experiência</p>
+            <div class="estrelaConhecimento"><span style="width:10%" class="nivelConhecimento"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!---
     <form id="contato" method="post" enctype="text/plain">
       <article id="agradecimento">
         <div>
@@ -269,7 +258,6 @@
           <h4>Não hesite em mandar-me uma mensagem.</h4>
         </div>
       </article>
-      Adicionei a tag name para todos os inputs do form para capturar a entrada do usuário
       <fieldset id="camposContato">
         <div id="campoFlex">
           <div class="campoPadrao">
@@ -303,23 +291,23 @@
         <a href=""><i class="fa fa-chevron-up"></i></a>
       </span>
     </div>
-
   </main>
 
   <!--Footer-->
   <footer>
     <p>Orgulhosamente feito por Iuri Silva</p>
-    <article id="midiasSociaisFooter">
-      <a href="https://www.facebook.com/exudojazz" target="_blank"><i class="fa fa-facebook"></i></a>
+    <article id="redesSociais">
       <a href="https://www.linkedin.com/in/iuricode/" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a href="https://github.com/iuricode" target="_blank"><i class="fa fa-github"></i></a>
       <a href="https://www.instagram.com/iuricode/" target="_blank"><i class="fa fa-instagram"></i></a>
     </article>
   </footer>
 
-  <!--JQuery para o menu e scroll-->
+  <!--Script dos ícones-->
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <!--JQuery para o scroll-->
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-  <!--Meus Scritps-->
+  <!--Scritps-->
   <script src="assets/js/script.js"></script>
 </body>
 

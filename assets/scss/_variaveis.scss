@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-//Minhas variáveis
-//Fontes
-$fontPrincipal: 'Space Mono', monospace; //'Montserrat', sans-serif;
+//Fonte
+$fontPrincipal: 'Fira Code', monospace, 'Montserrat', sans-serif;
 //Cores
-$corPrincipal: #4070f4;
-$corSegundaria: #0e2431;
+$corPrincipal: #5429CF;
+$corBranca: #FEFBFB;
+$corBrancaDark: #F9F9F9;
 //Cores Dark
-$corPrincipalDark: #191919;
-$corSegundariaDark: #232323;
-$corBrancaDark: rgb(248, 248, 248);
+$corPrincipalDark: #181818;
+$corSegundariaDark: #202020;
+//Cores textos
+$corTitulo: #474F52;
+$corDescricao:#273137;
 //Hover
-$hoverPrincipal: #3460da;
-$hoverSegundaria: #091a24;
+$hoverPrincipal: #4220A3;
+
+
 //Espaçamentos
 $espacamentoLaterais: 50px 150px;
 $tamanhoArticlesMaior: 60%;
@@ -23,18 +25,18 @@ $espacoResponsivo: 20px;
 @mixin botao {
   background-color: $corPrincipal;
   color: #fff;
-  padding: 15px;
-  width: 200px;
+  padding: 15px 25px;
+  max-width: 250px;
   display: flex;
   align-self: center;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   margin-top: 30px;
   font: {
     size: 16px;
-    weight: 700;
+    weight: 500;
     family: $fontPrincipal;
   }
   &:hover {
@@ -44,14 +46,26 @@ $espacoResponsivo: 20px;
 }
 @mixin texto {
   line-height: 30px;
-  color: $corSegundaria;
+  color: $corTitulo;
 }
-@mixin alinhamentoTitulo {
-  text-align: center;
-  margin-top: 20px;
-  color: $corSegundaria;
+
+@mixin tituloSection {
+  padding-bottom: 20px;
+  color: $corBranca;
   font: {
-    size: 30px;
+    size: 32px;
+    weight: 500;
+  }
+}
+
+@mixin alinhamentoTitulo {
+  h2 {
+    padding-bottom: 20px;
+    color: $corBranca;
+    font: {
+      size: 32px;
+      weight: 500;
+    }
   }
 }
 @mixin putTransition($transitionDuration: .2s) {

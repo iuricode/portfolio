@@ -1,358 +1,339 @@
-//Importando arquivos Scss
-@import "./constants.scss";
-@import "./zero_config.scss";
-@import "./nav_menu.scss";
-@import "./dark_mode.scss";
+//Importando arquivos
+@import "./variaveis";
+@import "./reset";
+@import "./menu";
 
-//Apresentação | Home
-#apresentacaoPortfolio {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  @media screen and (max-width:1000px){
-    padding: 75px;
-  }
-  #apresentacaoTexto {
-    padding: 150px;
-    width: $tamanhoArticlesMaior;
-    flex-direction: column;
-    @media screen and (max-width:1000px){
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      text-align: center;
-      padding: 0px;
-    }
-    h2 {
-      font: {
-        size: 18px;
-        weight: 400;
-      }
-      color: rgb(56, 56, 56);
-      #nome {
-        text-transform: uppercase;
-        font: {
-          size: 2.5rem;
-          weight: 900;
-        }
-      }
-      #profissao{
-        font-size: 1.06rem;
-        text-transform: uppercase;
-      }
-    }
-    a {
-      @include botao;
-    }
-    .midiasSociais {
-      width: 150px;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 75px;
-      color: $corSegundaria;
-      i {
-        font: {
-          size: 24px;
-        }
-        &:hover {
-          cursor: pointer;
-          color: $hoverSegundaria;
-        }
-      }
-      @media screen and (max-width:1000px){
-        padding: 40px 0px;
-        margin: 0 auto;
-      }
-    }
-  }
-  #apresentacaoFoto {
-    width: $tamanhoArticlesMenor;
-    position: relative;
-    height: 100vh;
-    @media screen and (max-width:1000px){
-      display: none;
-    }
-    #fundo{
-      width: 100%;
-      max-width: 950px;
-      position: absolute;
-      top: 65px;
-      right: 0;
-      @media screen and (max-width:1000px){
-        display: none;
-      }
-    }
-  }
+.larguraMaxContainer{
+  @include LarguraMaxContainer();
 }
 
-
-/*main apresentacao simples e animação*/
-.object{
-  animation:MoveUpDown 2s linear infinite;
-  position:absolute;
-  right:0;
-  top:0;
-  z-index:4;
-  max-width:550px;
-  width: 100%;
-}
-@keyframes MoveUpDown{
-  0%,100%{
-   top:0
-  }
-  50%{
-    top:10px
-  }
-}
-
-
-//Main | Sections > Sobre mim > Projetos > Serviços > Conhecimentos
+//Home > Sobre mim > Projetos > Serviços > Conhecimentos
 main {
-  //Sobre
-  #sobre {
-    padding: $espacamentoLaterais;
-    background-color: #fafafa;
-    @media screen and (max-width:1000px){
-      padding: 70px 20px;
+  // Home
+  #apresentacaoPortfolio {
+    background-color: $corPrincipalDark;
+    position: relative;
+    @media screen and (max-width:1024px){
+      padding: 20px;
     }
-    #sobreMim {
+    .larguraMaxContainer{
       display: flex;
-      padding: 25px 0px;
       align-items: center;
-    }
-    #sobreFoto {
-      width: $tamanhoArticlesMenor;
-      padding-right: 30px;
-      img{
-        width: 100%;
-        max-width: 300px;
-      }
-      @media screen and (max-width:1000px){
-        display: none;
-      }
-    }
-    #sobreTexto {
-      width: $tamanhoArticlesMaior;
-      padding-left: 30px;
-      @media screen and (max-width:1000px){
-        width: 100%;
-        display: flex;
+      height: 90vh;
+      overflow: hidden;
+      width: 100%;
+      padding: 0px 50px;
+      #apresentacaoTexto {
+        width: 60%;
         flex-direction: column;
-        align-items: center;
-        padding-left: 0px;
-        text-align: center;
-        color: $corSegundaria;
-      }
-      h3 {
-        padding-bottom: 20px;
-        font: {
-          size: 30px;
+        @media screen and (max-width:1024px){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          padding: 0px;
+        }
+        h2 {
+          color: $corBranca;
+          font: {
+            size: 1.1rem;
+            weight: 400;
+          }
+          #nome {
+            font: {
+              size: 2.3rem;
+              weight: 600;
+            }
+          }
+        }
+        a {
+          @include botao;
         }
       }
-      p {
-        line-height: 30px;
-        &:nth-child(2){
-          padding-bottom: 20px;
+      #apresentacaoFoto {
+        width: 40%;
+        height: 100vh;
+        @media screen and (max-width:1024px){
+          display: none;
+        }
+        #fundo{
+          width: 100%;
+          max-width: 600px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          @media screen and (max-width:1024px){
+            display: none;
+          }
+        }
+        .object{
+          animation:MoveUpDown 2s linear infinite;
+          position:absolute;
+          right:0;
+          top:0;
+          z-index:4;
+          max-width:550px;
+          width: 100%;
+        }
+        @keyframes MoveUpDown{
+          0%,100%{
+            top:0
+          }
+          50%{
+            top:10px
+          }
         }
       }
     }
-    a {
-      @include botao();
+  }
+
+  //Sobre mim
+  #sobre {
+    background-color: $corSegundariaDark;
+    .larguraMaxContainer{
+      padding: 100px 50px;
+      @media screen and (max-width:1024px){
+        padding: 50px 20px;
+      }
+      #sobreMim {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #sobreFoto {
+        width: 50%;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 100%;
+          max-width: 400px;
+        }
+        @media screen and (max-width:1024px){
+          display: none;
+        }
+      }
+      #sobreTexto {
+        width: 50%;
+        @media screen and (max-width:1024px){
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: 0px;
+          color: $corTitulo;
+        }
+        h2 {
+          @include tituloSection();
+        }
+        p {
+          line-height: 30px;
+          color: $corBrancaDark;
+          &:nth-child(2){
+            padding-bottom: 20px;
+          }
+        }
+      }
+      a {
+        @include botao();
+      }
     }
   }
   
   //Projetos
   #projetos {
-    padding:70px;
+    padding: 100px 50px;
     text-align: center;
-    #linkRepo{
-      color: $corPrincipal;
-      font-size: 18px;
+    background-color: $corPrincipalDark;
+    @media screen and (max-width:1024px){
+      padding: 50px 20px;
     }
-    h2 {
-      @include alinhamentoTitulo();
-    }
-    article {
-      padding: 25px 0px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text-align: left;
-      div {
-        height: auto;
-        flex-grow: 1;
-        flex-basis: 300px;
-        background-color: #fafafa;
-        padding: 40px 40px 80px 40px;
-        margin: 10px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgb(202, 202, 202);
-        position: relative;
-        h3{
-          font-size: 1.2rem;
-        }
-        p{
-          margin: 20px 0px;
-          font-size: 0.9rem;
-        }
-        .botoes-projetos{
-          position: absolute;
-          bottom: 40px;
-          left: 40px;
-        }
-        a{
-          margin-right: 10px;
-        }
-        .aovivo-button{
-          background-color: $corPrincipal;
-          padding: 10px 20px;
-          color:#fff;
-          border:0;
-          font-weight: 500;
-          font-size: 14px;
+    .larguraMaxContainer{
+      h2 {
+        @include tituloSection();
+      }
+      article {
+        margin: 25px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        div {
+          height: auto;
+          flex-grow: 1;
+          flex-basis: calc(33% - 20px);
+          background-color: $corSegundariaDark;
+          padding: 40px 25px;
+          margin: 10px;
           border-radius: 5px;
-          text-transform: uppercase;
-          cursor: pointer;
-          &:hover {
-            cursor: pointer;
-            background-color: $hoverPrincipal;
+          position: relative;
+          h3{
+            font-size: 1.2rem;
+            color: $corBranca;
           }
-        }
-        .github-button{
-          width: 35px;
-          height: 35px;
-          font-size: 20px;
-          border-radius: 50%;
-          background-color: $corPrincipal;
-          color:#fff;
-          border:0;
-          border-radius: 50%;
-          cursor: pointer;
-          &:hover {
-            cursor: pointer;
-            background-color: $hoverPrincipal;
+          p{
+            line-height: 28px;
+            margin: 20px 0px;
+            font-size: 1rem;
+            color: $corBrancaDark;
+          }
+          span{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          button{
+            background-color: $corPrincipal;
+            padding: 10px 25px;
+            color:$corBranca;
+            border:0;
+            font-weight: 500;
+            font-size: 14px;
+            border-radius: 5px;
+            &:hover {
+              cursor: pointer;
+              background-color: $hoverPrincipal;
+            }
           }
         }
       }
-    }
-    //reponsividade no flexbox
-    @media screen and (max-width:800px){
-        padding: 70px 10px;
+      a{
+        color: $corPrincipal;
+        font-size: 18px;
+      }
     }
   }
 
   //Serviços
   #servicos {
-    background-color: #fafafa;
-    padding: 70px;
-    h2 {
-       @include alinhamentoTitulo();
+    padding: 100px 50px;
+    text-align: center;
+    background-color: $corSegundariaDark;
+    @media screen and (max-width:1024px){
+      padding: 50px 20px;
     }
-    article {
-      display: flex;
-      height: auto;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-    div {
-      text-align: center;
-      height: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      margin: 10px;
-      flex-basis: 250px;
-      flex-grow: 1;
-      box-shadow: 0px 0px 20px rgb(231, 231, 231);
-      h2{
-        font-size: 20px;
-        padding: 20px 0px;
+    .larguraMaxContainer{
+      h2 {
+        @include tituloSection();
       }
-      p {
-        line-height: 30px;
+      article {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 25px 0px;
+        div {
+          text-align: center;
+          height: auto;
+          background-color: $corPrincipalDark;
+          padding: 40px 30px;
+          border-radius: 5px;
+          margin: 10px;
+          flex-basis: 250px;
+          flex-grow: 1;
+          .iconify{
+            color: $corPrincipal;
+            font-size: 50px;
+            margin: 10px 0px;
+          }
+          h3{
+            font-size: 1.2rem;
+            padding: 20px 0px;
+            color: $corBranca;
+          }
+          p {
+            line-height: 28px;
+            font-size: 1rem;
+            color: $corBrancaDark;
+          }
+        }
       }
     }
-    //reponsividade no flexbox
-    @media screen and (max-width:800px){
-        padding: 70px 10px;
-    }
-  }
-  .imageIcone {
-    width: 50px;
-  }
-  .imageIcones {
-    width: 100px;
   }
 
   //Conhecimentos
-  #meusConhecimentos {
-    width: 100%;
-    padding: 70px;
-    overflow: hidden;
-    h2{
-      @include alinhamentoTitulo();
+  #conhecimentos {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: $corPrincipalDark;
+    @media screen and (max-width:1024px){
+      padding: 50px 20px;
     }
-    div {
-      display: flex;
-      height: auto;
-      flex-wrap: wrap;
-      margin-top: 25px;
-    }
-    article {
-      text-align: center;
-      height: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      margin: 10px;
-      flex-basis: 250px;
-      flex-grow: 1;
-      box-shadow: 0px 0px 20px rgb(231, 231, 231);
-      transition: all 0.5s;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
+    .larguraMaxContainer{
+      h2{
+        @include tituloSection();
       }
-      h2 {
-        padding: 10px 0px;
-        font-size: 20px;
+      div {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        article {
+          text-align: center;
+          height: auto;
+          background-color: $corSegundariaDark;
+          padding: 30px;
+          border-radius: 5px;
+          margin: 10px;
+          flex-basis: 30%;
+          flex-grow: 1;
+          transition: all 0.5s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+          }
+          #dualIcones{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            .iconify{
+              margin: 0px 10px 10px 10px;
+            }
+          }
+          .iconify{
+            color: $corPrincipal;
+            font-size: 50px;
+            margin: 10px 0px;
+          }
+          h3 {
+            padding: 15px 0px;
+            font-size: 1.3rem;
+            color: $corBranca;
+          }
+          p {
+            line-height: 28px;
+            color: $corBrancaDark;
+            font-size: 1.1rem;
+          }
+          .estrelaConhecimento {
+            background: url("../image/estrelas.png") repeat-x;
+            font-size: 0;
+            height: 24px;
+            line-height: 0;
+            overflow: hidden;
+            text-indent: -999em;
+            width: 110px;
+            margin: 10px auto;
+          }
+          .nivelConhecimento {
+            background: url("../image/estrelas.png") repeat-x;
+            background-position: 0 100%;
+            float: left;
+            height: 23.5px;
+            display: block;
+          }
+        }
       }
-      p {
-        line-height: 30px;
-      }
-      .estrelaConhecimento {
-        background: url("../image/star.png") repeat-x;
-        font-size: 0;
-        height: 21px;
-        line-height: 0;
-        overflow: hidden;
-        text-indent: -999em;
-        width: 110px;
-        margin: 10px auto;
-      }
-      .nivelConhecimento {
-        background: url("../image/star.png") repeat-x;
-        background-position: 0 100%;
-        float: left;
-        height: 23px;
-        display: block;
-      }
-    }
-    //reponsividade no flexbox
-    @media screen and (max-width:800px){
-        padding: 70px 10px;
     }
   }
 }
 
-label{
-  margin-bottom: 10px;
-}
-//Contato
+/*
 #contato {
-  background-color: #fafafa;
+  background-color: $corBrancaDark;
   padding: 70px;
   display: flex;
   justify-content: center;
@@ -376,18 +357,17 @@ label{
       transform: translate(-50%, -50%);
     }
     h2{
-      color: #fff;
+      color: $corBranca;
     }
     h4{
-      color: #fff;
+      color: $corBranca;
     }
   }
   #camposContato{
-    background-color: #fff;
+    background-color: $corBranca;
     width: 60%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(231, 231, 231);
     padding: 30px;
     #campoFlex{
       display: flex;
@@ -438,7 +418,7 @@ label{
   #botao{
     margin-top: 20px;
     background-color: $corPrincipal;
-    color: #fff;
+    color: $corBranca;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -477,55 +457,53 @@ label{
       }
     }
   }
-}
-
+}*/
 
 // Scroll
 .scrollTop {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background-color: $corPrincipal;
-  padding: 14px;
+  background-color: $hoverPrincipal;
+  padding: 15px;
   opacity: 0;
   transition: all 0.4s ease-in-out 0s;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 10%;
-  &:hover {
-    cursor: pointer;
-    background-color: $hoverPrincipal;
-  }
   i {
     font-size: 20px;
-    color: #fff;
+    color: $corBranca;
   }
 }
-//Fim do Main
 
-//Footer | Rodapé
+//Footer
 footer {
   padding: 50px 10px;
-  background-color: $corSegundaria;
+  background-color: $corPrincipal;
   text-align: center;
   p {
-    color: #fff;
+    color: $corBranca;
     padding: 25px;
     font: {
-      size: 14px;
-      weight: 200;
+      size: 1.1rem;
+      weight: 500;
+    }
+    @media screen and (max-width: 1024px){
+      font: {
+        size: 1rem;
+      }
     }
   }
-  #midiasSociaisFooter {
-    margin: 0 auto;
+  #redesSociais {
     i {
       padding: 0px 20px;
-      color: #fff;
+      color: $corBranca;
       font: {
-        size: 24px;
-      }
-      &:hover {
+        size: 1.6rem;
         cursor: pointer;
-        color: $hoverPrincipal;
+      }
+      &:hover{
+        opacity: 0.7;
       }
     }
   }

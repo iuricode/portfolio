@@ -1,0 +1,49 @@
+//Zerando as configurações dos navegadores
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $fontPrincipal;
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $corTitulo;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $corTitulo;
+}
+button, input{
+  border: 0;
+  font-family: $fontPrincipal;
+  &:focus{
+      border: 0;
+  }
+}
+body {
+  font-family: $fontPrincipal;
+  color: $corTitulo;
+  background-color: $corBranca;
+}
+
+//Mixins
+@mixin FlexBox(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@mixin LarguraMaxContainer(){
+    max-width: 1281px;
+    margin: 0 auto;
+}

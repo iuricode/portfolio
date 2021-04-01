@@ -1,25 +1,47 @@
-//Animação menu responsivo
-$('.btn-menu, .btn-close').on('click', function () {
-    $('.menu').slideToggle('slow');
-});
+//Menu
+class MobileNavbar{
+            constructor(mobileMenu, navList, navLinks){
+                this.mobileMenu = document.querySelector(mobileMenu);
+                this.navList = document.querySelector(navList);
+                this.navLinks = document.querySelectorAll(navLinks);
+                this.activeClass = 'active';
 
-$('nav ul li').click(function () {
-    $('.menu').hide();
-});
+                this.handleClick = this.handleClick.bind(this);
+            }
 
-//Scroll menu
-$('nav a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top;
+            animateLinks(){
+                this.navLinks.forEach((link, index) => {
+                
+                    link.style.animation
+                        ? (link.style.animation = "")
+                        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
+                });
+            }
 
-    $('html, body').animate(
-        {
-            scrollTop: targetOffset,
-        },
-        1000
-    );
-});
+            handleClick(){
+                this.navList.classList.toggle(this.activeClass);
+                this.mobileMenu.classList.toggle(this.activeClass);
+                this.animateLinks();
+            }
+
+            addClickEvent(){
+                this.mobileMenu.addEventListener('click', this.handleClick);
+            }
+
+            init(){
+                if(this.mobileMenu){
+                    this.addClickEvent();
+                }
+                return this;
+            }
+        }
+
+        const mobileNavbar = new MobileNavbar(
+            '.mobile-menu',
+            '.nav-list',
+            '.nav-list li',
+        );
+        mobileNavbar.init();
 
 //Scroll top
 $(document).ready(function () {
@@ -62,12 +84,6 @@ $(document).ready(function () {
         name: 'reactjs',
         url: 'https://pt-br.reactjs.org/',
     }, {
-        name: 'next',
-        url: 'https://nextjs.org/',
-    }, {
-        name: 'typescript',
-        url: 'https://www.typescriptlang.org/pt/',
-    }, {
         name: 'figma',
         url: 'https://www.figma.com/'
     }]
@@ -80,37 +96,6 @@ $(document).ready(function () {
 
 });
 
-//Dark Mode
-var darkMode;
-
-if (localStorage.getItem('dark-mode')) {
-    darkMode = 'light';
-} else {
-    darkMode = localStorage.getItem('dark-mode');
-}
-
-localStorage.getItem('dark-mode', darkMode);
-
-if (localStorage.getItem('dark-mode') == 'dark') {
-    $('body').addClass('dark');
-    $('.dark-button').hide();
-    $('.light-button').show();
-}
-
-
-$('.dark-button').on('click', function () {
-    $('.dark-button').hide();
-    $('.light-button').show();
-    $('body').addClass('dark');
-    localStorage.setItem('dark-mode', 'dark');
-});
-
-$('.light-button').on('click', function () {
-    $('.light-button').hide();
-    $('.dark-button').show();
-    $('body').removeClass('dark');
-    localStorage.setItem('dark-mode', 'light');
-});
 
 /*
 valor = document.getElementById('campo').value
