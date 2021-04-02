@@ -3,6 +3,22 @@
 @import "./reset";
 @import "./menu";
 
+.maquina-escrever:after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 1s infinite;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
 .larguraMaxContainer{
   @include LarguraMaxContainer();
 }
@@ -123,7 +139,6 @@ main {
           flex-direction: column;
           align-items: center;
           padding-left: 0px;
-          color: $corTitulo;
         }
         h2 {
           @include tituloSection();
@@ -169,6 +184,12 @@ main {
           margin: 10px;
           border-radius: 5px;
           position: relative;
+          @media screen and (max-width:1124px){
+            flex-basis: calc(50% - 20px);
+          }
+          @media screen and (max-width:768px){
+            flex-basis: calc(100% - 20px);
+          }
           h3{
             font-size: 1.2rem;
             color: $corBranca;
@@ -235,8 +256,14 @@ main {
           padding: 40px 30px;
           border-radius: 5px;
           margin: 10px;
-          flex-basis: 250px;
+          flex-basis: calc(25% - 20px);
           flex-grow: 1;
+          @media screen and (max-width:1124px){
+            flex-basis: calc(50% - 20px);
+          }
+          @media screen and (max-width:768px){
+            flex-basis: calc(100% - 20px);
+          }
           .iconify{
             color: $corPrincipal;
             font-size: 50px;
@@ -281,9 +308,15 @@ main {
           padding: 30px;
           border-radius: 5px;
           margin: 10px;
-          flex-basis: 30%;
+          flex-basis: calc(33% - 20px);
           flex-grow: 1;
           transition: all 0.5s;
+          @media screen and (max-width:1124px){
+            flex-basis: calc(50% - 20px);
+          }
+          @media screen and (max-width:768px){
+            flex-basis: calc(100% - 20px);
+          }
           &:hover {
             cursor: pointer;
             transform: scale(1.03);
@@ -472,7 +505,7 @@ main {
   background-color: $hoverPrincipal;
   padding: 15px;
   opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
+  transition: all 0.5s ease;
   border-radius: 5px;
   cursor: pointer;
   .iconify {

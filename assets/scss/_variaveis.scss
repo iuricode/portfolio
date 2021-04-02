@@ -2,26 +2,28 @@
 $fontPrincipal: 'Fira Code', monospace, 'Montserrat', sans-serif;
 //Cores
 $corPrincipal: #5429CF;
+//Hover
+$hoverPrincipal: #4220A3;
+//Cores textos
 $corBranca: #FEFBFB;
 $corBrancaDark: #F9F9F9;
 //Cores Dark
 $corPrincipalDark: #181818;
 $corSegundariaDark: #202020;
-//Cores textos
-$corTitulo: #474F52;
-$corDescricao:#273137;
-//Hover
-$hoverPrincipal: #4220A3;
-
-
-//Espaçamentos
-$espacamentoLaterais: 50px 150px;
-$tamanhoArticlesMaior: 60%;
-$tamanhoArticlesMenor: 40%;
-//Unidades responsivos
-$espacoResponsivo: 20px;
 
 //Mixins
+@mixin FlexBox(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin LarguraMaxContainer(){
+  max-width: 1281px;
+  margin: 0 auto;
+}
+
 @mixin botao {
   background-color: $corPrincipal;
   color: #fff;
@@ -44,10 +46,6 @@ $espacoResponsivo: 20px;
     background-color: $hoverPrincipal;
   }
 }
-@mixin texto {
-  line-height: 30px;
-  color: $corTitulo;
-}
 
 @mixin tituloSection {
   padding-bottom: 20px;
@@ -56,18 +54,4 @@ $espacoResponsivo: 20px;
     size: 32px;
     weight: 500;
   }
-}
-
-@mixin alinhamentoTitulo {
-  h2 {
-    padding-bottom: 20px;
-    color: $corBranca;
-    font: {
-      size: 32px;
-      weight: 500;
-    }
-  }
-}
-@mixin putTransition($transitionDuration: .2s) {
-  transition: all $transitionDuration ease-in-out;
 }

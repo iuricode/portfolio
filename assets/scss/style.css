@@ -1,20 +1,29 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+}
+
+*, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
-  scroll-behavior: smooth;
 }
 
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: #474F52;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 p,
@@ -24,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #474F52;
+  margin: 0;
 }
 
 button, input {
@@ -38,8 +47,11 @@ button:focus, input:focus {
 
 body {
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
-  color: #474F52;
   background-color: #FEFBFB;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -86,8 +98,8 @@ header .larguraMaxContainer nav .nav-list li {
 header .larguraMaxContainer nav .nav-list li a {
   color: #FEFBFB;
   text-decoration: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 1.1rem;
   padding-bottom: 4px;
 }
@@ -182,6 +194,32 @@ header .larguraMaxContainer nav .nav-list li a:hover {
   }
   .mobile-menu {
     display: block;
+  }
+}
+
+.maquina-escrever:after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: pisca 1s infinite;
+          animation: pisca 1s infinite;
+}
+
+@-webkit-keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
@@ -403,7 +441,6 @@ main #sobre .larguraMaxContainer #sobreTexto {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 0px;
-    color: #474F52;
   }
 }
 
@@ -498,6 +535,20 @@ main #projetos .larguraMaxContainer article div {
   position: relative;
 }
 
+@media screen and (max-width: 1124px) {
+  main #projetos .larguraMaxContainer article div {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #projetos .larguraMaxContainer article div {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+  }
+}
+
 main #projetos .larguraMaxContainer article div h3 {
   font-size: 1.2rem;
   color: #FEFBFB;
@@ -588,11 +639,25 @@ main #servicos .larguraMaxContainer article div {
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px;
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media screen and (max-width: 1124px) {
+  main #servicos .larguraMaxContainer article div {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #servicos .larguraMaxContainer article div {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+  }
 }
 
 main #servicos .larguraMaxContainer article div .iconify {
@@ -649,13 +714,27 @@ main #conhecimentos .larguraMaxContainer div article {
   padding: 30px;
   border-radius: 5px;
   margin: 10px;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: calc(33% - 20px);
+      flex-basis: calc(33% - 20px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1124px) {
+  main #conhecimentos .larguraMaxContainer div article {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #conhecimentos .larguraMaxContainer div article {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+  }
 }
 
 main #conhecimentos .larguraMaxContainer div article:hover {
@@ -852,8 +931,8 @@ main #conhecimentos .larguraMaxContainer div article .nivelConhecimento {
   background-color: #4220A3;
   padding: 15px;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   border-radius: 5px;
   cursor: pointer;
 }

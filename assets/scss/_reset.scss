@@ -2,17 +2,24 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: $fontPrincipal;
-  scroll-behavior: smooth;
+}
+*, ::before, ::after{
+  box-sizing: border-box;
 }
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
-  color: $corTitulo;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 p,
 h1,
@@ -21,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $corTitulo;
+  margin: 0;
 }
 button, input{
   border: 0;
@@ -32,18 +39,8 @@ button, input{
 }
 body {
   font-family: $fontPrincipal;
-  color: $corTitulo;
   background-color: $corBranca;
 }
-
-//Mixins
-@mixin FlexBox(){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-@mixin LarguraMaxContainer(){
-    max-width: 1281px;
-    margin: 0 auto;
+html{
+  scroll-behavior: smooth;
 }
