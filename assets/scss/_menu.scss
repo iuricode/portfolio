@@ -48,7 +48,8 @@ header{
   }
 }
 .nav-list.active{
-  transform: translateX(0);
+  visibility: initial;
+  transition: 1s all ease;
 }
 @keyframes navLinkFade{
   from{
@@ -77,19 +78,18 @@ header{
       position: absolute;
       top: 10vh;
       right: 0;
-      width: 50vw;
+      width: 60vw;
       height: 100vh;
       z-index: 999;
       background-color: $corSegundariaDark;
       flex-direction: column;
-      padding: 20px 0px 300px 0px;
-      justify-content: space-between;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
+      padding: 25px 0px 100px 0px;
+      visibility: hidden;
   }
-  .nav-list li{
-      margin-left: 0;
+  header .larguraMaxContainer nav .nav-list li {
+      margin-left: 30px;
       opacity: 0;
+      margin-bottom: 50px;
   }
   .mobile-menu{
       display: block;

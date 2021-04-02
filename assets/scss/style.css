@@ -111,8 +111,9 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 .nav-list.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  visibility: initial;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 @-webkit-keyframes navLinkFade {
@@ -163,7 +164,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     position: absolute;
     top: 10vh;
     right: 0;
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     z-index: 999;
     background-color: #202020;
@@ -171,20 +172,13 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px 0px 300px 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    padding: 25px 0px 100px 0px;
+    visibility: hidden;
   }
-  .nav-list li {
-    margin-left: 0;
+  header .larguraMaxContainer nav .nav-list li {
+    margin-left: 30px;
     opacity: 0;
+    margin-bottom: 50px;
   }
   .mobile-menu {
     display: block;
