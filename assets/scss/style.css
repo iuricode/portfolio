@@ -460,7 +460,13 @@ main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
   padding-bottom: 20px;
 }
 
-main #sobre .larguraMaxContainer a {
+main #sobre .larguraMaxContainer #sobreTexto div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #sobre .larguraMaxContainer #sobreTexto div a {
   background-color: #5429CF;
   color: #fff;
   padding: 15px 25px;
@@ -484,9 +490,13 @@ main #sobre .larguraMaxContainer a {
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
 }
 
-main #sobre .larguraMaxContainer a:hover {
+main #sobre .larguraMaxContainer #sobreTexto div a:hover {
   cursor: pointer;
   background-color: #4220A3;
+}
+
+main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
+  margin-right: 20px;
 }
 
 main #projetos {
@@ -521,7 +531,7 @@ main #projetos .larguraMaxContainer article {
   text-align: left;
 }
 
-main #projetos .larguraMaxContainer article div {
+main #projetos .larguraMaxContainer article > div {
   height: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -536,32 +546,32 @@ main #projetos .larguraMaxContainer article div {
 }
 
 @media screen and (max-width: 1124px) {
-  main #projetos .larguraMaxContainer article div {
+  main #projetos .larguraMaxContainer article > div {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #projetos .larguraMaxContainer article div {
+  main #projetos .larguraMaxContainer article > div {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #projetos .larguraMaxContainer article div h3 {
+main #projetos .larguraMaxContainer article > div h3 {
   font-size: 1.2rem;
   color: #FEFBFB;
 }
 
-main #projetos .larguraMaxContainer article div p {
+main #projetos .larguraMaxContainer article > div p {
   line-height: 28px;
   margin: 20px 0px;
   font-size: 1rem;
   color: #F9F9F9;
 }
 
-main #projetos .larguraMaxContainer article div span {
+main #projetos .larguraMaxContainer article > div span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,7 +583,29 @@ main #projetos .larguraMaxContainer article div span {
           justify-content: space-between;
 }
 
-main #projetos .larguraMaxContainer article div button {
+main #projetos .larguraMaxContainer article > div .linguagensProjeto {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20px;
+}
+
+main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
+  padding: 5px;
+  background-color: #181818;
+  border-radius: 5px;
+  color: #FEFBFB;
+}
+
+main #projetos .larguraMaxContainer article > div button {
   background-color: #5429CF;
   padding: 10px 25px;
   color: #FEFBFB;
@@ -589,12 +621,12 @@ main #projetos .larguraMaxContainer article div button {
           align-items: center;
 }
 
-main #projetos .larguraMaxContainer article div button:hover {
+main #projetos .larguraMaxContainer article > div button:hover {
   cursor: pointer;
   background-color: #4220A3;
 }
 
-main #projetos .larguraMaxContainer article div button .iconify {
+main #projetos .larguraMaxContainer article > div button .iconify {
   font-size: 20px;
 }
 
@@ -776,25 +808,6 @@ main #conhecimentos .larguraMaxContainer div article p {
   line-height: 28px;
   color: #F9F9F9;
   font-size: 1.1rem;
-}
-
-main #conhecimentos .larguraMaxContainer div article .estrelaConhecimento {
-  background: url("../image/estrelas.png") repeat-x;
-  font-size: 0;
-  height: 24px;
-  line-height: 0;
-  overflow: hidden;
-  text-indent: -999em;
-  width: 110px;
-  margin: 10px auto;
-}
-
-main #conhecimentos .larguraMaxContainer div article .nivelConhecimento {
-  background: url("../image/estrelas.png") repeat-x;
-  background-position: 0 100%;
-  float: left;
-  height: 23.5px;
-  display: block;
 }
 
 /*

@@ -58,13 +58,14 @@ typeWrite(titulo);
 //Scroll TOP
 $(document).ready(function () {
     var scrollTop = $('.scrollTop');
+    var q = $('.footer');
 
     $(window).scroll(function () {
         var topPos = $(this).scrollTop();
         //Quantidade Y que o botão de scroll vai aparecer
         if (topPos > 500) {
             $(scrollTop).css('opacity', '1');
-        } else {
+        }else {
             $(scrollTop).css('opacity', '0');
         }
     });
@@ -118,6 +119,7 @@ const sr = ScrollReveal({
 
 //Home delay
 sr.reveal('.button',{delay: 200})
+sr.reveal('.linguagensProjeto',{delay: 400})
 sr.reveal('.imagem-espaco-delay',{delay: 200})
 sr.reveal('.imagem-iuri-delay',{delay: 600})
 //Sobre mim delay
