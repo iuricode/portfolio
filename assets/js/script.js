@@ -23,8 +23,6 @@ class MobileNavbar{
     }
 
     addClickEvent(){
-        document.body.style.oveflow = activeClass ? "hidden" : "initial"
-        
         this.mobileMenu.addEventListener('click', this.handleClick);
     }
 
