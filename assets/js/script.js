@@ -82,33 +82,6 @@ $(document).ready(function () {
     });
 });
 
-//Links dos meus conhecimentos
-const techs = [{
-    name: 'htmlecss',
-    url: 'https://www.treinaweb.com.br/blog/o-que-e-e-como-comecar-com-html-e-css/'
-}, {
-    name: 'js',
-    url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/',
-}, {
-    name: 'sass',
-    url: 'https://sass-lang.com/'
-}, {
-    name: 'bootstrap',
-    url: 'https://getbootstrap.com/',
-}, {
-    name: 'reactjs',
-    url: 'https://pt-br.reactjs.org/',
-}, {
-    name: 'figma',
-    url: 'https://www.figma.com/'
-}]
-
-techs.forEach(tech => {
-    $('.' + tech.name).on('click', () => {
-        window.open(tech.url)
-    })
-});
-
 //Revelar animação
 const sr = ScrollReveal({
     origin: 'top',
@@ -129,7 +102,48 @@ sr.reveal('.descricao-delay',{delay: 400})
 sr.reveal('.cards-interval',{interval: 400})
 
 
+//Animação conhecimentos
+var texto1 = document.querySelector('.mudarTextoDescricao')
 
+    document.querySelector('.html').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. <br><br> 2 ano de experiência'
+    })
+
+    document.querySelector('.css').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML. <br><br> 2 ano de experiência'
+    })
+
+    document.querySelector('.js').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. <br><br> 1 ano de experiência'
+    })
+
+    document.querySelector('.bootstrap').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'Bootstrap é um framework para desenvolvimento de componentes de interface front-end para sites e aplicações web usando HTML, CSS e JavaScript. <br><br> 1 ano de experiência'
+    })
+
+    document.querySelector('.sass').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'Sass (o pré-processador) é uma linguagem de folhas de estilo. É uma simples linguagem de script usada em arquivos Sass. <br><br> 6 meses de experiência'
+    })
+
+    document.querySelector('.react').addEventListener('mouseover', function (){ 
+        texto1.innerHTML = 'React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. <br><br> 1 mês de experiência'
+    })
+
+    document.querySelector('.next').addEventListener('mouseover', function (){
+        texto1.innerHTML = 'Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React. <br><br> 1 mês de experiência'
+    })
+
+    document.querySelector('.styled').addEventListener('mouseover', function mudarTexto8(){
+        texto1.innerHTML = 'Styled Components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. <br><br> 1 mês de experiência'
+    })
+
+    var sairCaixa = document.getElementsByClassName('sairCaixa')
+
+    for (i = 0; i < sairCaixa.length; i++) {
+      sairCaixa[i].addEventListener('mouseout', function mudarTextoNormal(){
+        texto1.innerHTML = `Estou convencido de que juntos alcançaremos coisas incríveis.💜<br><br>*passe o mouse no card para ler sobre*`
+      })
+    }
 
 
 /*
