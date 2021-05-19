@@ -1103,6 +1103,7 @@ footer p {
   padding: 25px;
   font-size: 1.1rem;
   font-weight: 500;
+  display: inline;
 }
 
 @media screen and (max-width: 1024px) {
