@@ -27,14 +27,8 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - HTML;
 - Sass;
 - JavaScript;
-
----
-
-## 📌 Melhorias
-O site ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
-- Colocar projetos;
-- Seção de contato;
+- Jquery;
+- ScrollReveal;
 
 ---
 
