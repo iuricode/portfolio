@@ -21,13 +21,27 @@ header{
         li{
           margin-left: 50px;
           a{
-            color: $corBranca;
-            text-decoration: none;
-            transition: 0.3s;
+            color: $corBrancaDark;
             font-size: 1.1rem;
-            padding-bottom: 4px;
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 3px;
+              bottom: -7px;
+              left: 0;
+              background-color: $corPrincipal;
+              transform-origin: bottom right;
+              transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+            }
+            &:hover::after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
             &:hover{
-              border-bottom: 4px solid $corPrincipal;
+              color: $corBranca;
             }
           }
         }

@@ -58,7 +58,6 @@ typeWrite(titulo);
 //Scroll TOP
 $(document).ready(function () {
     var scrollTop = $('.scrollTop');
-    var q = $('.footer');
 
     $(window).scroll(function () {
         var topPos = $(this).scrollTop();
@@ -76,7 +75,7 @@ $(document).ready(function () {
             {
                 scrollTop: 0,
             },
-            1300
+            100
         );
         return false;
     });
@@ -106,11 +105,11 @@ sr.reveal('.cards-interval',{interval: 400})
 var texto1 = document.querySelector('.mudarTextoDescricao')
 
     document.querySelector('.html').addEventListener('mouseover', function (){
-        texto1.innerHTML = 'HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. <br><br> 2 ano de experiência'
+        texto1.innerHTML = 'HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. <br><br> 2 anos de experiência'
     })
 
     document.querySelector('.css').addEventListener('mouseover', function (){
-        texto1.innerHTML = 'CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML. <br><br> 2 ano de experiência'
+        texto1.innerHTML = 'CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML. <br><br> 2 anos de experiência'
     })
 
     document.querySelector('.js').addEventListener('mouseover', function (){
@@ -144,6 +143,7 @@ var texto1 = document.querySelector('.mudarTextoDescricao')
         texto1.innerHTML = `Estou convencido de que juntos alcançaremos coisas incríveis.💜<br><br>*passe o mouse no card para ler sobre*`
       })
     }
+
 
 
 /*

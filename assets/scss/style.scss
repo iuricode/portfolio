@@ -611,7 +611,7 @@ main {
 //Footer
 footer {
   padding: 50px 10px;
-  background-color: $corPrincipal;
+  background: linear-gradient(90deg, #47438a 0%, #8257E6 29.17%, #019bb9  100%);
   text-align: center;
   p {
     color: $corBranca;
@@ -627,5 +627,5 @@ footer {
       }
     }
   }
-  }
 }
+

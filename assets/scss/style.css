@@ -96,16 +96,38 @@ header .larguraMaxContainer nav .nav-list li {
 }
 
 header .larguraMaxContainer nav .nav-list li a {
-  color: #FEFBFB;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  color: #F9F9F9;
   font-size: 1.1rem;
-  padding-bottom: 4px;
+  position: relative;
+}
+
+header .larguraMaxContainer nav .nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 3px;
+  bottom: -7px;
+  left: 0;
+  background-color: #6610F2;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+header .larguraMaxContainer nav .nav-list li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 header .larguraMaxContainer nav .nav-list li a:hover {
-  border-bottom: 4px solid #5429CF;
+  color: #FEFBFB;
 }
 
 .mobile-menu {
@@ -290,7 +312,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
-  background-color: #5429CF;
+  background-color: #6610F2;
   color: #fff;
   padding: 15px 25px;
   max-width: 250px;
@@ -315,7 +337,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #5429CF;
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
@@ -551,7 +573,7 @@ main #sobre .larguraMaxContainer #sobreTexto div {
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a {
-  background-color: #5429CF;
+  background-color: #6610F2;
   color: #fff;
   padding: 15px 25px;
   max-width: 250px;
@@ -576,7 +598,7 @@ main #sobre .larguraMaxContainer #sobreTexto div a {
 
 main #sobre .larguraMaxContainer #sobreTexto div a:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #5429CF;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
@@ -690,7 +712,7 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
 }
 
 main #projetos .larguraMaxContainer article > div button {
-  background-color: #5429CF;
+  background-color: #6610F2;
   padding: 10px 25px;
   color: #FEFBFB;
   border: 0;
@@ -707,7 +729,7 @@ main #projetos .larguraMaxContainer article > div button {
 
 main #projetos .larguraMaxContainer article > div button:hover {
   cursor: pointer;
-  background-color: #4220A3;
+  background-color: #5429CF;
 }
 
 main #projetos .larguraMaxContainer article > div button .iconify {
@@ -715,7 +737,7 @@ main #projetos .larguraMaxContainer article > div button .iconify {
 }
 
 main #projetos .larguraMaxContainer a {
-  color: #5429CF;
+  color: #6610F2;
   font-size: 18px;
 }
 
@@ -777,7 +799,7 @@ main #servicos .larguraMaxContainer article div {
 }
 
 main #servicos .larguraMaxContainer article div .iconify {
-  color: #5429CF;
+  color: #6610F2;
   font-size: 50px;
   margin: 10px 0px;
 }
@@ -843,7 +865,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .c
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
-  border-bottom: 6px solid #5429CF;
+  border-bottom: 6px solid #6610F2;
   cursor: pointer;
 }
 
@@ -928,7 +950,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .aumento
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .iconify {
   font-size: 68px;
-  color: #5429CF;
+  color: #6610F2;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
@@ -1078,7 +1100,7 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background-color: #4220A3;
+  background-color: #5429CF;
   padding: 15px;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
@@ -1094,16 +1116,17 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
 
 footer {
   padding: 50px 10px;
-  background-color: #5429CF;
+  background: -webkit-gradient(linear, left top, right top, from(#47438a), color-stop(29.17%, #8257E6), to(#019bb9));
+  background: linear-gradient(90deg, #47438a 0%, #8257E6 29.17%, #019bb9 100%);
   text-align: center;
 }
 
 footer p {
   color: #FEFBFB;
   padding: 25px;
+  display: inline;
   font-size: 1.1rem;
   font-weight: 500;
-  display: inline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1111,5 +1134,4 @@ footer p {
     font-size: 1rem;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
