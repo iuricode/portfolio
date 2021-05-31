@@ -3,8 +3,11 @@
   padding: 0;
   margin: 0;
   font-family: $fontPrincipal;
+  user-select: none;
 }
-*, ::before, ::after{
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 ul,
@@ -16,7 +19,7 @@ ol {
 a {
   text-decoration: none;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -30,17 +33,18 @@ h5,
 h6 {
   margin: 0;
 }
-button, input{
+button,
+input {
   border: 0;
   font-family: $fontPrincipal;
-  &:focus{
-      border: 0;
+  &:focus {
+    border: 0;
   }
 }
 body {
   font-family: $fontPrincipal;
   background-color: $corBranca;
 }
-html{
+html {
   scroll-behavior: smooth;
 }

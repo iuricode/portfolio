@@ -2,9 +2,15 @@
   padding: 0;
   margin: 0;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -36,12 +42,14 @@ h6 {
   margin: 0;
 }
 
-button, input {
+button,
+input {
   border: 0;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus {
   border: 0;
 }
 
@@ -220,7 +228,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 .maquina-escrever:after {
-  content: '|';
+  content: "|";
   margin-left: 5px;
   opacity: 1;
   -webkit-animation: pisca 1s infinite;
@@ -228,7 +236,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 @-webkit-keyframes pisca {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -237,7 +246,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 @keyframes pisca {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -377,7 +387,8 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
 }
 
 @-webkit-keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     top: 0;
   }
   50% {
@@ -386,7 +397,8 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     top: 0;
   }
   50% {
@@ -433,6 +445,13 @@ main #sobre .larguraMaxContainer #sobreFoto {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+main #sobre .larguraMaxContainer #sobreFoto:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main #sobre .larguraMaxContainer #sobreFoto div {
@@ -523,7 +542,7 @@ main #sobre .larguraMaxContainer #sobreFoto img {
   max-width: 400px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   main #sobre .larguraMaxContainer #sobreFoto {
     display: none;
   }
@@ -533,7 +552,7 @@ main #sobre .larguraMaxContainer #sobreTexto {
   width: 50%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   main #sobre .larguraMaxContainer #sobreTexto {
     width: 100%;
     display: -webkit-box;
@@ -570,6 +589,8 @@ main #sobre .larguraMaxContainer #sobreTexto div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a {
@@ -603,6 +624,16 @@ main #sobre .larguraMaxContainer #sobreTexto div a:hover {
 
 main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  main #sobre .larguraMaxContainer #sobreTexto div a {
+    width: 100%;
+    max-width: 100%;
+  }
+  main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
+    margin-right: 0px;
+  }
 }
 
 main #projetos {
@@ -649,6 +680,13 @@ main #projetos .larguraMaxContainer article > div {
   margin: 10px;
   border-radius: 5px;
   position: relative;
+  -webkit-transition: 0.8s all ease;
+  transition: 0.8s all ease;
+  border: 3px solid #202020;
+}
+
+main #projetos .larguraMaxContainer article > div:hover {
+  border: 3px solid #6610F2;
 }
 
 @media screen and (max-width: 1124px) {
@@ -677,7 +715,7 @@ main #projetos .larguraMaxContainer article > div p {
   color: #F9F9F9;
 }
 
-main #projetos .larguraMaxContainer article > div span {
+main #projetos .larguraMaxContainer article > div > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,31 +725,22 @@ main #projetos .larguraMaxContainer article > div span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-main #projetos .larguraMaxContainer article > div .linguagensProjeto {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  height: 20px;
 }
 
-main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
-  padding: 5px;
-  background-color: #181818;
-  border-radius: 5px;
-  color: #FEFBFB;
+main #projetos .larguraMaxContainer article > div > span a {
+  width: 50%;
 }
 
-main #projetos .larguraMaxContainer article > div button {
+@media screen and (max-width: 1024px) {
+  main #projetos .larguraMaxContainer article > div > span a {
+    width: 100%;
+  }
+}
+
+main #projetos .larguraMaxContainer article > div > span button {
   background-color: #6610F2;
   padding: 10px 25px;
   color: #FEFBFB;
@@ -725,15 +754,50 @@ main #projetos .larguraMaxContainer article > div button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
-main #projetos .larguraMaxContainer article > div button:hover {
+@media screen and (max-width: 1024px) {
+  main #projetos .larguraMaxContainer article > div > span button {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main #projetos .larguraMaxContainer article > div > span button:hover {
   cursor: pointer;
   background-color: #5429CF;
 }
 
-main #projetos .larguraMaxContainer article > div button .iconify {
+main #projetos .larguraMaxContainer article > div > span button .iconify {
   font-size: 20px;
+}
+
+main #projetos .larguraMaxContainer article > div .linguagensProjeto {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
+  padding: 5px;
+  background-color: #181818;
+  border-radius: 5px;
+  color: #FEFBFB;
+  margin-bottom: 5px;
 }
 
 main #projetos .larguraMaxContainer a {
@@ -782,6 +846,13 @@ main #servicos .larguraMaxContainer article div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transition: 0.8s all ease;
+  transition: 0.8s all ease;
+  border: 3px solid #202020;
+}
+
+main #servicos .larguraMaxContainer article div:hover {
+  border: 3px solid #6610F2;
 }
 
 @media screen and (max-width: 1124px) {
@@ -1109,6 +1180,12 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .scrollTop {
+    display: none;
+  }
+}
+
 .scrollTop .iconify {
   font-size: 26px;
   color: #FEFBFB;
@@ -1116,9 +1193,11 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
 
 footer {
   padding: 50px 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#47438a), color-stop(29.17%, #8257E6), to(#019bb9));
-  background: linear-gradient(90deg, #47438a 0%, #8257E6 29.17%, #019bb9 100%);
+  background: linear-gradient(225deg, #6610F2 0%, #6a32eb 29.17%, #019bb9 100%);
   text-align: center;
+  background-size: 300% 300%;
+  -webkit-animation: animate_background 5s ease infinite alternate;
+          animation: animate_background 5s ease infinite alternate;
 }
 
 footer p {
@@ -1132,6 +1211,30 @@ footer p {
 @media screen and (max-width: 1024px) {
   footer p {
     font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes animate_background {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 25% 100%;
+  }
+}
+
+@keyframes animate_background {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 25% 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
