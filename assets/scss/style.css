@@ -1,3 +1,243 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -55,7 +295,7 @@ input:focus {
 
 body {
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
-  background-color: #FEFBFB;
+  background-color: #fefbfb;
 }
 
 html {
@@ -89,7 +329,7 @@ header .larguraMaxContainer nav {
 header .larguraMaxContainer nav .logo {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #FEFBFB;
+  color: #fefbfb;
 }
 
 header .larguraMaxContainer nav .nav-list {
@@ -104,7 +344,7 @@ header .larguraMaxContainer nav .nav-list li {
 }
 
 header .larguraMaxContainer nav .nav-list li a {
-  color: #F9F9F9;
+  color: #f9f9f9;
   font-size: 1.1rem;
   position: relative;
 }
@@ -118,7 +358,7 @@ header .larguraMaxContainer nav .nav-list li a::after {
   height: 3px;
   bottom: -7px;
   left: 0;
-  background-color: #6610F2;
+  background-color: #6610f2;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -135,7 +375,7 @@ header .larguraMaxContainer nav .nav-list li a:hover::after {
 }
 
 header .larguraMaxContainer nav .nav-list li a:hover {
-  color: #FEFBFB;
+  color: #fefbfb;
 }
 
 .mobile-menu {
@@ -146,7 +386,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #FEFBFB;
+  background-color: #fefbfb;
   margin: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -311,7 +551,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
-  color: #FEFBFB;
+  color: #fefbfb;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -322,7 +562,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
-  background-color: #6610F2;
+  background-color: #6610f2;
   color: #fff;
   padding: 15px 25px;
   max-width: 250px;
@@ -347,7 +587,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
   cursor: pointer;
-  background-color: #5429CF;
+  background-color: #5429cf;
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
@@ -571,14 +811,14 @@ main #sobre .larguraMaxContainer #sobreTexto {
 
 main #sobre .larguraMaxContainer #sobreTexto h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p {
   line-height: 30px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
@@ -594,7 +834,7 @@ main #sobre .larguraMaxContainer #sobreTexto div {
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a {
-  background-color: #6610F2;
+  background-color: #6610f2;
   color: #fff;
   padding: 15px 25px;
   max-width: 250px;
@@ -619,7 +859,7 @@ main #sobre .larguraMaxContainer #sobreTexto div a {
 
 main #sobre .larguraMaxContainer #sobreTexto div a:hover {
   cursor: pointer;
-  background-color: #5429CF;
+  background-color: #5429cf;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
@@ -650,7 +890,7 @@ main #projetos {
 
 main #projetos .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
@@ -686,7 +926,7 @@ main #projetos .larguraMaxContainer article > div {
 }
 
 main #projetos .larguraMaxContainer article > div:hover {
-  border: 3px solid #6610F2;
+  border: 3px solid #6610f2;
 }
 
 @media screen and (max-width: 1124px) {
@@ -705,14 +945,14 @@ main #projetos .larguraMaxContainer article > div:hover {
 
 main #projetos .larguraMaxContainer article > div h3 {
   font-size: 1.2rem;
-  color: #FEFBFB;
+  color: #fefbfb;
 }
 
 main #projetos .larguraMaxContainer article > div p {
   line-height: 28px;
   margin: 20px 0px;
   font-size: 1rem;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 main #projetos .larguraMaxContainer article > div > span {
@@ -741,9 +981,9 @@ main #projetos .larguraMaxContainer article > div > span a {
 }
 
 main #projetos .larguraMaxContainer article > div > span button {
-  background-color: #6610F2;
+  background-color: #6610f2;
   padding: 10px 25px;
-  color: #FEFBFB;
+  color: #fefbfb;
   border: 0;
   font-weight: 500;
   font-size: 14px;
@@ -768,7 +1008,7 @@ main #projetos .larguraMaxContainer article > div > span button {
 
 main #projetos .larguraMaxContainer article > div > span button:hover {
   cursor: pointer;
-  background-color: #5429CF;
+  background-color: #5429cf;
 }
 
 main #projetos .larguraMaxContainer article > div > span button .iconify {
@@ -796,12 +1036,12 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
   padding: 5px;
   background-color: #181818;
   border-radius: 5px;
-  color: #FEFBFB;
+  color: #fefbfb;
   margin-bottom: 5px;
 }
 
 main #projetos .larguraMaxContainer a {
-  color: #6610F2;
+  color: #6610f2;
   font-size: 18px;
 }
 
@@ -819,7 +1059,7 @@ main #servicos {
 
 main #servicos .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #FEFBFB;
+  color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
@@ -852,7 +1092,7 @@ main #servicos .larguraMaxContainer article div {
 }
 
 main #servicos .larguraMaxContainer article div:hover {
-  border: 3px solid #6610F2;
+  border: 3px solid #6610f2;
 }
 
 @media screen and (max-width: 1124px) {
@@ -870,7 +1110,7 @@ main #servicos .larguraMaxContainer article div:hover {
 }
 
 main #servicos .larguraMaxContainer article div .iconify {
-  color: #6610F2;
+  color: #6610f2;
   font-size: 50px;
   margin: 10px 0px;
 }
@@ -878,13 +1118,13 @@ main #servicos .larguraMaxContainer article div .iconify {
 main #servicos .larguraMaxContainer article div h3 {
   font-size: 1.2rem;
   padding: 20px 0px;
-  color: #FEFBFB;
+  color: #fefbfb;
 }
 
 main #servicos .larguraMaxContainer article div p {
   line-height: 28px;
   font-size: 1rem;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 main #conhecimentos {
@@ -936,7 +1176,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .c
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
-  border-bottom: 6px solid #6610F2;
+  border-bottom: 6px solid #6610f2;
   cursor: pointer;
 }
 
@@ -978,7 +1218,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   height: 30px;
   width: 125px;
   border-radius: 5px;
-  color: #FEFBFB;
+  color: #fefbfb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1002,7 +1242,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   height: auto;
   width: 125px;
   border-radius: 5px;
-  color: #FEFBFB;
+  color: #fefbfb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,7 +1261,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .aumento
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .iconify {
   font-size: 68px;
-  color: #6610F2;
+  color: #6610f2;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
@@ -1030,14 +1270,14 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
   margin-bottom: 30px;
-  color: #FEFBFB;
+  color: #fefbfb;
   font-size: 32px;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   max-width: 500px;
   line-height: 32px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 /*
@@ -1171,7 +1411,7 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background-color: #5429CF;
+  background-color: #5429cf;
   padding: 15px;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
@@ -1188,12 +1428,12 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
 
 .scrollTop .iconify {
   font-size: 26px;
-  color: #FEFBFB;
+  color: #fefbfb;
 }
 
 footer {
   padding: 50px 10px;
-  background: linear-gradient(225deg, #6610F2 0%, #6a32eb 29.17%, #019bb9 100%);
+  background: linear-gradient(225deg, #6610f2 0%, #6a32eb 29.17%, #019bb9 100%);
   text-align: center;
   background-size: 300% 300%;
   -webkit-animation: animate_background 5s ease infinite alternate;
@@ -1201,7 +1441,7 @@ footer {
 }
 
 footer p {
-  color: #FEFBFB;
+  color: #fefbfb;
   padding: 25px;
   display: inline;
   font-size: 1.1rem;
