@@ -104,6 +104,12 @@ main {
         }
       }
     }
+    .mouse {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
   }
 
   //Sobre mim
@@ -214,6 +220,7 @@ main {
           flex-wrap: wrap;
           a {
             @include botao();
+            width: 200px;
             &:nth-child(1) {
               margin-right: 20px;
             }
@@ -253,7 +260,7 @@ main {
           flex-grow: 1;
           flex-basis: calc(33% - 20px);
           background-color: $corSegundariaDark;
-          padding: 40px 25px;
+          padding: 30px 25px;
           margin: 10px;
           border-radius: 5px;
           position: relative;
@@ -268,13 +275,17 @@ main {
           @media screen and (max-width: 768px) {
             flex-basis: calc(100% - 20px);
           }
+          img {
+            margin: 20px 0;
+            border-radius: 5px;
+          }
           h3 {
             font-size: 1.2rem;
             color: $corBranca;
           }
           p {
             line-height: 28px;
-            margin: 20px 0px;
+            margin-bottom: 20px;
             font-size: 1rem;
             color: $corBrancaDark;
           }
@@ -494,7 +505,6 @@ main {
             max-width: 500px;
             line-height: 32px;
             color: $corBrancaDark;
-            
           }
         }
       }
