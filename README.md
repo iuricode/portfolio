@@ -14,7 +14,7 @@
 O site é composto por 5 seções diferentes:
 
 - **Home:** Nele temos um avatar do meu github e um breve apresentação;
-- **Sobre mim:** Nessa seção tenho uma descrição dizendo um pouco sobre mim;
+- **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;
 - **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
@@ -27,7 +27,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - HTML;
 - Sass;
 - JavaScript;
-- Jquery;
 - ScrollReveal;
 
 ---
@@ -42,28 +41,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
           <b>Iuri Silva</b>
         </sub>
       </a>
-    </td>
-  </tr>
-</table>
-
-## 🌈 Contribuidores<br>
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/BrianIto">
-        <img src="https://avatars3.githubusercontent.com/u/6891093" width="100px;" alt="Foto do Brian Ito no GitHub"/><br>
-        <sub>
-          <b>Brian Ito</b>
-        </sub>
-      </a><br>
-    </td>
-    <td align="center">
-      <a href="https://github.com/afaferz">
-        <img src="https://avatars3.githubusercontent.com/u/66867161" width="100px;" alt="Foto do afaferz Ito no GitHub"/><br>
-        <sub>
-          <b>Afaferz</b>
-        </sub>
-      </a><br>
     </td>
   </tr>
 </table>
