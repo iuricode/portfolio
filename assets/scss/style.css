@@ -71,6 +71,19 @@ html {
   font-size: 62.5%;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #131219;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6610f2;
+  border-radius: 4px;
+}
+
 header {
   background-color: #17161d;
 }
