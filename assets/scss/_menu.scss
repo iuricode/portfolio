@@ -1,35 +1,83 @@
-header{
+header {
   background-color: $corSegundariaDark;
-  .larguraMaxContainer{
-    nav{
+  .larguraMaxContainer {
+    nav {
       padding: 0px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 10vh;
-      @media screen and (max-width: 1024px){
+      @media screen and (max-width: 1024px) {
         padding: 0px 25px;
       }
-      .logo{
-        font-size: 1.3rem;
-        font-weight: 600;
+      .logo {
+        font-size: 2rem;
+        font-weight: 500;
         color: $corBranca;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        position: relative;
+        backdrop-filter: blur(10px);
+        transition: all 0.7s ease;
+        background: linear-gradient(
+          225deg,
+          rgba(102, 16, 242, 0.3) 0%,
+          rgba(102, 16, 242, 0) 100%
+        );
+        border: 1px solid;
+        border-image: linear-gradient(
+            225deg,
+            rgba(102, 16, 242, 1) 0%,
+            rgba(102, 16, 242, 0) 100%
+          )
+          1;
+        &:hover {
+          padding: 5px 25px;
+          background: linear-gradient(
+            225deg,
+            rgba(102, 16, 242, 0.6) 0%,
+            rgba(102, 16, 242, 0) 100%
+          );
+        }
+        div {
+          width: 5px;
+          height: 5px;
+          background-color: white;
+          border: 1px solid $corPrincipal;
+          position: absolute;
+        }
+        #quadrado1 {
+          top: -2px;
+          left: -2px;
+        }
+        #quadrado2 {
+          top: -2px;
+          right: -2px;
+        }
+        #quadrado3 {
+          bottom: -2px;
+          left: -2px;
+        }
+        #quadrado4 {
+          bottom: -2px;
+          right: -2px;
+        }
       }
-      .nav-list{
+      .nav-list {
         list-style: none;
         display: flex;
-        li{
+        li {
           margin-left: 50px;
-          a{
+          a {
             color: $corBrancaDark;
-            font-size: 1.1rem;
+            font-size: 1.8rem;
             position: relative;
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               width: 100%;
               transform: scaleX(0);
-              height: 3px;
+              height: 1px;
               bottom: -7px;
               left: 0;
               background-color: $corPrincipal;
@@ -40,7 +88,7 @@ header{
               transform: scaleX(1);
               transform-origin: bottom left;
             }
-            &:hover{
+            &:hover {
               color: $corBranca;
             }
           }
@@ -49,10 +97,10 @@ header{
     }
   }
 }
-.mobile-menu{
+.mobile-menu {
   display: none;
   cursor: pointer;
-  div{
+  div {
     width: 32px;
     height: 2px;
     background-color: $corBranca;
@@ -60,54 +108,51 @@ header{
     transition: 0.3s;
   }
 }
-.nav-list.active{
+.nav-list.active {
   visibility: initial;
   transition: 1s all ease;
 }
-@keyframes navLinkFade{
-  from{
-      opacity: 0;
-      transform: translateX(50px);
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-  to{
-      opacity: 1;
-      transform: translateX(0);
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-.mobile-menu.active .line1{
+.mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
-.mobile-menu.active .line2{
+.mobile-menu.active .line2 {
   opacity: 0;
 }
-.mobile-menu.active .line3{
+.mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-@media screen and (max-width: 1024px){
-  body{
-      overflow-x: hidden;
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
   }
-  .nav-list{
-      position: absolute;
-      top: 10vh;
-      right: 0;
-      width: 60vw;
-      height: 100vh;
-      z-index: 999;
-      background-color: $corSegundariaDark;
-      flex-direction: column;
-      padding: 25px 0px 100px 0px;
-      visibility: hidden;
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: $corSegundariaDark;
+    flex-direction: column;
+    padding: 25px 0px 100px 0px;
+    visibility: hidden;
   }
   header .larguraMaxContainer nav .nav-list li {
-      margin-left: 30px;
-      opacity: 0;
-      margin-bottom: 50px;
+    margin-left: 30px;
+    opacity: 0;
+    margin-bottom: 50px;
   }
-  .mobile-menu{
-      display: block;
+  .mobile-menu {
+    display: block;
   }
 }
-
-
-

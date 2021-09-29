@@ -1,107 +1,14 @@
-/* cyrillic-ext */
 @font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* latin */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
+  font-family: "Circular Std";
+  src: local("Circular Std Medium"), local("Circular-Std-Medium"), url("../fonts/CircularStd.ttf") format("woff2");
   font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: "Fira Code";
   font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0NSDulI.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh2dSDulI.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh0dSDulI.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3tSDulI.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh09SDulI.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9NCBsR6Z2vfE9aq3bh3dSD.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+  font-family: "Circular Std";
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -145,7 +52,7 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+  font-family: "Circular Std";
 }
 
 button:focus,
@@ -154,16 +61,17 @@ input:focus {
 }
 
 body {
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+  font-family: "Circular Std";
   background-color: #fefbfb;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 header {
-  background-color: #202020;
+  background-color: #17161d;
 }
 
 header .larguraMaxContainer nav {
@@ -187,9 +95,53 @@ header .larguraMaxContainer nav {
 }
 
 header .larguraMaxContainer nav .logo {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   color: #fefbfb;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  border: 1px solid;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, rgba(102, 16, 242, 0) 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, rgba(102, 16, 242, 0) 100%) 1;
+}
+
+header .larguraMaxContainer nav .logo:hover {
+  padding: 5px 25px;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
+}
+
+header .larguraMaxContainer nav .logo div {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border: 1px solid #6610f2;
+  position: absolute;
+}
+
+header .larguraMaxContainer nav .logo #quadrado1 {
+  top: -2px;
+  left: -2px;
+}
+
+header .larguraMaxContainer nav .logo #quadrado2 {
+  top: -2px;
+  right: -2px;
+}
+
+header .larguraMaxContainer nav .logo #quadrado3 {
+  bottom: -2px;
+  left: -2px;
+}
+
+header .larguraMaxContainer nav .logo #quadrado4 {
+  bottom: -2px;
+  right: -2px;
 }
 
 header .larguraMaxContainer nav .nav-list {
@@ -204,18 +156,18 @@ header .larguraMaxContainer nav .nav-list li {
 }
 
 header .larguraMaxContainer nav .nav-list li a {
-  color: #f9f9f9;
-  font-size: 1.1rem;
+  color: #c9c9c9;
+  font-size: 1.8rem;
   position: relative;
 }
 
 header .larguraMaxContainer nav .nav-list li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  height: 3px;
+  height: 1px;
   bottom: -7px;
   left: 0;
   background-color: #6610f2;
@@ -309,7 +261,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     width: 60vw;
     height: 100vh;
     z-index: 999;
-    background-color: #202020;
+    background-color: #17161d;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -333,6 +285,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
   opacity: 1;
   -webkit-animation: pisca 1s infinite;
           animation: pisca 1s infinite;
+  color: #6610f2;
 }
 
 @-webkit-keyframes pisca {
@@ -356,18 +309,18 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 .larguraMaxContainer {
-  max-width: 1281px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 main #apresentacaoPortfolio {
-  background-color: #181818;
+  background-color: #131219;
   position: relative;
 }
 
 @media screen and (max-width: 1024px) {
   main #apresentacaoPortfolio {
-    padding: 20px;
+    padding: 0px 20px;
   }
 }
 
@@ -410,44 +363,47 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h1 {
   color: #fefbfb;
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
-  font-size: 2.3rem;
-  font-weight: 600;
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h1 #nome {
+  font-size: 4.8rem;
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
-  background-color: #6610f2;
-  color: #fff;
-  padding: 15px 25px;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  color: #fefbfb;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 15px 30px;
   max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 5px;
-  border: none;
+  border-radius: 4px;
+  border: 1px solid rgba(102, 16, 242, 0.5);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
+  font-family: "Circular Std";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
+  padding: 15px 45px;
   cursor: pointer;
-  background-color: #5429cf;
+  max-width: 280px;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
@@ -515,7 +471,7 @@ main #apresentacaoPortfolio .mouse {
 }
 
 main #sobre {
-  background-color: #202020;
+  background-color: #17161d;
 }
 
 main #sobre .larguraMaxContainer {
@@ -542,7 +498,7 @@ main #sobre .larguraMaxContainer #sobreMim {
 
 main #sobre .larguraMaxContainer #sobreFoto {
   width: 50%;
-  padding-right: 30px;
+  padding-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,7 +538,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #181818;
+  background-color: #131219;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -592,7 +548,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #181818;
+  background-color: #131219;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -602,7 +558,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #181818;
+  background-color: #131219;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -670,9 +626,6 @@ main #sobre .larguraMaxContainer #sobreTexto {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-left: 0px;
   }
 }
@@ -680,13 +633,19 @@ main #sobre .larguraMaxContainer #sobreTexto {
 main #sobre .larguraMaxContainer #sobreTexto h2 {
   padding-bottom: 20px;
   color: #fefbfb;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 500;
+}
+
+main #sobre .larguraMaxContainer #sobreTexto h2 span {
+  color: #6610f2;
+  font-size: 6rem;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p {
   line-height: 30px;
-  color: #f9f9f9;
+  color: #c9c9c9;
+  font-size: 1.6rem;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
@@ -702,37 +661,36 @@ main #sobre .larguraMaxContainer #sobreTexto div {
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a {
-  background-color: #6610f2;
-  color: #fff;
-  padding: 15px 25px;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  color: #fefbfb;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 15px 30px;
   max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 5px;
-  border: none;
+  border-radius: 4px;
+  border: 1px solid rgba(102, 16, 242, 0.5);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  font-family: "Fira Code", monospace, "Montserrat", sans-serif;
-  width: 200px;
+  font-family: "Circular Std";
 }
 
 main #sobre .larguraMaxContainer #sobreTexto div a:hover {
+  padding: 15px 45px;
   cursor: pointer;
-  background-color: #5429cf;
-}
-
-main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
-  margin-right: 20px;
+  max-width: 280px;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
 
 @media screen and (max-width: 480px) {
@@ -740,15 +698,12 @@ main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
     width: 100%;
     max-width: 100%;
   }
-  main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
-    margin-right: 0px;
-  }
 }
 
 main #projetos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #181818;
+  background-color: #131219;
 }
 
 @media screen and (max-width: 1024px) {
@@ -760,8 +715,13 @@ main #projetos {
 main #projetos .larguraMaxContainer h2 {
   padding-bottom: 20px;
   color: #fefbfb;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 500;
+}
+
+main #projetos .larguraMaxContainer h2 span {
+  color: #6610f2;
+  font-size: 6rem;
 }
 
 main #projetos .larguraMaxContainer article {
@@ -784,18 +744,18 @@ main #projetos .larguraMaxContainer article > div {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #202020;
+  background-color: #17161d;
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
-  position: relative;
-  -webkit-transition: 0.8s all ease;
-  transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 2px solid #17161d;
 }
 
 main #projetos .larguraMaxContainer article > div:hover {
-  border: 3px solid #6610f2;
+  border-radius: 5px;
+  border: 2px solid #17161d;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
 }
 
 @media screen and (max-width: 1124px) {
@@ -818,15 +778,16 @@ main #projetos .larguraMaxContainer article > div img {
 }
 
 main #projetos .larguraMaxContainer article > div h3 {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   color: #fefbfb;
+  font-weight: 500;
 }
 
 main #projetos .larguraMaxContainer article > div p {
   line-height: 28px;
-  margin-bottom: 20px;
-  font-size: 1rem;
-  color: #f9f9f9;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #c9c9c9;
 }
 
 main #projetos .larguraMaxContainer article > div > span {
@@ -908,7 +869,7 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto {
 
 main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
   padding: 5px;
-  background-color: #181818;
+  background-color: #131219;
   border-radius: 5px;
   color: #fefbfb;
   margin-bottom: 5px;
@@ -917,12 +878,38 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
 main #projetos .larguraMaxContainer a {
   color: #6610f2;
   font-size: 18px;
+  position: relative;
+}
+
+main #projetos .larguraMaxContainer a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+  background-color: #6610f2;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+main #projetos .larguraMaxContainer a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 main #servicos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #202020;
+  background-color: #17161d;
 }
 
 @media screen and (max-width: 1024px) {
@@ -934,8 +921,13 @@ main #servicos {
 main #servicos .larguraMaxContainer h2 {
   padding-bottom: 20px;
   color: #fefbfb;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 500;
+}
+
+main #servicos .larguraMaxContainer h2 span {
+  color: #6610f2;
+  font-size: 6rem;
 }
 
 main #servicos .larguraMaxContainer article {
@@ -951,7 +943,7 @@ main #servicos .larguraMaxContainer article {
 main #servicos .larguraMaxContainer article div {
   text-align: center;
   height: auto;
-  background-color: #181818;
+  background-color: #131219;
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -960,13 +952,13 @@ main #servicos .larguraMaxContainer article div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-transition: 0.8s all ease;
-  transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 2px solid #17161d;
 }
 
 main #servicos .larguraMaxContainer article div:hover {
-  border: 3px solid #6610f2;
+  border: 2px solid #17161d;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
 }
 
 @media screen and (max-width: 1124px) {
@@ -990,20 +982,21 @@ main #servicos .larguraMaxContainer article div .iconify {
 }
 
 main #servicos .larguraMaxContainer article div h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   padding: 20px 0px;
   color: #fefbfb;
+  font-weight: 500;
 }
 
 main #servicos .larguraMaxContainer article div p {
   line-height: 28px;
-  font-size: 1rem;
-  color: #f9f9f9;
+  font-size: 1.6rem;
+  color: #c9c9c9;
 }
 
 main #conhecimentos {
   padding: 100px 50px;
-  background-color: #181818;
+  background-color: #131219;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1034,6 +1027,11 @@ main #conhecimentos .larguraMaxContainer > div article {
   }
 }
 
+main #conhecimentos .larguraMaxContainer > div article h2 span {
+  color: #6610f2;
+  font-size: 6rem;
+}
+
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,7 +1048,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .c
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
-  border-bottom: 6px solid #6610f2;
+  border-bottom: 4px solid #6610f2;
   cursor: pointer;
 }
 
@@ -1059,8 +1057,8 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 150px;
-  background-color: #202020;
+  height: 130px;
+  background-color: #17161d;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,11 +1085,11 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color: #17161d;
   padding: 5px;
   height: 30px;
   width: 125px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #fefbfb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,6 +1101,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  font-size: 1.8rem;
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes-baixo {
@@ -1111,11 +1110,11 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color: #17161d;
   padding: 5px;
   height: auto;
   width: 125px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #fefbfb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1127,15 +1126,15 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  font-size: 1.8rem;
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .aumento-hover {
   bottom: -75px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .iconify {
-  font-size: 68px;
-  color: #6610f2;
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .icon-conhecimentos {
+  width: 60px;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
@@ -1145,153 +1144,35 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
   margin-bottom: 30px;
   color: #fefbfb;
-  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 500;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
+  font-size: 1.8rem;
   max-width: 500px;
   line-height: 32px;
-  color: #f9f9f9;
+  color: #c9c9c9;
 }
 
-/*
-#contato {
-  background-color: $corBrancaDark;
-  padding: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fieldset{
-    border: none;
-  }
-  #agradecimento{
-    width: 30%;
-    height: 300px;
-    background-color: $corPrincipal;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    text-align: center;
-    position: relative;
-    div{
-      width: 80%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    h2{
-      color: $corBranca;
-    }
-    h4{
-      color: $corBranca;
-    }
-  }
-  #camposContato{
-    background-color: $corBranca;
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
-    padding: 30px;
-    #campoFlex{
-      display: flex;
-      justify-content: space-between;
-    }
-    .campoPadrao{
-      width: 47%;
-    }
-    input{
-      border: none;
-      padding-left: 15px;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    textarea{
-      border: none;
-      background-color: #f0f0f0;
-      padding: 10px 15px;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    .campos{
-      width: 100%;
-      height: 40px;
-      border-radius: 5px;
-       background-color: #f0f0f0;
-    }
-    #captcha{
-      font-size: 20px;
-      float: right;
-      #campo {
-        width: 40px;
-        height: 30px;
-        background-color:#ddd;
-        padding-left: 15px;
-        border-radius: 5px;
-      }
-    }
-  }
-  #campoDois{
-    margin-top: 20px;
-    #campoMensagem{
-      width: 100%;
-      height: 150px;
-      border-radius: 5px;
-    }
-  }
-  #botao{
-    margin-top: 20px;
-    background-color: $corPrincipal;
-    color: $corBranca;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font: {
-      size:18px;
-      weight: 700;
-    }
-    &:hover{
-      background-color: $hoverPrincipal;
-    }
-  }
-}
-@media screen and (max-width:1100px){
-  #contato{
-    padding: 70px 20px;
-    #agradecimento{
-      display: none;
-    }
-    #camposContato{
-      width: 100%;
-    }
-  }
-}
-@media screen and (max-width:650px){
-  #contato{
-    #camposContato{
-       #campoFlex{
-        flex-wrap: wrap;
-        #espacoResponsivo{
-          margin-top: 20px;
-        }
-      }
-      .campoPadrao{
-        width: 100%;
-      }
-    }
-  }
-}*/
 .scrollTop {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background-color: #5429cf;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  border: 1px solid rgba(102, 16, 242, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 15px;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.scrollTop:hover {
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1308,27 +1189,33 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
 footer {
   padding: 50px 10px;
   text-align: center;
-  background-color: #181818;
+  background-color: #131219;
   color: #fefbfb;
 }
 
 footer span {
-  background-color: #202020;
+  background-color: #17161d;
   padding: 10px 20px;
   border-radius: 20px;
   color: #fefbfb;
+  font-size: 1.6rem;
 }
 
 footer span:hover {
   opacity: 1;
 }
 
+footer h2 {
+  color: #fefbfb;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
 footer p {
   color: #fefbfb;
   opacity: 0.5;
   padding: 25px;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.8rem;
 }
 
 footer p:nth-child(2) {
@@ -1337,12 +1224,6 @@ footer p:nth-child(2) {
 
 footer p:nth-child(5) {
   opacity: 1;
-}
-
-@media screen and (max-width: 1024px) {
-  footer p {
-    font-size: 1rem;
-  }
 }
 
 footer div {
@@ -1361,12 +1242,13 @@ footer div {
 }
 
 footer div a {
-  background-color: #202020;
+  background-color: #17161d;
   padding: 15px 25px;
   margin: 10px;
   border-radius: 5px;
   color: #fefbfb;
   opacity: 0.5;
+  font-size: 1.6rem;
 }
 
 footer div a:hover {
