@@ -464,6 +464,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
 }
 
 main #apresentacaoPortfolio .mouse {
+  width: 70px;
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -514,6 +515,10 @@ main #sobre .larguraMaxContainer #sobreFoto {
   transition: 1s all ease;
 }
 
+main #sobre .larguraMaxContainer #sobreFoto #iuricode {
+  width: 400px;
+}
+
 main #sobre .larguraMaxContainer #sobreFoto:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -531,8 +536,8 @@ main #sobre .larguraMaxContainer #sobreFoto div {
           justify-content: center;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto div .iconify {
-  font-size: 48px;
+main #sobre .larguraMaxContainer #sobreFoto div img {
+  width: 45px;
 }
 
 main #sobre .larguraMaxContainer #sobreFoto #figura1 {

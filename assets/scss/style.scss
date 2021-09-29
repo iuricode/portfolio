@@ -103,6 +103,7 @@ main {
       }
     }
     .mouse {
+      width: 70px;
       position: absolute;
       bottom: 30px;
       left: 50%;
@@ -131,6 +132,9 @@ main {
         justify-content: center;
         position: relative;
         transition: 1s all ease;
+        #iuricode {
+          width: 400px;
+        }
         &:hover {
           transform: scale(1.1);
         }
@@ -138,8 +142,8 @@ main {
           display: flex;
           align-items: center;
           justify-content: center;
-          .iconify {
-            font-size: 48px;
+          img {
+            width: 45px;
           }
         }
         #figura1 {
