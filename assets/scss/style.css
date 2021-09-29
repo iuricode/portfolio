@@ -3,6 +3,7 @@
   src: local("Circular Std Medium"), local("Circular-Std-Medium"), url("../fonts/CircularStd.ttf") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -961,6 +962,11 @@ main #servicos .larguraMaxContainer article div:hover {
      border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
 }
 
+main #servicos .larguraMaxContainer article div .image-servicos {
+  width: 100px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1124px) {
   main #servicos .larguraMaxContainer article div {
     -ms-flex-preferred-size: calc(50% - 20px);
@@ -1181,9 +1187,8 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   }
 }
 
-.scrollTop .iconify {
-  font-size: 26px;
-  color: #fefbfb;
+.scrollTop img {
+  width: 30px;
 }
 
 footer {

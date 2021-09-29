@@ -413,6 +413,10 @@ main {
               )
               1;
           }
+          .image-servicos {
+            width: 100px;
+            margin: 0 auto;
+          }
           @media screen and (max-width: 1124px) {
             flex-basis: calc(50% - 20px);
           }
@@ -581,9 +585,8 @@ main {
   @media screen and (max-width: 1024px) {
     display: none;
   }
-  .iconify {
-    font-size: 26px;
-    color: $corBranca;
+  img {
+    width: 30px;
   }
 }
 
