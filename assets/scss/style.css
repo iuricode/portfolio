@@ -1166,36 +1166,6 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   color: #c9c9c9;
 }
 
-.scrollTop {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-  border: 1px solid rgba(102, 16, 242, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  padding: 15px;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.scrollTop:hover {
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
-}
-
-@media screen and (max-width: 1024px) {
-  .scrollTop {
-    display: none;
-  }
-}
-
-.scrollTop img {
-  width: 30px;
-}
-
 footer {
   padding: 50px 10px;
   text-align: center;

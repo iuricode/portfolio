@@ -55,32 +55,6 @@ function typeWrite(elemento) {
 const titulo = document.querySelector(".maquina-escrever");
 typeWrite(titulo);
 
-//Scroll TOP
-$(document).ready(function () {
-  var scrollTop = $(".scrollTop");
-
-  $(window).scroll(function () {
-    var topPos = $(this).scrollTop();
-    //Quantidade Y que o botão de scroll vai aparecer
-    if (topPos > 500) {
-      $(scrollTop).css("opacity", "1");
-    } else {
-      $(scrollTop).css("opacity", "0");
-    }
-  });
-
-  //Velocidade a animação
-  $(scrollTop).click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      100
-    );
-    return false;
-  });
-});
-
 //Revelar animação
 const sr = ScrollReveal({
   origin: "top",
@@ -153,13 +127,3 @@ for (i = 0; i < sairCaixa.length; i++) {
     texto1.innerHTML = `Estou convencido de que juntos alcançaremos coisas incríveis.💜<br><br>*passe o mouse no card para ler sobre*`;
   });
 }
-
-/*
-//Validação captcha do contato
-valor = document.getElementById('campo').value
-
-function testar() {
-    if (valor != 'g') {
-        alert('Complete o nome "google" com uma letra para enviar!')
-    }
-}*/
