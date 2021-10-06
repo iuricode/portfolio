@@ -52,7 +52,7 @@ main {
           text-align: center;
           padding: 0px;
         }
-        h1 {
+        h2 {
           color: $corBranca;
           font: {
             size: 1.8rem;
@@ -76,7 +76,7 @@ main {
           width: 100%;
           max-width: 600px;
           position: absolute;
-          top: 0;
+          top: 10vh;
           right: 0;
           @media screen and (max-width: 1024px) {
             display: none;
@@ -253,13 +253,13 @@ main {
           font-size: 6rem;
         }
       }
-      article {
+      div {
         margin: 25px 0px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         text-align: left;
-        > div {
+        > article {
           height: auto;
           flex-grow: 1;
           flex-basis: calc(33% - 20px);
@@ -393,12 +393,12 @@ main {
           font-size: 6rem;
         }
       }
-      article {
+      div {
         display: flex;
         height: auto;
         flex-wrap: wrap;
         margin: 25px 0px;
-        div {
+        article {
           text-align: center;
           height: auto;
           background-color: $corPrincipalDark;
@@ -450,10 +450,10 @@ main {
 
   //Conhecimentos
   #conhecimentos {
-    padding: 100px 50px;
+    padding: 100px 75px;
     background-color: $corPrincipalDark;
     @media screen and (max-width: 1024px) {
-      padding: 50px 20px 100px 20px;
+      padding: 75px 20px 100px 20px;
     }
     .larguraMaxContainer {
       > div {
@@ -461,6 +461,7 @@ main {
         justify-content: space-between;
         height: auto;
         flex-wrap: wrap;
+        div,
         article {
           width: 50%;
           @media screen and (max-width: 1124px) {
@@ -477,21 +478,32 @@ main {
           display: flex;
           flex-wrap: wrap;
           gap: 20px;
-          div:hover .cards-nomes,
-          div:hover .cards-nomes-baixo {
+          @media screen and (max-width: 1124px) {
+            margin-top: 50px;
+          }
+          article:hover .cards-nomes,
+          article:hover .cards-nomes-baixo {
             display: block;
             text-align: center;
           }
-          div:hover {
-            border-bottom: 4px solid $corPrincipal;
-            cursor: pointer;
+          article:hover {
+            border: 2px solid $corSegundariaDark;
+            &:hover {
+              border: 2px solid $corSegundariaDark;
+              border-image: linear-gradient(
+                  225deg,
+                  rgba(102, 16, 242, 1) 0%,
+                  $corSegundariaDark 100%
+                )
+                1;
+            }
           }
-          div {
+          article {
             width: 20%;
             flex-grow: 1;
             height: 130px;
             background-color: $corSegundariaDark;
-            border-radius: 10px;
+            border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -568,7 +580,7 @@ footer {
   text-align: center;
   background-color: $corPrincipalDark;
   color: $corBranca;
-  span {
+  > a {
     background-color: $corSegundariaDark;
     padding: 10px 20px;
     border-radius: 20px;

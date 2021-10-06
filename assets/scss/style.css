@@ -86,6 +86,11 @@ html {
 
 header {
   background-color: #17161d;
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header .larguraMaxContainer nav {
@@ -377,13 +382,13 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h1 {
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
   color: #fefbfb;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h1 #nome {
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
   font-size: 4.8rem;
 }
 
@@ -435,7 +440,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #fundo {
   width: 100%;
   max-width: 600px;
   position: absolute;
-  top: 0;
+  top: 10vh;
   right: 0;
 }
 
@@ -743,7 +748,7 @@ main #projetos .larguraMaxContainer h2 span {
   font-size: 6rem;
 }
 
-main #projetos .larguraMaxContainer article {
+main #projetos .larguraMaxContainer div {
   margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,7 +761,7 @@ main #projetos .larguraMaxContainer article {
   text-align: left;
 }
 
-main #projetos .larguraMaxContainer article > div {
+main #projetos .larguraMaxContainer div > article {
   height: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -770,7 +775,7 @@ main #projetos .larguraMaxContainer article > div {
   border: 2px solid #17161d;
 }
 
-main #projetos .larguraMaxContainer article > div:hover {
+main #projetos .larguraMaxContainer div > article:hover {
   border-radius: 5px;
   border: 2px solid #17161d;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
@@ -778,38 +783,38 @@ main #projetos .larguraMaxContainer article > div:hover {
 }
 
 @media screen and (max-width: 1124px) {
-  main #projetos .larguraMaxContainer article > div {
+  main #projetos .larguraMaxContainer div > article {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #projetos .larguraMaxContainer article > div {
+  main #projetos .larguraMaxContainer div > article {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #projetos .larguraMaxContainer article > div img {
+main #projetos .larguraMaxContainer div > article img {
   margin: 20px 0;
   border-radius: 5px;
 }
 
-main #projetos .larguraMaxContainer article > div h3 {
+main #projetos .larguraMaxContainer div > article h3 {
   font-size: 2.4rem;
   color: #fefbfb;
   font-weight: 500;
 }
 
-main #projetos .larguraMaxContainer article > div p {
+main #projetos .larguraMaxContainer div > article p {
   line-height: 28px;
   margin-top: 20px;
   font-size: 1.6rem;
   color: #c9c9c9;
 }
 
-main #projetos .larguraMaxContainer article > div > span {
+main #projetos .larguraMaxContainer div > article > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,17 +829,17 @@ main #projetos .larguraMaxContainer article > div > span {
   width: 100%;
 }
 
-main #projetos .larguraMaxContainer article > div > span a {
+main #projetos .larguraMaxContainer div > article > span a {
   width: 50%;
 }
 
 @media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer article > div > span a {
+  main #projetos .larguraMaxContainer div > article > span a {
     width: 100%;
   }
 }
 
-main #projetos .larguraMaxContainer article > div > span button {
+main #projetos .larguraMaxContainer div > article > span button {
   background-color: #6610f2;
   padding: 10px 25px;
   color: #fefbfb;
@@ -852,7 +857,7 @@ main #projetos .larguraMaxContainer article > div > span button {
 }
 
 @media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer article > div > span button {
+  main #projetos .larguraMaxContainer div > article > span button {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -860,16 +865,16 @@ main #projetos .larguraMaxContainer article > div > span button {
   }
 }
 
-main #projetos .larguraMaxContainer article > div > span button:hover {
+main #projetos .larguraMaxContainer div > article > span button:hover {
   cursor: pointer;
   background-color: #5429cf;
 }
 
-main #projetos .larguraMaxContainer article > div > span button .iconify {
+main #projetos .larguraMaxContainer div > article > span button .iconify {
   font-size: 20px;
 }
 
-main #projetos .larguraMaxContainer article > div .linguagensProjeto {
+main #projetos .larguraMaxContainer div > article .linguagensProjeto {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -886,7 +891,7 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto {
   height: auto;
 }
 
-main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
+main #projetos .larguraMaxContainer div > article .linguagensProjeto span {
   padding: 5px;
   background-color: #131219;
   border-radius: 5px;
@@ -949,7 +954,7 @@ main #servicos .larguraMaxContainer h2 span {
   font-size: 6rem;
 }
 
-main #servicos .larguraMaxContainer article {
+main #servicos .larguraMaxContainer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,7 +964,7 @@ main #servicos .larguraMaxContainer article {
   margin: 25px 0px;
 }
 
-main #servicos .larguraMaxContainer article div {
+main #servicos .larguraMaxContainer div article {
   text-align: center;
   height: auto;
   background-color: #131219;
@@ -974,58 +979,58 @@ main #servicos .larguraMaxContainer article div {
   border: 2px solid #17161d;
 }
 
-main #servicos .larguraMaxContainer article div:hover {
+main #servicos .larguraMaxContainer div article:hover {
   border: 2px solid #17161d;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
 }
 
-main #servicos .larguraMaxContainer article div .image-servicos {
+main #servicos .larguraMaxContainer div article .image-servicos {
   width: 100px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1124px) {
-  main #servicos .larguraMaxContainer article div {
+  main #servicos .larguraMaxContainer div article {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #servicos .larguraMaxContainer article div {
+  main #servicos .larguraMaxContainer div article {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #servicos .larguraMaxContainer article div .iconify {
+main #servicos .larguraMaxContainer div article .iconify {
   color: #6610f2;
   font-size: 50px;
   margin: 10px 0px;
 }
 
-main #servicos .larguraMaxContainer article div h3 {
+main #servicos .larguraMaxContainer div article h3 {
   font-size: 1.8rem;
   padding: 20px 0px;
   color: #fefbfb;
   font-weight: 500;
 }
 
-main #servicos .larguraMaxContainer article div p {
+main #servicos .larguraMaxContainer div article p {
   line-height: 28px;
   font-size: 1.6rem;
   color: #c9c9c9;
 }
 
 main #conhecimentos {
-  padding: 100px 50px;
+  padding: 100px 75px;
   background-color: #131219;
 }
 
 @media screen and (max-width: 1024px) {
   main #conhecimentos {
-    padding: 50px 20px 100px 20px;
+    padding: 75px 20px 100px 20px;
   }
 }
 
@@ -1041,16 +1046,19 @@ main #conhecimentos .larguraMaxContainer > div {
       flex-wrap: wrap;
 }
 
+main #conhecimentos .larguraMaxContainer > div div,
 main #conhecimentos .larguraMaxContainer > div article {
   width: 50%;
 }
 
 @media screen and (max-width: 1124px) {
+  main #conhecimentos .larguraMaxContainer > div div,
   main #conhecimentos .larguraMaxContainer > div article {
     width: 100%;
   }
 }
 
+main #conhecimentos .larguraMaxContainer > div div h2 span,
 main #conhecimentos .larguraMaxContainer > div article h2 span {
   color: #6610f2;
   font-size: 6rem;
@@ -1065,25 +1073,36 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
   gap: 20px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .cards-nomes,
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .cards-nomes-baixo {
+@media screen and (max-width: 1124px) {
+  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
+    margin-top: 50px;
+  }
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover .cards-nomes,
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover .cards-nomes-baixo {
   display: block;
   text-align: center;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
-  border-bottom: 4px solid #6610f2;
-  cursor: pointer;
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
+  border: 2px solid #17161d;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:hover {
+  border: 2px solid #17161d;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
   width: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 130px;
   background-color: #17161d;
-  border-radius: 10px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,13 +1116,13 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
 }
 
 @media screen and (max-width: 768px) {
-  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
+  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
     width: 40%;
     margin: 20px 0px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .cards-nomes {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -1128,7 +1147,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   font-size: 1.8rem;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes-baixo {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .cards-nomes-baixo {
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -1153,11 +1172,11 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   font-size: 1.8rem;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .aumento-hover {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .aumento-hover {
   bottom: -75px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .icon-conhecimentos {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .icon-conhecimentos {
   width: 60px;
 }
 
@@ -1186,7 +1205,7 @@ footer {
   color: #fefbfb;
 }
 
-footer span {
+footer > a {
   background-color: #17161d;
   padding: 10px 20px;
   border-radius: 20px;
@@ -1194,7 +1213,7 @@ footer span {
   font-size: 1.6rem;
 }
 
-footer span:hover {
+footer > a:hover {
   opacity: 1;
 }
 

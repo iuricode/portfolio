@@ -1,5 +1,10 @@
 header {
   background-color: $corSegundariaDark;
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   .larguraMaxContainer {
     nav {
       padding: 0px 50px;
