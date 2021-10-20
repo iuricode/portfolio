@@ -44,7 +44,7 @@ header {
             rgba(102, 16, 242, 0) 100%
           );
         }
-        div {
+        span {
           width: 5px;
           height: 5px;
           background-color: white;
@@ -141,21 +141,24 @@ header {
     overflow-x: hidden;
   }
   .nav-list {
+    text-align: center;
     position: absolute;
     top: 10vh;
     right: 0;
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
     z-index: 999;
     background-color: $corSegundariaDark;
     flex-direction: column;
-    padding: 25px 0px 100px 0px;
+    padding-top: 100px;
     visibility: hidden;
   }
   header .larguraMaxContainer nav .nav-list li {
-    margin-left: 30px;
     opacity: 0;
-    margin-bottom: 50px;
+    margin: 0px 0px 50px 0px;
+    a{
+      font-size: 2.4rem;
+    }
   }
   .mobile-menu {
     display: block;

@@ -135,7 +135,7 @@ header .larguraMaxContainer nav .logo:hover {
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
 
-header .larguraMaxContainer nav .logo div {
+header .larguraMaxContainer nav .logo span {
   width: 5px;
   height: 5px;
   background-color: white;
@@ -274,10 +274,11 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     overflow-x: hidden;
   }
   .nav-list {
+    text-align: center;
     position: absolute;
     top: 10vh;
     right: 0;
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
     z-index: 999;
     background-color: #17161d;
@@ -285,13 +286,15 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 25px 0px 100px 0px;
+    padding-top: 100px;
     visibility: hidden;
   }
   header .larguraMaxContainer nav .nav-list li {
-    margin-left: 30px;
     opacity: 0;
-    margin-bottom: 50px;
+    margin: 0px 0px 50px 0px;
+  }
+  header .larguraMaxContainer nav .nav-list li a {
+    font-size: 2.4rem;
   }
   .mobile-menu {
     display: block;
