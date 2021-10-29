@@ -55,11 +55,17 @@ main {
         h2 {
           color: $corBranca;
           font: {
-            size: 1.8rem;
+            size: 2.4rem;
             weight: 500;
+            family: $fontSecundaria;
           }
           #nome {
-            font-size: 4.8rem;
+            font-size: 5.4rem;
+          }
+          .maquina-escrever {
+            font: {
+              family: $fontSecundaria;
+            }
           }
         }
         a {
@@ -204,7 +210,6 @@ main {
           width: 100%;
           display: flex;
           flex-direction: column;
-
           padding-left: 0px;
         }
         h2 {
@@ -215,22 +220,14 @@ main {
           }
         }
         p {
-          line-height: 30px;
+          line-height: 3.2rem;
           color: $corBrancaDark;
-          font-size: 1.6rem;
+          font: {
+            family: $fontSecundaria;
+            size: 1.8rem;
+          }
           &:nth-child(2) {
             padding-bottom: 20px;
-          }
-        }
-        div {
-          display: flex;
-          flex-wrap: wrap;
-          a {
-            @include botao();
-            @media screen and (max-width: 480px) {
-              width: 100%;
-              max-width: 100%;
-            }
           }
         }
       }
@@ -296,8 +293,11 @@ main {
           p {
             line-height: 28px;
             margin-top: 20px;
-            font-size: 1.6rem;
             color: $corBrancaDark;
+            font: {
+              family: $fontSecundaria;
+              size: 1.6rem;
+            }
           }
           > span {
             display: flex;
@@ -365,7 +365,7 @@ main {
           height: 1px;
           bottom: -7px;
           left: 0;
-          background-color: $corPrincipal;
+          background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
           transform-origin: bottom right;
           transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
         }
@@ -440,8 +440,11 @@ main {
           }
           p {
             line-height: 28px;
-            font-size: 1.6rem;
             color: $corBrancaDark;
+            font: {
+              family: $fontSecundaria;
+              size: 1.6rem;
+            }
           }
         }
       }
@@ -488,14 +491,61 @@ main {
           }
           article:hover {
             border: 2px solid $corSegundariaDark;
-            &:hover {
-              border: 2px solid $corSegundariaDark;
-              border-image: linear-gradient(
-                  225deg,
-                  rgba(102, 16, 242, 1) 0%,
-                  $corSegundariaDark 100%
-                )
-                1;
+          }
+          article:before,
+          article:after {
+            content: "";
+            position: absolute;
+            border: 2px solid transparent;
+            height: 0;
+            width: 0;
+            top: 0px;
+            right: 0px;
+          }
+
+          article:hover {
+            animation: buttonColorChange 1s ease-out forwards;
+          }
+
+          article:hover:before {
+            animation: buttonBeforeColorChange 1s ease-out forwards;
+          }
+
+          article:hover:after {
+            animation: buttonAfterColorChange 1s ease-out forwards;
+          }
+
+          @keyframes buttonColorChange {
+            100% {
+              color: $corPrincipal;
+            }
+          }
+
+          @keyframes buttonBeforeColorChange {
+            50% {
+              width: 100%;
+              height: 0%;
+              border-top-color: $corPrincipal;
+            }
+            100% {
+              width: 100%;
+              height: 100%;
+              border-top-color: $corPrincipal;
+              border-left-color: $corPrincipal;
+            }
+          }
+
+          @keyframes buttonAfterColorChange {
+            50% {
+              width: 0%;
+              height: 100%;
+              border-right-color: $corPrincipal;
+            }
+            100% {
+              width: 100%;
+              height: 100%;
+              border-right-color: $corPrincipal;
+              border-bottom-color: $corPrincipal;
             }
           }
           article {
@@ -508,6 +558,7 @@ main {
             justify-content: center;
             align-items: center;
             position: relative;
+
             @media screen and (max-width: 768px) {
               width: 40%;
               margin: 20px 0px;
@@ -563,10 +614,13 @@ main {
             font-weight: 500;
           }
           p {
-            font-size: 1.8rem;
             max-width: 500px;
             line-height: 32px;
             color: $corBrancaDark;
+            font: {
+              family: $fontSecundaria;
+              size: 1.8rem;
+            }
           }
         }
       }
@@ -599,7 +653,10 @@ footer {
     color: $corBranca;
     opacity: 0.5;
     padding: 25px;
-    font-size: 1.8rem;
+    font: {
+      family: $fontSecundaria;
+      size: 1.8rem;
+    }
     &:nth-child(2) {
       margin-bottom: 25px;
     }

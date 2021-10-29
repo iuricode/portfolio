@@ -60,7 +60,6 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
   duration: 2000,
-  reset: true,
 });
 
 //Home delay
@@ -95,35 +94,35 @@ document.querySelector(".js").addEventListener("mouseover", function () {
 
 document.querySelector(".tailwind").addEventListener("mouseover", function () {
   texto1.innerHTML =
-    "Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe. <br><br> 1 mês de experiência";
+    "Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe. <br><br> 2 meses de experiência";
 });
 
 document.querySelector(".sass").addEventListener("mouseover", function () {
   texto1.innerHTML =
-    "Sass (o pré-processador) é uma linguagem de folhas de estilo. É uma simples linguagem de script usada em arquivos Sass. <br><br> 8 meses de experiência";
+    "Sass (o pré-processador) é uma linguagem de folhas de estilo. É uma simples linguagem de script usada em arquivos Sass. <br><br> 9 meses de experiência";
 });
 
 document.querySelector(".react").addEventListener("mouseover", function () {
   texto1.innerHTML =
-    "React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. <br><br> 3 meses de experiência";
+    "React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. <br><br> 4 meses de experiência";
 });
 
 document.querySelector(".next").addEventListener("mouseover", function () {
   texto1.innerHTML =
-    "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React. <br><br> 3 meses de experiência";
+    "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React. <br><br> 4 meses de experiência";
 });
 
 document
   .querySelector(".styled")
   .addEventListener("mouseover", function mudarTexto8() {
     texto1.innerHTML =
-      "Styled Components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. <br><br> 3 meses de experiência";
+      "Styled Components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. <br><br> 4 meses de experiência";
   });
 
 var sairCaixa = document.getElementsByClassName("sairCaixa");
 
 for (i = 0; i < sairCaixa.length; i++) {
   sairCaixa[i].addEventListener("mouseout", function mudarTextoNormal() {
-    texto1.innerHTML = `Estou convencido de que juntos alcançaremos coisas incríveis.💜<br><br>*passe o mouse no card para ler sobre*`;
+    texto1.innerHTML = `*passe o mouse no card para ler*`;
   });
 }

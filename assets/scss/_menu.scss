@@ -15,58 +15,8 @@ header {
       @media screen and (max-width: 1024px) {
         padding: 0px 25px;
       }
-      .logo {
-        font-size: 2rem;
-        font-weight: 500;
-        color: $corBranca;
-        text-transform: uppercase;
-        padding: 5px 15px;
-        position: relative;
-        backdrop-filter: blur(10px);
-        transition: all 0.7s ease;
-        background: linear-gradient(
-          225deg,
-          rgba(102, 16, 242, 0.3) 0%,
-          rgba(102, 16, 242, 0) 100%
-        );
-        border: 1px solid;
-        border-image: linear-gradient(
-            225deg,
-            rgba(102, 16, 242, 1) 0%,
-            rgba(102, 16, 242, 0) 100%
-          )
-          1;
-        &:hover {
-          padding: 5px 25px;
-          background: linear-gradient(
-            225deg,
-            rgba(102, 16, 242, 0.6) 0%,
-            rgba(102, 16, 242, 0) 100%
-          );
-        }
-        span {
-          width: 5px;
-          height: 5px;
-          background-color: white;
-          border: 1px solid $corPrincipal;
-          position: absolute;
-        }
-        #quadrado1 {
-          top: -2px;
-          left: -2px;
-        }
-        #quadrado2 {
-          top: -2px;
-          right: -2px;
-        }
-        #quadrado3 {
-          bottom: -2px;
-          left: -2px;
-        }
-        #quadrado4 {
-          bottom: -2px;
-          right: -2px;
-        }
+      img {
+        width: 150px;
       }
       .nav-list {
         list-style: none;
@@ -75,8 +25,11 @@ header {
           margin-left: 50px;
           a {
             color: $corBrancaDark;
-            font-size: 1.8rem;
+            font-size: 2rem;
             position: relative;
+            font: {
+              family: $fontSecundaria;
+            }
             &::after {
               content: "";
               position: absolute;
@@ -85,7 +38,7 @@ header {
               height: 1px;
               bottom: -7px;
               left: 0;
-              background-color: $corPrincipal;
+              background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
               transform-origin: bottom right;
               transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
             }
@@ -156,7 +109,7 @@ header {
   header .larguraMaxContainer nav .nav-list li {
     opacity: 0;
     margin: 0px 0px 50px 0px;
-    a{
+    a {
       font-size: 2.4rem;
     }
   }

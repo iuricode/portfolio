@@ -7,8 +7,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Circular Std Book";
+  src: local("Circular Std Book"), local("Circular-Std-Book"),
+    url("../fonts/CircularStd-Book.ttf") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
 //Fonte
 $fontPrincipal: "Circular Std";
+$fontSecundaria: "Circular Std Book";
 //Cores
 $corPrincipal: #6610f2;
 //Hover
@@ -53,7 +62,7 @@ $corSegundariaDark: #17161d;
   font: {
     size: 18px;
     weight: 500;
-    family: $fontPrincipal;
+    family: $fontSecundaria;
   }
   &:hover {
     padding: 15px 45px;

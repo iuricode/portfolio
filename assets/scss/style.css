@@ -6,6 +6,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Circular Std Book";
+  src: local("Circular Std Book"), local("Circular-Std-Book"), url("../fonts/CircularStd-Book.ttf") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -72,7 +79,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -81,7 +88,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: #6610f2;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 header {
@@ -113,54 +120,8 @@ header .larguraMaxContainer nav {
   }
 }
 
-header .larguraMaxContainer nav .logo {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fefbfb;
-  text-transform: uppercase;
-  padding: 5px 15px;
-  position: relative;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-  border: 1px solid;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, rgba(102, 16, 242, 0) 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, rgba(102, 16, 242, 0) 100%) 1;
-}
-
-header .larguraMaxContainer nav .logo:hover {
-  padding: 5px 25px;
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
-}
-
-header .larguraMaxContainer nav .logo span {
-  width: 5px;
-  height: 5px;
-  background-color: white;
-  border: 1px solid #6610f2;
-  position: absolute;
-}
-
-header .larguraMaxContainer nav .logo #quadrado1 {
-  top: -2px;
-  left: -2px;
-}
-
-header .larguraMaxContainer nav .logo #quadrado2 {
-  top: -2px;
-  right: -2px;
-}
-
-header .larguraMaxContainer nav .logo #quadrado3 {
-  bottom: -2px;
-  left: -2px;
-}
-
-header .larguraMaxContainer nav .logo #quadrado4 {
-  bottom: -2px;
-  right: -2px;
+header .larguraMaxContainer nav img {
+  width: 150px;
 }
 
 header .larguraMaxContainer nav .nav-list {
@@ -176,8 +137,9 @@ header .larguraMaxContainer nav .nav-list li {
 
 header .larguraMaxContainer nav .nav-list li a {
   color: #c9c9c9;
-  font-size: 1.8rem;
+  font-size: 2rem;
   position: relative;
+  font-family: "Circular Std Book";
 }
 
 header .larguraMaxContainer nav .nav-list li a::after {
@@ -189,7 +151,8 @@ header .larguraMaxContainer nav .nav-list li a::after {
   height: 1px;
   bottom: -7px;
   left: 0;
-  background-color: #6610f2;
+  background: -webkit-gradient(linear, right top, left top, from(#6610f2), to(#17161d));
+  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -387,12 +350,17 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
   color: #fefbfb;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 500;
+  font-family: "Circular Std Book";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
-  font-size: 4.8rem;
+  font-size: 5.4rem;
+}
+
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 .maquina-escrever {
+  font-family: "Circular Std Book";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
@@ -418,7 +386,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   margin-top: 30px;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Circular Std";
+  font-family: "Circular Std Book";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
@@ -670,61 +638,14 @@ main #sobre .larguraMaxContainer #sobreTexto h2 span {
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p {
-  line-height: 30px;
+  line-height: 3.2rem;
   color: #c9c9c9;
-  font-size: 1.6rem;
+  font-family: "Circular Std Book";
+  font-size: 1.8rem;
 }
 
 main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
   padding-bottom: 20px;
-}
-
-main #sobre .larguraMaxContainer #sobreTexto div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main #sobre .larguraMaxContainer #sobreTexto div a {
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-  color: #fefbfb;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  padding: 15px 30px;
-  max-width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 4px;
-  border: 1px solid rgba(102, 16, 242, 0.5);
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  margin-top: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Circular Std";
-}
-
-main #sobre .larguraMaxContainer #sobreTexto div a:hover {
-  padding: 15px 45px;
-  cursor: pointer;
-  max-width: 280px;
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
-}
-
-@media screen and (max-width: 480px) {
-  main #sobre .larguraMaxContainer #sobreTexto div a {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 main #projetos {
@@ -813,8 +734,9 @@ main #projetos .larguraMaxContainer div > article h3 {
 main #projetos .larguraMaxContainer div > article p {
   line-height: 28px;
   margin-top: 20px;
-  font-size: 1.6rem;
   color: #c9c9c9;
+  font-family: "Circular Std Book";
+  font-size: 1.6rem;
 }
 
 main #projetos .larguraMaxContainer div > article > span {
@@ -917,7 +839,8 @@ main #projetos .larguraMaxContainer a::after {
   height: 1px;
   bottom: -7px;
   left: 0;
-  background-color: #6610f2;
+  background: -webkit-gradient(linear, right top, left top, from(#6610f2), to(#17161d));
+  background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1022,8 +945,9 @@ main #servicos .larguraMaxContainer div article h3 {
 
 main #servicos .larguraMaxContainer div article p {
   line-height: 28px;
-  font-size: 1.6rem;
   color: #c9c9c9;
+  font-family: "Circular Std Book";
+  font-size: 1.6rem;
 }
 
 main #conhecimentos {
@@ -1092,10 +1016,98 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hove
   border: 2px solid #17161d;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:hover {
-  border: 2px solid #17161d;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:before,
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:after {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0px;
+  right: 0px;
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
+  -webkit-animation: buttonColorChange 1s ease-out forwards;
+          animation: buttonColorChange 1s ease-out forwards;
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:before {
+  -webkit-animation: buttonBeforeColorChange 1s ease-out forwards;
+          animation: buttonBeforeColorChange 1s ease-out forwards;
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:after {
+  -webkit-animation: buttonAfterColorChange 1s ease-out forwards;
+          animation: buttonAfterColorChange 1s ease-out forwards;
+}
+
+@-webkit-keyframes buttonColorChange {
+  100% {
+    color: #6610f2;
+  }
+}
+
+@keyframes buttonColorChange {
+  100% {
+    color: #6610f2;
+  }
+}
+
+@-webkit-keyframes buttonBeforeColorChange {
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: #6610f2;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #6610f2;
+    border-left-color: #6610f2;
+  }
+}
+
+@keyframes buttonBeforeColorChange {
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: #6610f2;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #6610f2;
+    border-left-color: #6610f2;
+  }
+}
+
+@-webkit-keyframes buttonAfterColorChange {
+  50% {
+    width: 0%;
+    height: 100%;
+    border-right-color: #6610f2;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-right-color: #6610f2;
+    border-bottom-color: #6610f2;
+  }
+}
+
+@keyframes buttonAfterColorChange {
+  50% {
+    width: 0%;
+    height: 100%;
+    border-right-color: #6610f2;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-right-color: #6610f2;
+    border-bottom-color: #6610f2;
+  }
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
@@ -1195,10 +1207,11 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
-  font-size: 1.8rem;
   max-width: 500px;
   line-height: 32px;
   color: #c9c9c9;
+  font-family: "Circular Std Book";
+  font-size: 1.8rem;
 }
 
 footer {
@@ -1230,6 +1243,7 @@ footer p {
   color: #fefbfb;
   opacity: 0.5;
   padding: 25px;
+  font-family: "Circular Std Book";
   font-size: 1.8rem;
 }
 

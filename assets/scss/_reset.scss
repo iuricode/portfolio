@@ -50,12 +50,12 @@ html {
   font-size: 62.5%;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 ::-webkit-scrollbar-track {
   background-color: $corPrincipalDark;
 }
 ::-webkit-scrollbar-thumb {
   background-color: $corPrincipal;
-  border-radius: 4px;
+  border-radius: 8px;
 }
