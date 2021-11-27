@@ -123,6 +123,6 @@ var sairCaixa = document.getElementsByClassName("sairCaixa");
 
 for (i = 0; i < sairCaixa.length; i++) {
   sairCaixa[i].addEventListener("mouseout", function mudarTextoNormal() {
-    texto1.innerHTML = `*passe o mouse no card para ler*`;
+    texto1.innerHTML = `*passe o cursor no card para ler*`;
   });
 }

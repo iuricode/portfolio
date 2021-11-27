@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   font-family: $fontPrincipal;
-  user-select: none;
 }
 *,
 ::before,
@@ -18,6 +17,7 @@ ol {
 }
 a {
   text-decoration: none;
+  cursor: url("../image/cursor-pointer.svg"), pointer;
 }
 img {
   max-width: 100%;
@@ -48,14 +48,15 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  cursor: url("../image/cursor.svg"), auto;
 }
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background-color: $corPrincipalDark;
 }
 ::-webkit-scrollbar-thumb {
   background-color: $corPrincipal;
-  border-radius: 8px;
+  border-radius: 6px;
 }

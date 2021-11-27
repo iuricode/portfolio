@@ -1,5 +1,8 @@
 header {
-  background-color: $corSegundariaDark;
+  background: rgba (14,9,27, 0.6);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -11,7 +14,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 10vh;
+      height: 8vh;
       @media screen and (max-width: 1024px) {
         padding: 0px 25px;
       }
@@ -28,7 +31,7 @@ header {
             font-size: 2rem;
             position: relative;
             font: {
-              family: $fontSecundaria;
+              family: $fontPrincipal;
             }
             &::after {
               content: "";
@@ -57,7 +60,6 @@ header {
 }
 .mobile-menu {
   display: none;
-  cursor: pointer;
   div {
     width: 32px;
     height: 2px;
@@ -96,7 +98,7 @@ header {
   .nav-list {
     text-align: center;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     right: 0;
     width: 100vw;
     height: 100vh;

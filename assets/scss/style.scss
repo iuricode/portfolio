@@ -55,12 +55,12 @@ main {
         h2 {
           color: $corBranca;
           font: {
-            size: 2.4rem;
+            size: 2.5rem;
             weight: 500;
             family: $fontSecundaria;
           }
           #nome {
-            font-size: 5.4rem;
+            font-size: 5.6rem;
           }
           .maquina-escrever {
             font: {
@@ -82,7 +82,7 @@ main {
           width: 100%;
           max-width: 600px;
           position: absolute;
-          top: 10vh;
+          top: 8vh;
           right: 0;
           @media screen and (max-width: 1024px) {
             display: none;
@@ -327,7 +327,6 @@ main {
                 justify-content: center;
               }
               &:hover {
-                cursor: pointer;
                 background-color: $hoverPrincipal;
               }
               .iconify {
@@ -489,65 +488,6 @@ main {
             display: block;
             text-align: center;
           }
-          article:hover {
-            border: 2px solid $corSegundariaDark;
-          }
-          article:before,
-          article:after {
-            content: "";
-            position: absolute;
-            border: 2px solid transparent;
-            height: 0;
-            width: 0;
-            top: 0px;
-            right: 0px;
-          }
-
-          article:hover {
-            animation: buttonColorChange 1s ease-out forwards;
-          }
-
-          article:hover:before {
-            animation: buttonBeforeColorChange 1s ease-out forwards;
-          }
-
-          article:hover:after {
-            animation: buttonAfterColorChange 1s ease-out forwards;
-          }
-
-          @keyframes buttonColorChange {
-            100% {
-              color: $corPrincipal;
-            }
-          }
-
-          @keyframes buttonBeforeColorChange {
-            50% {
-              width: 100%;
-              height: 0%;
-              border-top-color: $corPrincipal;
-            }
-            100% {
-              width: 100%;
-              height: 100%;
-              border-top-color: $corPrincipal;
-              border-left-color: $corPrincipal;
-            }
-          }
-
-          @keyframes buttonAfterColorChange {
-            50% {
-              width: 0%;
-              height: 100%;
-              border-right-color: $corPrincipal;
-            }
-            100% {
-              width: 100%;
-              height: 100%;
-              border-right-color: $corPrincipal;
-              border-bottom-color: $corPrincipal;
-            }
-          }
           article {
             width: 20%;
             flex-grow: 1;
@@ -558,6 +498,15 @@ main {
             justify-content: center;
             align-items: center;
             position: relative;
+            &:hover {
+              border: 2px solid $corSegundariaDark;
+              border-image: linear-gradient(
+                  225deg,
+                  rgba(102, 16, 242, 1) 0%,
+                  $corSegundariaDark 100%
+                )
+                1;
+            }
 
             @media screen and (max-width: 768px) {
               width: 40%;
@@ -634,52 +583,48 @@ footer {
   text-align: center;
   background-color: $corPrincipalDark;
   color: $corBranca;
-  > a {
-    background-color: $corSegundariaDark;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: $corBranca;
-    font-size: 1.6rem;
-    &:hover {
-      opacity: 1;
-    }
+  @media screen and (max-width: 1024px) {
+    padding: 50px 20px;
   }
-  h2 {
-    color: $corBranca;
-    font-weight: 500;
-    font-size: 3.2rem;
-  }
-  p {
-    color: $corBranca;
-    opacity: 0.5;
-    padding: 25px;
-    font: {
-      family: $fontSecundaria;
-      size: 1.8rem;
-    }
-    &:nth-child(2) {
-      margin-bottom: 25px;
-    }
-    &:nth-child(5) {
-      opacity: 1;
-    }
-  }
-  div {
+  .larguraMaxContainer {
+    border-top: 1px solid rgba(114, 114, 126, 0.2);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 30px;
-    a {
-      background-color: $corSegundariaDark;
-      padding: 15px 25px;
-      margin: 10px;
-      border-radius: 5px;
-      color: $corBranca;
-      opacity: 0.5;
+    text-align: center;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+    p {
+      margin-top: 32px;
+      text-align: center;
+      font-family: $fontSecundaria;
+      color: rgb(114, 114, 126);
       font-size: 1.6rem;
-      &:hover {
-        opacity: 1;
+    }
+    div {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        a:nth-child(1) {
+          margin-left: 0px;
+        }
+      }
+      a {
+        margin-left: 40px;
+        img {
+          opacity: 0.5;
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
   }

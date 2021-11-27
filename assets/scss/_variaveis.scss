@@ -1,33 +1,32 @@
 @font-face {
-  font-family: "Circular Std";
-  src: local("Circular Std Medium"), local("Circular-Std-Medium"),
-    url("../fonts/CircularStd.ttf") format("woff2");
-  font-weight: 500;
+  font-family: "Cera Pro Medium";
+  src: local("Cera Pro Medium"), local("Cera Pro Medium"),
+    url("../fonts/CeraProMedium.otf") format("opentype");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Circular Std Book";
-  src: local("Circular Std Book"), local("Circular-Std-Book"),
-    url("../fonts/CircularStd-Book.ttf") format("woff2");
+  font-family: "Cera Pro Regular";
+  src: local("Cera Pro Regular"), local("Cera Pro Regular"),
+    url("../fonts/CeraProRegular.otf") format("opentype");
   font-style: normal;
   font-display: swap;
 }
 
 //Fonte
-$fontPrincipal: "Circular Std";
-$fontSecundaria: "Circular Std Book";
+$fontPrincipal: "Cera Pro Medium";
+$fontSecundaria: "Cera Pro Regular";
 //Cores
 $corPrincipal: #6610f2;
 //Hover
 $hoverPrincipal: #5429cf;
 //Cores textos
-$corBranca: #fefbfb;
+$corBranca: #fafafa;
 $corBrancaDark: #c9c9c9;
 //Cores Dark
-$corPrincipalDark: #131219;
-$corSegundariaDark: #17161d;
+$corPrincipalDark: #0e091b;
+$corSegundariaDark: #110e1b;
 
 //Mixins
 @mixin FlexBox() {
@@ -66,7 +65,6 @@ $corSegundariaDark: #17161d;
   }
   &:hover {
     padding: 15px 45px;
-    cursor: pointer;
     max-width: 280px;
     background: linear-gradient(
       225deg,
@@ -80,7 +78,7 @@ $corSegundariaDark: #17161d;
   padding-bottom: 20px;
   color: $corBranca;
   font: {
-    size: 3.2rem;
+    size: 4rem;
     weight: 500;
   }
 }

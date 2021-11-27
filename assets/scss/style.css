@@ -1,14 +1,13 @@
 @font-face {
-  font-family: "Circular Std";
-  src: local("Circular Std Medium"), local("Circular-Std-Medium"), url("../fonts/CircularStd.ttf") format("woff2");
-  font-weight: 500;
+  font-family: "Cera Pro Medium";
+  src: local("Cera Pro Medium"), local("Cera Pro Medium"), url("../fonts/CeraProMedium.otf") format("opentype");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Circular Std Book";
-  src: local("Circular Std Book"), local("Circular-Std-Book"), url("../fonts/CircularStd-Book.ttf") format("woff2");
+  font-family: "Cera Pro Regular";
+  src: local("Cera Pro Regular"), local("Cera Pro Regular"), url("../fonts/CeraProRegular.otf") format("opentype");
   font-style: normal;
   font-display: swap;
 }
@@ -16,11 +15,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Circular Std";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  font-family: "Cera Pro Medium";
 }
 
 *,
@@ -39,6 +34,7 @@ ol {
 
 a {
   text-decoration: none;
+  cursor: url("../image/cursor-pointer.svg"), pointer;
 }
 
 img {
@@ -60,7 +56,7 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: "Circular Std";
+  font-family: "Cera Pro Medium";
 }
 
 button:focus,
@@ -69,30 +65,34 @@ input:focus {
 }
 
 body {
-  font-family: "Circular Std";
-  background-color: #fefbfb;
+  font-family: "Cera Pro Medium";
+  background-color: #fafafa;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  cursor: url("../image/cursor.svg"), auto;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #131219;
+  background-color: #0e091b;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #6610f2;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 header {
-  background-color: #17161d;
+  background: rgba 14, 9, 27, 0.6;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -111,7 +111,7 @@ header .larguraMaxContainer nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  height: 8vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -139,7 +139,7 @@ header .larguraMaxContainer nav .nav-list li a {
   color: #c9c9c9;
   font-size: 2rem;
   position: relative;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Medium";
 }
 
 header .larguraMaxContainer nav .nav-list li a::after {
@@ -169,18 +169,17 @@ header .larguraMaxContainer nav .nav-list li a:hover::after {
 }
 
 header .larguraMaxContainer nav .nav-list li a:hover {
-  color: #fefbfb;
+  color: #fafafa;
 }
 
 .mobile-menu {
   display: none;
-  cursor: pointer;
 }
 
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #fefbfb;
+  background-color: #fafafa;
   margin: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -239,12 +238,12 @@ header .larguraMaxContainer nav .nav-list li a:hover {
   .nav-list {
     text-align: center;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     right: 0;
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: #17161d;
+    background-color: #110e1b;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -299,7 +298,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 main #apresentacaoPortfolio {
-  background-color: #131219;
+  background-color: #0e091b;
   position: relative;
 }
 
@@ -349,23 +348,23 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
-  color: #fefbfb;
-  font-size: 2.4rem;
+  color: #fafafa;
+  font-size: 2.5rem;
   font-weight: 500;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
-  font-size: 5.4rem;
+  font-size: 5.6rem;
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 .maquina-escrever {
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-  color: #fefbfb;
+  color: #fafafa;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 15px 30px;
@@ -386,12 +385,11 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   margin-top: 30px;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
   padding: 15px 45px;
-  cursor: pointer;
   max-width: 280px;
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
@@ -411,7 +409,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #fundo {
   width: 100%;
   max-width: 600px;
   position: absolute;
-  top: 10vh;
+  top: 8vh;
   right: 0;
 }
 
@@ -462,7 +460,7 @@ main #apresentacaoPortfolio .mouse {
 }
 
 main #sobre {
-  background-color: #17161d;
+  background-color: #110e1b;
 }
 
 main #sobre .larguraMaxContainer {
@@ -533,7 +531,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #131219;
+  background-color: #0e091b;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -543,7 +541,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #131219;
+  background-color: #0e091b;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -553,7 +551,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #131219;
+  background-color: #0e091b;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -627,8 +625,8 @@ main #sobre .larguraMaxContainer #sobreTexto {
 
 main #sobre .larguraMaxContainer #sobreTexto h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
-  font-size: 3.2rem;
+  color: #fafafa;
+  font-size: 4rem;
   font-weight: 500;
 }
 
@@ -640,7 +638,7 @@ main #sobre .larguraMaxContainer #sobreTexto h2 span {
 main #sobre .larguraMaxContainer #sobreTexto p {
   line-height: 3.2rem;
   color: #c9c9c9;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
 
@@ -651,7 +649,7 @@ main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
 main #projetos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #131219;
+  background-color: #0e091b;
 }
 
 @media screen and (max-width: 1024px) {
@@ -662,8 +660,8 @@ main #projetos {
 
 main #projetos .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
-  font-size: 3.2rem;
+  color: #fafafa;
+  font-size: 4rem;
   font-weight: 500;
 }
 
@@ -692,18 +690,18 @@ main #projetos .larguraMaxContainer div > article {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #17161d;
+  background-color: #110e1b;
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid #17161d;
+  border: 2px solid #110e1b;
 }
 
 main #projetos .larguraMaxContainer div > article:hover {
   border-radius: 5px;
-  border: 2px solid #17161d;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+  border: 2px solid #110e1b;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
 @media screen and (max-width: 1124px) {
@@ -727,7 +725,7 @@ main #projetos .larguraMaxContainer div > article img {
 
 main #projetos .larguraMaxContainer div > article h3 {
   font-size: 2.4rem;
-  color: #fefbfb;
+  color: #fafafa;
   font-weight: 500;
 }
 
@@ -735,7 +733,7 @@ main #projetos .larguraMaxContainer div > article p {
   line-height: 28px;
   margin-top: 20px;
   color: #c9c9c9;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
 
@@ -767,7 +765,7 @@ main #projetos .larguraMaxContainer div > article > span a {
 main #projetos .larguraMaxContainer div > article > span button {
   background-color: #6610f2;
   padding: 10px 25px;
-  color: #fefbfb;
+  color: #fafafa;
   border: 0;
   font-weight: 500;
   font-size: 14px;
@@ -791,7 +789,6 @@ main #projetos .larguraMaxContainer div > article > span button {
 }
 
 main #projetos .larguraMaxContainer div > article > span button:hover {
-  cursor: pointer;
   background-color: #5429cf;
 }
 
@@ -818,9 +815,9 @@ main #projetos .larguraMaxContainer div > article .linguagensProjeto {
 
 main #projetos .larguraMaxContainer div > article .linguagensProjeto span {
   padding: 5px;
-  background-color: #131219;
+  background-color: #0e091b;
   border-radius: 5px;
-  color: #fefbfb;
+  color: #fafafa;
   margin-bottom: 5px;
 }
 
@@ -859,7 +856,7 @@ main #projetos .larguraMaxContainer a:hover::after {
 main #servicos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #17161d;
+  background-color: #110e1b;
 }
 
 @media screen and (max-width: 1024px) {
@@ -870,8 +867,8 @@ main #servicos {
 
 main #servicos .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
-  font-size: 3.2rem;
+  color: #fafafa;
+  font-size: 4rem;
   font-weight: 500;
 }
 
@@ -893,7 +890,7 @@ main #servicos .larguraMaxContainer div {
 main #servicos .larguraMaxContainer div article {
   text-align: center;
   height: auto;
-  background-color: #131219;
+  background-color: #0e091b;
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -902,13 +899,13 @@ main #servicos .larguraMaxContainer div article {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 2px solid #17161d;
+  border: 2px solid #110e1b;
 }
 
 main #servicos .larguraMaxContainer div article:hover {
-  border: 2px solid #17161d;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #17161d 100%) 1;
+  border: 2px solid #110e1b;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
 main #servicos .larguraMaxContainer div article .image-servicos {
@@ -939,20 +936,20 @@ main #servicos .larguraMaxContainer div article .iconify {
 main #servicos .larguraMaxContainer div article h3 {
   font-size: 1.8rem;
   padding: 20px 0px;
-  color: #fefbfb;
+  color: #fafafa;
   font-weight: 500;
 }
 
 main #servicos .larguraMaxContainer div article p {
   line-height: 28px;
   color: #c9c9c9;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
 
 main #conhecimentos {
   padding: 100px 75px;
-  background-color: #131219;
+  background-color: #0e091b;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1012,111 +1009,13 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hove
   text-align: center;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
-  border: 2px solid #17161d;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:before,
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:after {
-  content: "";
-  position: absolute;
-  border: 2px solid transparent;
-  height: 0;
-  width: 0;
-  top: 0px;
-  right: 0px;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
-  -webkit-animation: buttonColorChange 1s ease-out forwards;
-          animation: buttonColorChange 1s ease-out forwards;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:before {
-  -webkit-animation: buttonBeforeColorChange 1s ease-out forwards;
-          animation: buttonBeforeColorChange 1s ease-out forwards;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover:after {
-  -webkit-animation: buttonAfterColorChange 1s ease-out forwards;
-          animation: buttonAfterColorChange 1s ease-out forwards;
-}
-
-@-webkit-keyframes buttonColorChange {
-  100% {
-    color: #6610f2;
-  }
-}
-
-@keyframes buttonColorChange {
-  100% {
-    color: #6610f2;
-  }
-}
-
-@-webkit-keyframes buttonBeforeColorChange {
-  50% {
-    width: 100%;
-    height: 0%;
-    border-top-color: #6610f2;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: #6610f2;
-    border-left-color: #6610f2;
-  }
-}
-
-@keyframes buttonBeforeColorChange {
-  50% {
-    width: 100%;
-    height: 0%;
-    border-top-color: #6610f2;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: #6610f2;
-    border-left-color: #6610f2;
-  }
-}
-
-@-webkit-keyframes buttonAfterColorChange {
-  50% {
-    width: 0%;
-    height: 100%;
-    border-right-color: #6610f2;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-right-color: #6610f2;
-    border-bottom-color: #6610f2;
-  }
-}
-
-@keyframes buttonAfterColorChange {
-  50% {
-    width: 0%;
-    height: 100%;
-    border-right-color: #6610f2;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-right-color: #6610f2;
-    border-bottom-color: #6610f2;
-  }
-}
-
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
   width: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 130px;
-  background-color: #17161d;
+  background-color: #110e1b;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,6 +1027,12 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
+  border: 2px solid #110e1b;
+  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -1143,12 +1048,12 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .car
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #17161d;
+  background-color: #110e1b;
   padding: 5px;
   height: 30px;
   width: 125px;
   border-radius: 4px;
-  color: #fefbfb;
+  color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,12 +1073,12 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .car
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #17161d;
+  background-color: #110e1b;
   padding: 5px;
   height: auto;
   width: 125px;
   border-radius: 4px;
-  color: #fefbfb;
+  color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1201,7 +1106,7 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
   margin-bottom: 30px;
-  color: #fefbfb;
+  color: #fafafa;
   font-size: 3.2rem;
   font-weight: 500;
 }
@@ -1210,77 +1115,88 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   max-width: 500px;
   line-height: 32px;
   color: #c9c9c9;
-  font-family: "Circular Std Book";
+  font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
 
 footer {
   padding: 50px 10px;
   text-align: center;
-  background-color: #131219;
-  color: #fefbfb;
+  background-color: #0e091b;
+  color: #fafafa;
 }
 
-footer > a {
-  background-color: #17161d;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: #fefbfb;
-  font-size: 1.6rem;
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 50px 20px;
+  }
 }
 
-footer > a:hover {
-  opacity: 1;
-}
-
-footer h2 {
-  color: #fefbfb;
-  font-weight: 500;
-  font-size: 3.2rem;
-}
-
-footer p {
-  color: #fefbfb;
-  opacity: 0.5;
-  padding: 25px;
-  font-family: "Circular Std Book";
-  font-size: 1.8rem;
-}
-
-footer p:nth-child(2) {
-  margin-bottom: 25px;
-}
-
-footer p:nth-child(5) {
-  opacity: 1;
-}
-
-footer div {
+footer .larguraMaxContainer {
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 30px;
+  text-align: center;
+  width: 100%;
 }
 
-footer div a {
-  background-color: #17161d;
-  padding: 15px 25px;
-  margin: 10px;
-  border-radius: 5px;
-  color: #fefbfb;
-  opacity: 0.5;
+@media screen and (max-width: 768px) {
+  footer .larguraMaxContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .larguraMaxContainer p {
+  margin-top: 32px;
+  text-align: center;
+  font-family: "Cera Pro Regular";
+  color: #72727e;
   font-size: 1.6rem;
 }
 
-footer div a:hover {
+footer .larguraMaxContainer div {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer .larguraMaxContainer div {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .larguraMaxContainer div a:nth-child(1) {
+    margin-left: 0px;
+  }
+}
+
+footer .larguraMaxContainer div a {
+  margin-left: 40px;
+}
+
+footer .larguraMaxContainer div a img {
+  opacity: 0.5;
+}
+
+footer .larguraMaxContainer div a img:hover {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
