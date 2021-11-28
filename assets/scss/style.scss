@@ -264,10 +264,9 @@ main {
           padding: 30px 25px;
           margin: 10px;
           border-radius: 5px;
-          border: 2px solid $corSegundariaDark;
+          border: 1px solid $corSegundariaDark;
           &:hover {
             border-radius: 5px;
-            border: 2px solid $corSegundariaDark;
             border-image: linear-gradient(
                 225deg,
                 rgba(102, 16, 242, 1) 0%,
@@ -406,9 +405,8 @@ main {
           margin: 10px;
           flex-basis: calc(25% - 20px);
           flex-grow: 1;
-          border: 2px solid $corSegundariaDark;
+          border: 1px solid $corSegundariaDark;
           &:hover {
-            border: 2px solid $corSegundariaDark;
             border-image: linear-gradient(
                 225deg,
                 rgba(102, 16, 242, 1) 0%,
@@ -452,10 +450,10 @@ main {
 
   //Conhecimentos
   #conhecimentos {
-    padding: 100px 75px;
+    padding: 100px 75px 0px 75px;
     background-color: $corPrincipalDark;
     @media screen and (max-width: 1024px) {
-      padding: 75px 20px 100px 20px;
+      padding: 75px 20px 50px 20px;
     }
     .larguraMaxContainer {
       > div {
@@ -498,8 +496,9 @@ main {
             justify-content: center;
             align-items: center;
             position: relative;
+            border: 1px solid $corSegundariaDark;
             &:hover {
-              border: 2px solid $corSegundariaDark;
+              border: 1px solid $corSegundariaDark;
               border-image: linear-gradient(
                   225deg,
                   rgba(102, 16, 242, 1) 0%,
@@ -575,54 +574,53 @@ main {
       }
     }
   }
-}
-
-//Footer
-footer {
-  padding: 50px 10px;
-  text-align: center;
-  background-color: $corPrincipalDark;
-  color: $corBranca;
-  @media screen and (max-width: 1024px) {
-    padding: 50px 20px;
-  }
-  .larguraMaxContainer {
-    border-top: 1px solid rgba(114, 114, 126, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  //Footer
+  footer {
+    padding: 100px 10px 50px 10px;
     text-align: center;
-    width: 100%;
-
-    @media screen and (max-width: 768px) {
-      justify-content: center;
+    color: $corBranca;
+    @media screen and (max-width: 1024px) {
+      padding: 100px 20px 0px 20px;
     }
-    p {
-      margin-top: 32px;
-      text-align: center;
-      font-family: $fontSecundaria;
-      color: rgb(114, 114, 126);
-      font-size: 1.6rem;
-    }
-    div {
-      margin-top: 32px;
+    .larguraMaxContainer {
+      border-top: 1px solid rgba(114, 114, 126, 0.2);
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
       text-align: center;
+      width: 100%;
+
       @media screen and (max-width: 768px) {
-        width: 100%;
         justify-content: center;
-        a:nth-child(1) {
-          margin-left: 0px;
-        }
       }
-      a {
-        margin-left: 40px;
-        img {
-          opacity: 0.5;
-          &:hover {
-            opacity: 1;
+      p {
+        margin-top: 24px;
+        text-align: center;
+        font-family: $fontSecundaria;
+        color: rgb(114, 114, 126);
+        font-size: 1.6rem;
+      }
+      div {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          justify-content: center;
+          a:nth-child(1) {
+            margin-left: 0px;
+          }
+        }
+        a {
+          margin-left: 30px;
+          padding: 10px;
+          img {
+            opacity: 0.6;
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }

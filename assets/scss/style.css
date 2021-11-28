@@ -25,6 +25,16 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #6610f2;
+  color: #fafafa;
+}
+
+::selection {
+  background-color: #6610f2;
+  color: #fafafa;
+}
+
 ul,
 ol {
   list-style: none;
@@ -178,11 +188,11 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 
 .mobile-menu div {
   width: 32px;
-  height: 2px;
+  height: 1px;
   background-color: #fafafa;
   margin: 8px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .nav-list.active {
@@ -194,8 +204,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
   }
   to {
     opacity: 1;
@@ -207,8 +217,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
   }
   to {
     opacity: 1;
@@ -227,8 +237,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 .mobile-menu.active .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -7px);
-          transform: rotate(45deg) translate(-5px, -7px);
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -694,12 +704,11 @@ main #projetos .larguraMaxContainer div > article {
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid #110e1b;
+  border: 1px solid #110e1b;
 }
 
 main #projetos .larguraMaxContainer div > article:hover {
   border-radius: 5px;
-  border: 2px solid #110e1b;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
@@ -899,11 +908,10 @@ main #servicos .larguraMaxContainer div article {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 2px solid #110e1b;
+  border: 1px solid #110e1b;
 }
 
 main #servicos .larguraMaxContainer div article:hover {
-  border: 2px solid #110e1b;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
@@ -948,13 +956,13 @@ main #servicos .larguraMaxContainer div article p {
 }
 
 main #conhecimentos {
-  padding: 100px 75px;
+  padding: 100px 75px 0px 75px;
   background-color: #0e091b;
 }
 
 @media screen and (max-width: 1024px) {
   main #conhecimentos {
-    padding: 75px 20px 100px 20px;
+    padding: 75px 20px 50px 20px;
   }
 }
 
@@ -1027,10 +1035,11 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  border: 1px solid #110e1b;
 }
 
 main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
-  border: 2px solid #110e1b;
+  border: 1px solid #110e1b;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
@@ -1119,20 +1128,19 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   font-size: 1.8rem;
 }
 
-footer {
-  padding: 50px 10px;
+main footer {
+  padding: 100px 10px 50px 10px;
   text-align: center;
-  background-color: #0e091b;
   color: #fafafa;
 }
 
 @media screen and (max-width: 1024px) {
-  footer {
-    padding: 50px 20px;
+  main footer {
+    padding: 100px 20px 0px 20px;
   }
 }
 
-footer .larguraMaxContainer {
+main footer .larguraMaxContainer {
   border-top: 1px solid rgba(114, 114, 126, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1150,23 +1158,23 @@ footer .larguraMaxContainer {
 }
 
 @media screen and (max-width: 768px) {
-  footer .larguraMaxContainer {
+  main footer .larguraMaxContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-footer .larguraMaxContainer p {
-  margin-top: 32px;
+main footer .larguraMaxContainer p {
+  margin-top: 24px;
   text-align: center;
   font-family: "Cera Pro Regular";
   color: #72727e;
   font-size: 1.6rem;
 }
 
-footer .larguraMaxContainer div {
-  margin-top: 32px;
+main footer .larguraMaxContainer div {
+  margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,26 +1185,27 @@ footer .larguraMaxContainer div {
 }
 
 @media screen and (max-width: 768px) {
-  footer .larguraMaxContainer div {
+  main footer .larguraMaxContainer div {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .larguraMaxContainer div a:nth-child(1) {
+  main footer .larguraMaxContainer div a:nth-child(1) {
     margin-left: 0px;
   }
 }
 
-footer .larguraMaxContainer div a {
-  margin-left: 40px;
+main footer .larguraMaxContainer div a {
+  margin-left: 30px;
+  padding: 10px;
 }
 
-footer .larguraMaxContainer div a img {
-  opacity: 0.5;
+main footer .larguraMaxContainer div a img {
+  opacity: 0.6;
 }
 
-footer .larguraMaxContainer div a img:hover {
+main footer .larguraMaxContainer div a img:hover {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

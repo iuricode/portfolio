@@ -9,6 +9,10 @@
 ::after {
   box-sizing: border-box;
 }
+::selection {
+  background-color: $corPrincipal;
+  color: $corBranca;
+}
 ul,
 ol {
   list-style: none;

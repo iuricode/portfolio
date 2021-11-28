@@ -1,5 +1,5 @@
 header {
-  background: rgba (14,9,27, 0.6);
+  background: rgba (14, 9, 27, 0.6);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border-bottom: 1px solid rgba(114, 114, 126, 0.2);
@@ -62,10 +62,10 @@ header {
   display: none;
   div {
     width: 32px;
-    height: 2px;
+    height: 1px;
     background-color: $corBranca;
     margin: 8px;
-    transition: 0.3s;
+    transition: 0.4s;
   }
 }
 .nav-list.active {
@@ -75,7 +75,7 @@ header {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
@@ -89,7 +89,7 @@ header {
   opacity: 0;
 }
 .mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 @media screen and (max-width: 1024px) {
   body {
