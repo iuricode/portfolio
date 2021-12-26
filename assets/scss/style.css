@@ -407,6 +407,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
   width: 40%;
   height: 100vh;
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
@@ -415,58 +416,101 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #fundo {
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab {
   width: 100%;
-  max-width: 600px;
   position: absolute;
-  top: 8vh;
-  right: 0;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
 }
 
 @media screen and (max-width: 1024px) {
-  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #fundo {
+  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab {
     display: none;
   }
 }
 
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #luz-logo,
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #logo-iuricode {
+  opacity: 1;
+  -webkit-animation: luzes 8s ease infinite alternate;
+          animation: luzes 8s ease infinite alternate;
+}
+
+@-webkit-keyframes luzes {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes luzes {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #luz_2 {
+  opacity: 1;
+  -webkit-animation: luzDelay 8s ease infinite alternate;
+          animation: luzDelay 8s ease infinite alternate;
+}
+
+@-webkit-keyframes luzDelay {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  65%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes luzDelay {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  65%,
+  100% {
+    opacity: 1;
+  }
+}
+
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
-  -webkit-animation: MoveUpDown 2s linear infinite;
-          animation: MoveUpDown 2s linear infinite;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 4;
-  max-width: 550px;
-  width: 100%;
+  -webkit-animation: MoveUpDown 4s linear infinite;
+          animation: MoveUpDown 4s linear infinite;
 }
 
 @-webkit-keyframes MoveUpDown {
   0%,
   100% {
-    top: 0;
+    top: 34vh;
   }
   50% {
-    top: 10px;
+    top: 38vh;
   }
 }
 
 @keyframes MoveUpDown {
   0%,
   100% {
-    top: 0;
+    top: 34vh;
   }
   50% {
-    top: 10px;
+    top: 38vh;
   }
-}
-
-main #apresentacaoPortfolio .mouse {
-  width: 70px;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
 }
 
 main #sobre {
@@ -541,7 +585,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #0e091b;
+  background-color: #1a132b;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -551,7 +595,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #0e091b;
+  background-color: #1a132b;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -561,7 +605,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #0e091b;
+  background-color: #1a132b;
   border-radius: 10px;
   width: 75px;
   height: 75px;

@@ -75,45 +75,62 @@ main {
       #apresentacaoFoto {
         width: 40%;
         height: 100vh;
+        position: relative;
         @media screen and (max-width: 1024px) {
           display: none;
         }
-        #fundo {
+        #logo-lab {
           width: 100%;
-          max-width: 600px;
           position: absolute;
-          top: 8vh;
-          right: 0;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -40%);
           @media screen and (max-width: 1024px) {
             display: none;
           }
+          #luz-logo,
+          #logo-iuricode {
+            opacity: 1;
+            animation: luzes 8s ease infinite alternate;
+          }
+          @keyframes luzes {
+            0%,
+            55% {
+              opacity: 0;
+            }
+            60%,
+            100% {
+              opacity: 1;
+            }
+          }
+          #luz_2 {
+            opacity: 1;
+            animation: luzDelay 8s ease infinite alternate;
+          }
+          @keyframes luzDelay {
+            0%,
+            60% {
+              opacity: 0;
+            }
+            65%,
+            100% {
+              opacity: 1;
+            }
+          }
         }
         .object {
-          animation: MoveUpDown 2s linear infinite;
-          position: absolute;
-          right: 0;
-          top: 0;
-          z-index: 4;
-          max-width: 550px;
-          width: 100%;
+          animation: MoveUpDown 4s linear infinite;
         }
         @keyframes MoveUpDown {
           0%,
           100% {
-            top: 0;
+            top: 34vh;
           }
           50% {
-            top: 10px;
+            top: 38vh;
           }
         }
       }
-    }
-    .mouse {
-      width: 70px;
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translate(-50%, 0%);
     }
   }
 
@@ -156,7 +173,7 @@ main {
           position: absolute;
           top: 40px;
           right: 430px;
-          background-color: $corPrincipalDark;
+          background-color: #1a132b;
           border-radius: 10px;
           width: 75px;
           height: 75px;
@@ -165,7 +182,7 @@ main {
           position: absolute;
           top: 100px;
           right: 150px;
-          background-color: $corPrincipalDark;
+          background-color: #1a132b;
           border-radius: 10px;
           width: 75px;
           height: 75px;
@@ -174,7 +191,7 @@ main {
           position: absolute;
           top: 250px;
           right: 450px;
-          background-color: $corPrincipalDark;
+          background-color: #1a132b;
           border-radius: 10px;
           width: 75px;
           height: 75px;

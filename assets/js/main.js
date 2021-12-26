@@ -67,11 +67,10 @@ const sr = ScrollReveal({
   duration: 2000,
 });
 
-sr.reveal(".button", { delay: 200 });
+ScrollReveal().reveal(".menu-reveal", { interval: 200 });
+
+sr.reveal(".button", { delay: 400 });
 sr.reveal(".linguagensProjeto", { delay: 400 });
-sr.reveal(".imagem-espaco-delay", { delay: 200 });
-sr.reveal(".imagem-iuri-delay", { delay: 600 });
-sr.reveal(".scroll-delay", { delay: 1000 });
 sr.reveal(".imagem-delay", {});
 sr.reveal(".titulo-delay", { delay: 200 });
 sr.reveal(".descricao-delay", { delay: 400 });
@@ -124,10 +123,8 @@ document
 
 var sairCaixa = document.getElementsByClassName("sairCaixa");
 
-
 for (i = 0; i < sairCaixa.length; i++) {
   sairCaixa[i].addEventListener("mouseout", function mudarTextoNormal() {
     texto1.innerHTML = `*passe o cursor no card para ler*`;
-
   });
 }
