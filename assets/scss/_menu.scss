@@ -8,14 +8,14 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  .larguraMaxContainer {
+  .grid-layout {
     nav {
       padding: 0px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 8vh;
-      @media screen and (max-width: 1024px) {
+      @include responsive-tablet() {
         padding: 0px 25px;
       }
       img {
@@ -27,11 +27,11 @@ header {
         li {
           margin-left: 50px;
           a {
-            color: $corBrancaDark;
+            color: $color-gray;
             font-size: 2rem;
             position: relative;
             font: {
-              family: $fontPrincipal;
+              family: $font-main;
             }
             &::after {
               content: "";
@@ -50,7 +50,7 @@ header {
               transform-origin: bottom left;
             }
             &:hover {
-              color: $corBranca;
+              color: $color-white;
             }
           }
         }
@@ -63,7 +63,7 @@ header {
   div {
     width: 32px;
     height: 1px;
-    background-color: $corBranca;
+    background-color: $color-white;
     margin: 8px;
     transition: 0.4s;
   }
@@ -91,7 +91,7 @@ header {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
-@media screen and (max-width: 1024px) {
+@include responsive-tablet() {
   body {
     overflow-x: hidden;
   }
@@ -103,12 +103,12 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: $corSegundariaDark;
+    background-color: $bg-secondary;
     flex-direction: column;
     padding-top: 100px;
     visibility: hidden;
   }
-  header .larguraMaxContainer nav .nav-list li {
+  header .grid-layout nav .nav-list li {
     opacity: 0;
     margin: 0px 0px 50px 0px;
     a {

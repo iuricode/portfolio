@@ -1,0 +1,111 @@
+#s-skills {
+  @include spacing-section;
+  background-color: $bg-main;
+  .grid-layout {
+    #skills {
+      @include flexbox;
+      height: auto;
+      padding: 10px;
+      div,
+      article {
+        width: 50%;
+        @include responsive-desktop {
+          width: 100%;
+        }
+        h2 {
+          span {
+            color: $color-main;
+            font-size: 6rem;
+          }
+        }
+      }
+      #skills-text {
+        height: 300px;
+        h2 {
+          margin-bottom: 30px;
+          color: $color-white;
+          font: {
+            size: 3.2rem;
+            weight: 500px;
+          }
+        }
+        p {
+          max-width: 500px;
+          line-height: 32px;
+          color: $color-gray;
+          font: {
+            family: $font-secondary;
+            size: 1.8rem;
+          }
+        }
+      }
+      #skills-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @include responsive-desktop {
+          margin-top: 50px;
+        }
+
+        article {
+          @include flexbox();
+          justify-content: center;
+          width: 20%;
+          flex-grow: 1;
+          height: 130px;
+          background-color: $bg-secondary;
+          border-radius: 5px;
+          position: relative;
+          border: 1px solid $bg-secondary;
+          &:hover {
+            border: 1px solid $bg-secondary;
+            border-image: linear-gradient(
+                225deg,
+                rgba(102, 16, 242, 1) 0%,
+                $bg-secondary 100%
+              )
+              1;
+          }
+          &:hover .skills-cards-name {
+            display: block;
+            text-align: center;
+          }
+          @include responsive-mobile {
+            width: 40%;
+            margin: 20px 0px;
+          }
+          .skills-cards-name {
+            left: 50%;
+            height: auto;
+            position: absolute;
+            padding: 5px;
+            transform: translate(-50%, 0%);
+            background-color: $bg-secondary;
+            width: 125px;
+            border-radius: 4px;
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            font-size: 1.8rem;
+          }
+          .skills-cards-name-high {
+            @extend .skills-cards-name;
+            top: -50px;
+          }
+          .skills-cards-name-low {
+            @extend .skills-cards-name;
+            bottom: -50px;
+          }
+          .aumento-hover {
+            bottom: -75px;
+          }
+          .skills-icons {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

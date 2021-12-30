@@ -15,14 +15,9 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Cera Pro Medium";
-}
-
-*,
-::before,
-::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Cera Pro Medium";
 }
 
 ::-moz-selection {
@@ -110,7 +105,7 @@ header {
   left: 0;
 }
 
-header .larguraMaxContainer nav {
+header .grid-layout nav {
   padding: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,35 +119,35 @@ header .larguraMaxContainer nav {
   height: 8vh;
 }
 
-@media screen and (max-width: 1024px) {
-  header .larguraMaxContainer nav {
+@media screen and (max-width: 992px) {
+  header .grid-layout nav {
     padding: 0px 25px;
   }
 }
 
-header .larguraMaxContainer nav img {
+header .grid-layout nav img {
   width: 150px;
 }
 
-header .larguraMaxContainer nav .nav-list {
+header .grid-layout nav .nav-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .larguraMaxContainer nav .nav-list li {
+header .grid-layout nav .nav-list li {
   margin-left: 50px;
 }
 
-header .larguraMaxContainer nav .nav-list li a {
-  color: #c9c9c9;
+header .grid-layout nav .nav-list li a {
+  color: #bebebe;
   font-size: 2rem;
   position: relative;
   font-family: "Cera Pro Medium";
 }
 
-header .larguraMaxContainer nav .nav-list li a::after {
+header .grid-layout nav .nav-list li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -171,14 +166,14 @@ header .larguraMaxContainer nav .nav-list li a::after {
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-header .larguraMaxContainer nav .nav-list li a:hover::after {
+header .grid-layout nav .nav-list li a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
 
-header .larguraMaxContainer nav .nav-list li a:hover {
+header .grid-layout nav .nav-list li a:hover {
   color: #fafafa;
 }
 
@@ -241,7 +236,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
           transform: rotate(45deg) translate(-5px, -5px);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
@@ -261,11 +256,11 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     padding-top: 100px;
     visibility: hidden;
   }
-  header .larguraMaxContainer nav .nav-list li {
+  header .grid-layout nav .nav-list li {
     opacity: 0;
     margin: 0px 0px 50px 0px;
   }
-  header .larguraMaxContainer nav .nav-list li a {
+  header .grid-layout nav .nav-list li a {
     font-size: 2.4rem;
   }
   .mobile-menu {
@@ -273,52 +268,19 @@ header .larguraMaxContainer nav .nav-list li a:hover {
   }
 }
 
-.maquina-escrever:after {
-  content: "|";
-  margin-left: 5px;
-  opacity: 1;
-  -webkit-animation: pisca 1s infinite;
-          animation: pisca 1s infinite;
-  color: #6610f2;
-}
-
-@-webkit-keyframes pisca {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes pisca {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-.larguraMaxContainer {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-main #apresentacaoPortfolio {
+#s-home {
+  padding: 0px 50px;
   background-color: #0e091b;
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
-  main #apresentacaoPortfolio {
+@media screen and (max-width: 992px) {
+  #s-home {
     padding: 0px 20px;
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer {
+#s-home .grid-layout #home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,10 +290,9 @@ main #apresentacaoPortfolio .larguraMaxContainer {
   height: 90vh;
   overflow: hidden;
   width: 100%;
-  padding: 0px 50px;
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
+#s-home .grid-layout #home #home-container-text {
   width: 60%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -339,8 +300,8 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
           flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
-  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
+@media screen and (max-width: 992px) {
+  #s-home .grid-layout #home #home-container-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,22 +318,22 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
+#s-home .grid-layout #home #home-container-text h2 {
   color: #fafafa;
   font-size: 2.5rem;
   font-weight: 500;
   font-family: "Cera Pro Regular";
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
+#s-home .grid-layout #home #home-container-text h2 #home-name {
   font-size: 5.6rem;
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 .maquina-escrever {
+#s-home .grid-layout #home #home-container-text h2 .typewriter {
   font-family: "Cera Pro Regular";
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
+#s-home .grid-layout #home #home-container-text a {
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
   color: #fafafa;
   -webkit-backdrop-filter: blur(10px);
@@ -398,25 +359,25 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   font-family: "Cera Pro Regular";
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a:hover {
+#s-home .grid-layout #home #home-container-text a:hover {
   padding: 15px 45px;
   max-width: 280px;
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.6) 0%, rgba(102, 16, 242, 0) 100%);
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
+#s-home .grid-layout #home #home-container-photo {
   width: 40%;
   height: 100vh;
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
-  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto {
+@media screen and (max-width: 992px) {
+  #s-home .grid-layout #home #home-container-photo {
     display: none;
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab {
+#s-home .grid-layout #home #home-container-photo #logo-lab {
   width: 100%;
   position: absolute;
   top: 40%;
@@ -425,20 +386,20 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab {
           transform: translate(-50%, -40%);
 }
 
-@media screen and (max-width: 1024px) {
-  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab {
+@media screen and (max-width: 992px) {
+  #s-home .grid-layout #home #home-container-photo #logo-lab {
     display: none;
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #luz-logo,
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #logo-iuricode {
+#s-home .grid-layout #home #home-container-photo #logo-lab #luz-logo,
+#s-home .grid-layout #home #home-container-photo #logo-lab #logo-iuricode {
   opacity: 1;
-  -webkit-animation: luzes 8s ease infinite alternate;
-          animation: luzes 8s ease infinite alternate;
+  -webkit-animation: light 8s ease infinite alternate;
+          animation: light 8s ease infinite alternate;
 }
 
-@-webkit-keyframes luzes {
+@-webkit-keyframes light {
   0%,
   55% {
     opacity: 0;
@@ -449,7 +410,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #lo
   }
 }
 
-@keyframes luzes {
+@keyframes light {
   0%,
   55% {
     opacity: 0;
@@ -460,13 +421,13 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #lo
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #luz_2 {
+#s-home .grid-layout #home #home-container-photo #logo-lab #luz_2 {
   opacity: 1;
-  -webkit-animation: luzDelay 8s ease infinite alternate;
-          animation: luzDelay 8s ease infinite alternate;
+  -webkit-animation: lightDelay 8s ease infinite alternate;
+          animation: lightDelay 8s ease infinite alternate;
 }
 
-@-webkit-keyframes luzDelay {
+@-webkit-keyframes lightDelay {
   0%,
   60% {
     opacity: 0;
@@ -477,7 +438,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #lu
   }
 }
 
-@keyframes luzDelay {
+@keyframes lightDelay {
   0%,
   60% {
     opacity: 0;
@@ -488,7 +449,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto #logo-lab #lu
   }
 }
 
-main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
+#s-home .grid-layout #home #home-container-photo .object {
   -webkit-animation: MoveUpDown 4s linear infinite;
           animation: MoveUpDown 4s linear infinite;
 }
@@ -513,33 +474,32 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoFoto .object {
   }
 }
 
-main #sobre {
+#s-about {
+  padding: 100px 50px;
   background-color: #110e1b;
 }
 
-main #sobre .larguraMaxContainer {
-  padding: 100px 50px;
-}
-
-@media screen and (max-width: 1024px) {
-  main #sobre .larguraMaxContainer {
+@media screen and (max-width: 992px) {
+  #s-about {
     padding: 50px 20px;
   }
 }
 
-main #sobre .larguraMaxContainer #sobreMim {
+#s-about .grid-layout #about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto {
+#s-about .grid-layout #about-photo {
   width: 50%;
   padding-right: 100px;
   display: -webkit-box;
@@ -556,16 +516,16 @@ main #sobre .larguraMaxContainer #sobreFoto {
   transition: 1s all ease;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #iuricode {
+#s-about .grid-layout #about-photo #photo-iuricode {
   width: 400px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto:hover {
+#s-about .grid-layout #about-photo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-main #sobre .larguraMaxContainer #sobreFoto div {
+#s-about .grid-layout #about-photo div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,11 +537,11 @@ main #sobre .larguraMaxContainer #sobreFoto div {
           justify-content: center;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto div img {
+#s-about .grid-layout #about-photo div img {
   width: 45px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura1 {
+#s-about .grid-layout #about-photo #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
@@ -591,7 +551,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura2 {
+#s-about .grid-layout #about-photo #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
@@ -601,7 +561,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura3 {
+#s-about .grid-layout #about-photo #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
@@ -611,17 +571,17 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon1 {
+#s-about .grid-layout #about-photo .icon1 {
   -webkit-animation: icon-move 3s ease 2.9s infinite alternate;
           animation: icon-move 3s ease 2.9s infinite alternate;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon2 {
+#s-about .grid-layout #about-photo .icon2 {
   -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
           animation: icon-move 3s ease 1.9s infinite alternate;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon3 {
+#s-about .grid-layout #about-photo .icon3 {
   -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
           animation: icon-move 3s ease 0.6s infinite alternate;
 }
@@ -648,23 +608,23 @@ main #sobre .larguraMaxContainer #sobreFoto .icon3 {
   }
 }
 
-main #sobre .larguraMaxContainer #sobreFoto img {
+#s-about .grid-layout #about-photo img {
   width: 100%;
   max-width: 400px;
 }
 
-@media screen and (max-width: 1100px) {
-  main #sobre .larguraMaxContainer #sobreFoto {
+@media screen and (max-width: 1200px) {
+  #s-about .grid-layout #about-photo {
     display: none;
   }
 }
 
-main #sobre .larguraMaxContainer #sobreTexto {
+#s-about .grid-layout #about-text {
   width: 50%;
 }
 
-@media screen and (max-width: 1100px) {
-  main #sobre .larguraMaxContainer #sobreTexto {
+@media screen and (max-width: 1200px) {
+  #s-about .grid-layout #about-text {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -677,54 +637,54 @@ main #sobre .larguraMaxContainer #sobreTexto {
   }
 }
 
-main #sobre .larguraMaxContainer #sobreTexto h2 {
+#s-about .grid-layout #about-text h2 {
   padding-bottom: 20px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto h2 span {
+#s-about .grid-layout #about-text h2 span {
   color: #6610f2;
   font-size: 6rem;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto p {
+#s-about .grid-layout #about-text p {
   line-height: 3.2rem;
-  color: #c9c9c9;
+  color: #bebebe;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
+#s-about .grid-layout #about-text p:nth-child(2) {
   padding-bottom: 20px;
 }
 
-main #projetos {
+#s-projects {
   padding: 100px 50px;
   text-align: center;
   background-color: #0e091b;
 }
 
-@media screen and (max-width: 1024px) {
-  main #projetos {
+@media screen and (max-width: 992px) {
+  #s-projects {
     padding: 50px 20px;
   }
 }
 
-main #projetos .larguraMaxContainer h2 {
+#s-projects .grid-layout h2 {
   padding-bottom: 20px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
 }
 
-main #projetos .larguraMaxContainer h2 span {
+#s-projects .grid-layout h2 span {
   color: #6610f2;
   font-size: 6rem;
 }
 
-main #projetos .larguraMaxContainer div {
+#s-projects .grid-layout #projects {
   margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,12 +692,15 @@ main #projetos .larguraMaxContainer div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: left;
 }
 
-main #projetos .larguraMaxContainer div > article {
+#s-projects .grid-layout #projects > article {
   height: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -751,71 +714,71 @@ main #projetos .larguraMaxContainer div > article {
   border: 1px solid #110e1b;
 }
 
-main #projetos .larguraMaxContainer div > article:hover {
+#s-projects .grid-layout #projects > article:hover {
   border-radius: 5px;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
-@media screen and (max-width: 1124px) {
-  main #projetos .larguraMaxContainer div > article {
+@media screen and (max-width: 1200px) {
+  #s-projects .grid-layout #projects > article {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #projetos .larguraMaxContainer div > article {
+  #s-projects .grid-layout #projects > article {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #projetos .larguraMaxContainer div > article img {
+#s-projects .grid-layout #projects > article img {
   margin: 20px 0;
   border-radius: 5px;
 }
 
-main #projetos .larguraMaxContainer div > article h3 {
-  font-size: 2.4rem;
+#s-projects .grid-layout #projects > article h3 {
   color: #fafafa;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
-main #projetos .larguraMaxContainer div > article p {
+#s-projects .grid-layout #projects > article p {
   line-height: 28px;
   margin-top: 20px;
-  color: #c9c9c9;
+  color: #bebebe;
   font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
 
-main #projetos .larguraMaxContainer div > article > span {
+#s-projects .grid-layout #projects > article > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
 }
 
-main #projetos .larguraMaxContainer div > article > span a {
+#s-projects .grid-layout #projects > article > span a {
   width: 50%;
 }
 
-@media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer div > article > span a {
+@media screen and (max-width: 992px) {
+  #s-projects .grid-layout #projects > article > span a {
     width: 100%;
   }
 }
 
-main #projetos .larguraMaxContainer div > article > span button {
+#s-projects .grid-layout #projects > article > span button {
   background-color: #6610f2;
   padding: 10px 25px;
   color: #fafafa;
@@ -832,8 +795,8 @@ main #projetos .larguraMaxContainer div > article > span button {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer div > article > span button {
+@media screen and (max-width: 992px) {
+  #s-projects .grid-layout #projects > article > span button {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -841,15 +804,11 @@ main #projetos .larguraMaxContainer div > article > span button {
   }
 }
 
-main #projetos .larguraMaxContainer div > article > span button:hover {
+#s-projects .grid-layout #projects > article > span button:hover {
   background-color: #5429cf;
 }
 
-main #projetos .larguraMaxContainer div > article > span button .iconify {
-  font-size: 20px;
-}
-
-main #projetos .larguraMaxContainer div > article .linguagensProjeto {
+#s-projects .grid-layout #projects > article .linguagensProjeto {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,7 +825,7 @@ main #projetos .larguraMaxContainer div > article .linguagensProjeto {
   height: auto;
 }
 
-main #projetos .larguraMaxContainer div > article .linguagensProjeto span {
+#s-projects .grid-layout #projects > article .linguagensProjeto span {
   padding: 5px;
   background-color: #0e091b;
   border-radius: 5px;
@@ -874,13 +833,13 @@ main #projetos .larguraMaxContainer div > article .linguagensProjeto span {
   margin-bottom: 5px;
 }
 
-main #projetos .larguraMaxContainer a {
+#s-projects .grid-layout a {
   color: #6610f2;
   font-size: 18px;
   position: relative;
 }
 
-main #projetos .larguraMaxContainer a::after {
+#s-projects .grid-layout a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -899,38 +858,38 @@ main #projetos .larguraMaxContainer a::after {
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-main #projetos .larguraMaxContainer a:hover::after {
+#s-projects .grid-layout a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
 
-main #servicos {
+#s-services {
   padding: 100px 50px;
   text-align: center;
   background-color: #110e1b;
 }
 
-@media screen and (max-width: 1024px) {
-  main #servicos {
+@media screen and (max-width: 992px) {
+  #s-services {
     padding: 50px 20px;
   }
 }
 
-main #servicos .larguraMaxContainer h2 {
+#s-services .grid-layout h2 {
   padding-bottom: 20px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
 }
 
-main #servicos .larguraMaxContainer h2 span {
+#s-services .grid-layout h2 span {
   color: #6610f2;
   font-size: 6rem;
 }
 
-main #servicos .larguraMaxContainer div {
+#s-services .grid-layout #services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,7 +899,7 @@ main #servicos .larguraMaxContainer div {
   margin: 25px 0px;
 }
 
-main #servicos .larguraMaxContainer div article {
+#s-services .grid-layout #services article {
   text-align: center;
   height: auto;
   background-color: #0e091b;
@@ -955,92 +914,109 @@ main #servicos .larguraMaxContainer div article {
   border: 1px solid #110e1b;
 }
 
-main #servicos .larguraMaxContainer div article:hover {
+#s-services .grid-layout #services article:hover {
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
-main #servicos .larguraMaxContainer div article .image-servicos {
+#s-services .grid-layout #services article .image-service {
   width: 100px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1124px) {
-  main #servicos .larguraMaxContainer div article {
+@media screen and (max-width: 1200px) {
+  #s-services .grid-layout #services article {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #servicos .larguraMaxContainer div article {
+  #s-services .grid-layout #services article {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #servicos .larguraMaxContainer div article .iconify {
-  color: #6610f2;
-  font-size: 50px;
-  margin: 10px 0px;
-}
-
-main #servicos .larguraMaxContainer div article h3 {
-  font-size: 1.8rem;
+#s-services .grid-layout #services article h3 {
   padding: 20px 0px;
   color: #fafafa;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
-main #servicos .larguraMaxContainer div article p {
+#s-services .grid-layout #services article p {
   line-height: 28px;
-  color: #c9c9c9;
+  color: #bebebe;
   font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
 
-main #conhecimentos {
-  padding: 100px 75px 0px 75px;
+#s-skills {
+  padding: 100px 50px;
   background-color: #0e091b;
 }
 
-@media screen and (max-width: 1024px) {
-  main #conhecimentos {
-    padding: 75px 20px 50px 20px;
+@media screen and (max-width: 992px) {
+  #s-skills {
+    padding: 50px 20px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div {
+#s-skills .grid-layout #skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: auto;
+  padding: 10px;
 }
 
-main #conhecimentos .larguraMaxContainer > div div,
-main #conhecimentos .larguraMaxContainer > div article {
+#s-skills .grid-layout #skills div,
+#s-skills .grid-layout #skills article {
   width: 50%;
 }
 
-@media screen and (max-width: 1124px) {
-  main #conhecimentos .larguraMaxContainer > div div,
-  main #conhecimentos .larguraMaxContainer > div article {
+@media screen and (max-width: 1200px) {
+  #s-skills .grid-layout #skills div,
+  #s-skills .grid-layout #skills article {
     width: 100%;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div div h2 span,
-main #conhecimentos .larguraMaxContainer > div article h2 span {
+#s-skills .grid-layout #skills div h2 span,
+#s-skills .grid-layout #skills article h2 span {
   color: #6610f2;
   font-size: 6rem;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
+#s-skills .grid-layout #skills #skills-text {
+  height: 300px;
+}
+
+#s-skills .grid-layout #skills #skills-text h2 {
+  margin-bottom: 30px;
+  color: #fafafa;
+  font-size: 3.2rem;
+  font-weight: 500px;
+}
+
+#s-skills .grid-layout #skills #skills-text p {
+  max-width: 500px;
+  line-height: 32px;
+  color: #bebebe;
+  font-family: "Cera Pro Regular";
+  font-size: 1.8rem;
+}
+
+#s-skills .grid-layout #skills #skills-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,19 +1025,27 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
   gap: 20px;
 }
 
-@media screen and (max-width: 1124px) {
-  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
+@media screen and (max-width: 1200px) {
+  #s-skills .grid-layout #skills #skills-cards {
     margin-top: 50px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover .cards-nomes,
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover .cards-nomes-baixo {
-  display: block;
-  text-align: center;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
+#s-skills .grid-layout #skills #skills-cards article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1069,66 +1053,36 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
   height: 130px;
   background-color: #110e1b;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   border: 1px solid #110e1b;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article:hover {
+#s-skills .grid-layout #skills #skills-cards article:hover {
   border: 1px solid #110e1b;
   -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
+#s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name, #s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name-high, #s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name-low {
+  display: block;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
-  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article {
+  #s-skills .grid-layout #skills #skills-cards article {
     width: 40%;
     margin: 20px 0px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .cards-nomes {
-  position: absolute;
-  top: -50px;
+#s-skills .grid-layout #skills #skills-cards article .skills-cards-name, #s-skills .grid-layout #skills #skills-cards article .skills-cards-name-high, #s-skills .grid-layout #skills #skills-cards article .skills-cards-name-low {
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  background-color: #110e1b;
-  padding: 5px;
-  height: 30px;
-  width: 125px;
-  border-radius: 4px;
-  color: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-  font-size: 1.8rem;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .cards-nomes-baixo {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  background-color: #110e1b;
-  padding: 5px;
   height: auto;
+  position: absolute;
+  padding: 5px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  background-color: #110e1b;
   width: 125px;
   border-radius: 4px;
   color: #fafafa;
@@ -1145,79 +1099,64 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .car
   font-size: 1.8rem;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .aumento-hover {
+#s-skills .grid-layout #skills #skills-cards article .skills-cards-name-high {
+  top: -50px;
+}
+
+#s-skills .grid-layout #skills #skills-cards article .skills-cards-name-low {
+  bottom: -50px;
+}
+
+#s-skills .grid-layout #skills #skills-cards article .aumento-hover {
   bottom: -75px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos article .icon-conhecimentos {
+#s-skills .grid-layout #skills #skills-cards article .skills-icons {
   width: 60px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
-  height: 300px;
-}
-
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
-  margin-bottom: 30px;
-  color: #fafafa;
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
-  max-width: 500px;
-  line-height: 32px;
-  color: #c9c9c9;
-  font-family: "Cera Pro Regular";
-  font-size: 1.8rem;
-}
-
-main footer {
-  padding: 100px 10px 50px 10px;
+footer {
   text-align: center;
   color: #fafafa;
+  margin-top: 75px;
 }
 
-@media screen and (max-width: 1024px) {
-  main footer {
-    padding: 100px 20px 0px 20px;
-  }
-}
-
-main footer .larguraMaxContainer {
+footer .grid-layout {
   border-top: 1px solid rgba(114, 114, 126, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
+  padding: 0px 10px;
 }
 
 @media screen and (max-width: 768px) {
-  main footer .larguraMaxContainer {
+  footer .grid-layout {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0px 20px;
   }
 }
 
-main footer .larguraMaxContainer p {
+footer .grid-layout p {
   margin-top: 24px;
   text-align: center;
-  font-family: "Cera Pro Regular";
   color: #72727e;
+  font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
 
-main footer .larguraMaxContainer div {
+footer .grid-layout div {
   margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1229,27 +1168,61 @@ main footer .larguraMaxContainer div {
 }
 
 @media screen and (max-width: 768px) {
-  main footer .larguraMaxContainer div {
+  footer .grid-layout div {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main footer .larguraMaxContainer div a:nth-child(1) {
+  footer .grid-layout div a:nth-child(1) {
     margin-left: 0px;
   }
 }
 
-main footer .larguraMaxContainer div a {
+footer .grid-layout div a {
   margin-left: 30px;
   padding: 10px;
 }
 
-main footer .larguraMaxContainer div a img {
+footer .grid-layout div a img {
   opacity: 0.6;
 }
 
-main footer .larguraMaxContainer div a img:hover {
+footer .grid-layout div a img:hover {
   opacity: 1;
+}
+
+.typewriter:after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+  color: #6610f2;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.grid-layout {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

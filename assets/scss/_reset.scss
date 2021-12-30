@@ -1,17 +1,12 @@
-//Zerando as configurações dos navegadores
 * {
   padding: 0;
   margin: 0;
-  font-family: $fontPrincipal;
-}
-*,
-::before,
-::after {
   box-sizing: border-box;
+  font-family: $font-main;
 }
 ::selection {
-  background-color: $corPrincipal;
-  color: $corBranca;
+  background-color: $color-main;
+  color: $color-white;
 }
 ul,
 ol {
@@ -40,14 +35,14 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: $fontPrincipal;
+  font-family: $font-main;
   &:focus {
     border: 0;
   }
 }
 body {
-  font-family: $fontPrincipal;
-  background-color: $corBranca;
+  font-family: $font-main;
+  background-color: $color-white;
 }
 html {
   scroll-behavior: smooth;
@@ -58,9 +53,9 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background-color: $corPrincipalDark;
+  background-color: $bg-main;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $corPrincipal;
+  background-color: $color-main;
   border-radius: 6px;
 }

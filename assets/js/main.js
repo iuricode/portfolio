@@ -1,4 +1,3 @@
-//Menu
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks, navLinks2) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -47,7 +46,6 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-//Maquina de escrever
 function typeWrite(elemento) {
   const textoArray = elemento.innerHTML.split("");
   elemento.innerHTML = " ";
@@ -57,26 +55,22 @@ function typeWrite(elemento) {
     }, 100 * i);
   });
 }
-const titulo = document.querySelector(".maquina-escrever");
+const titulo = document.querySelector(".typewriter");
 typeWrite(titulo);
 
-//Revelar animação
 const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
   duration: 2000,
 });
 
-ScrollReveal().reveal(".menu-reveal", { interval: 200 });
+sr.reveal(".delaySmallReveal", { delay: 200 });
+sr.reveal(".delayMediumReveal", { delay: 300 });
+sr.reveal(".delayLargeReveal", { delay: 400 });
+sr.reveal(".delayExtraBigReveal", { delay: 600 });
 
-sr.reveal(".button", { delay: 400 });
-sr.reveal(".linguagensProjeto", { delay: 400 });
-sr.reveal(".imagem-delay", {});
-sr.reveal(".titulo-delay", { delay: 200 });
-sr.reveal(".descricao-delay", { delay: 400 });
-sr.reveal(".cards-interval", { interval: 400 });
+sr.reveal(".intervalCardReveal", { interval: 400 });
 
-//Animação conhecimentos
 var texto1 = document.querySelector(".mudarTextoDescricao");
 
 document.querySelector(".html").addEventListener("mouseover", function () {

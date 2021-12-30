@@ -1,0 +1,107 @@
+#s-home {
+  padding: 0px 50px;
+  background-color: $bg-main;
+  position: relative;
+  @include responsive-tablet {
+    padding: 0px 20px;
+  }
+  .grid-layout {
+    #home {
+      display: flex;
+      align-items: center;
+      height: 90vh;
+      overflow: hidden;
+      width: 100%;
+      #home-container-text {
+        width: 60%;
+        flex-direction: column;
+        @include responsive-tablet {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          padding: 0px;
+        }
+        h2 {
+          color: $color-white;
+          font: {
+            size: 2.5rem;
+            weight: 500;
+            family: $font-secondary;
+          }
+          #home-name {
+            font-size: 5.6rem;
+          }
+          .typewriter {
+            font: {
+              family: $font-secondary;
+            }
+          }
+        }
+        a {
+          @include button;
+        }
+      }
+      #home-container-photo {
+        width: 40%;
+        height: 100vh;
+        position: relative;
+        @include responsive-tablet {
+          display: none;
+        }
+        #logo-lab {
+          width: 100%;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -40%);
+          @include responsive-tablet {
+            display: none;
+          }
+          #luz-logo,
+          #logo-iuricode {
+            opacity: 1;
+            animation: light 8s ease infinite alternate;
+          }
+          @keyframes light {
+            0%,
+            55% {
+              opacity: 0;
+            }
+            60%,
+            100% {
+              opacity: 1;
+            }
+          }
+          #luz_2 {
+            opacity: 1;
+            animation: lightDelay 8s ease infinite alternate;
+          }
+          @keyframes lightDelay {
+            0%,
+            60% {
+              opacity: 0;
+            }
+            65%,
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+        .object {
+          animation: MoveUpDown 4s linear infinite;
+        }
+        @keyframes MoveUpDown {
+          0%,
+          100% {
+            top: 34vh;
+          }
+          50% {
+            top: 38vh;
+          }
+        }
+      }
+    }
+  }
+}

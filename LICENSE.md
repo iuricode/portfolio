@@ -1,3 +1,3 @@
-Copyright © 2020 - [iuricode](https://github.com/iuricode)
+Copyright © 2022 - [iuricode](https://github.com/iuricode)
 
-O uso desses arquivos NÃO é permitido, caso queria usar como referência por favor entrar em contato (Links na bio dos contatos).
+O uso desses arquivos NÃO são permitidos, mas você pode usá-los como referência para criar o seu portfólio.

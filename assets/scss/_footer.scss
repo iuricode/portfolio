@@ -1,0 +1,48 @@
+footer {
+  text-align: center;
+  color: $color-white;
+  margin-top: 75px;
+  .grid-layout {
+    border-top: 1px solid rgba(114, 114, 126, 0.2);
+    @include flexbox();
+    text-align: center;
+    width: 100%;
+    padding: 0px 10px;
+    @include responsive-mobile {
+      justify-content: center;
+      padding: 0px 20px;
+    }
+    p {
+      margin-top: 24px;
+      text-align: center;
+      color: rgb(114, 114, 126);
+      font: {
+        family: $font-secondary;
+        size: 1.6rem;
+      }
+    }
+    div {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      @include responsive-mobile {
+        width: 100%;
+        justify-content: center;
+        a:nth-child(1) {
+          margin-left: 0px;
+        }
+      }
+      a {
+        margin-left: 30px;
+        padding: 10px;
+        img {
+          opacity: 0.6;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

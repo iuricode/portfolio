@@ -1,0 +1,65 @@
+#s-services {
+  @include spacing-section;
+  text-align: center;
+  background-color: $bg-secondary;
+  .grid-layout {
+    h2 {
+      @include title-section();
+      span {
+        color: $color-main;
+        font-size: 6rem;
+      }
+    }
+    #services {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin: 25px 0px;
+      article {
+        text-align: center;
+        height: auto;
+        background-color: $bg-main;
+        padding: 40px 30px;
+        border-radius: 5px;
+        margin: 10px;
+        flex-basis: calc(25% - 20px);
+        flex-grow: 1;
+        border: 1px solid $bg-secondary;
+        &:hover {
+          border-image: linear-gradient(
+              225deg,
+              rgba(102, 16, 242, 1) 0%,
+              $bg-secondary 100%
+            )
+            1;
+        }
+        .image-service {
+          width: 100px;
+          margin: 0 auto;
+        }
+        @include responsive-desktop {
+          flex-basis: calc(50% - 20px);
+        }
+        @include responsive-mobile {
+          flex-basis: calc(100% - 20px);
+        }
+        h3 {
+          padding: 20px 0px;
+          color: $color-white;
+          font: {
+            size: 1.8rem;
+            weight: 500;
+          }
+        }
+        p {
+          line-height: 28px;
+          color: $color-gray;
+          font: {
+            family: $font-secondary;
+            size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

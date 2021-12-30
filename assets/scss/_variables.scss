@@ -14,40 +14,61 @@
   font-display: swap;
 }
 
-//Fonte
-$fontPrincipal: "Cera Pro Medium";
-$fontSecundaria: "Cera Pro Regular";
-//Cores
-$corPrincipal: #6610f2;
-//Hover
-$hoverPrincipal: #5429cf;
-//Cores textos
-$corBranca: #fafafa;
-$corBrancaDark: #c9c9c9;
-//Cores Dark
-$corPrincipalDark: #0e091b;
-$corSegundariaDark: #110e1b;
+$font-main: "Cera Pro Medium";
+$font-secondary: "Cera Pro Regular";
 
-//Mixins
-@mixin FlexBox() {
+$color-main: #6610f2;
+$color-main-hover: #5429cf;
+
+$color-white: #fafafa;
+$color-gray: #bebebe;
+$bg-main: #0e091b;
+$bg-secondary: #110e1b;
+
+@mixin responsive-desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin spacing-section() {
+  padding: 100px 50px;
+  @include responsive-tablet {
+    padding: 50px 20px;
+  }
+}
+
+@mixin flexbox() {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-@mixin LarguraMaxContainer() {
+@mixin grid-layout() {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-@mixin botao {
+@mixin button {
   background: linear-gradient(
     225deg,
     rgba(102, 16, 242, 0.3) 0%,
     rgba(102, 16, 242, 0) 100%
   );
-  color: $corBranca;
+  color: $color-white;
   backdrop-filter: blur(10px);
   padding: 15px 30px;
   max-width: 250px;
@@ -61,7 +82,7 @@ $corSegundariaDark: #110e1b;
   font: {
     size: 18px;
     weight: 500;
-    family: $fontSecundaria;
+    family: $font-secondary;
   }
   &:hover {
     padding: 15px 45px;
@@ -74,9 +95,9 @@ $corSegundariaDark: #110e1b;
   }
 }
 
-@mixin tituloSection {
+@mixin title-section {
   padding-bottom: 20px;
-  color: $corBranca;
+  color: $color-white;
   font: {
     size: 4rem;
     weight: 500;

@@ -1,5 +1,5 @@
 <h1 align="center">
-  📰<br>Meu Portfólio
+  💻<br>Meu Portfólio
 </h1>
 
 <h4 align="center">
@@ -13,7 +13,7 @@
 ## 📚 Seções
 O site é composto por 5 seções diferentes:
 
-- **Home:** Nele temos um avatar do meu github e um breve apresentação;
+- **Home:** Nele temos uma breve apresentação;
 - **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 - **Serviços:** Exibe através de cards os diferentes serviços em que possuo conhecimentos;

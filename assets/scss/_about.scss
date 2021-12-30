@@ -1,0 +1,110 @@
+#s-about {
+  @include spacing-section;
+  background-color: $bg-secondary;
+  .grid-layout {
+    #about {
+      @include flexbox;
+    }
+    #about-photo {
+      width: 50%;
+      padding-right: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: 1s all ease;
+      #photo-iuricode {
+        width: 400px;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 45px;
+        }
+      }
+      #figura1 {
+        position: absolute;
+        top: 40px;
+        right: 430px;
+        background-color: #1a132b;
+        border-radius: 10px;
+        width: 75px;
+        height: 75px;
+      }
+      #figura2 {
+        position: absolute;
+        top: 100px;
+        right: 150px;
+        background-color: #1a132b;
+        border-radius: 10px;
+        width: 75px;
+        height: 75px;
+      }
+      #figura3 {
+        position: absolute;
+        top: 250px;
+        right: 450px;
+        background-color: #1a132b;
+        border-radius: 10px;
+        width: 75px;
+        height: 75px;
+      }
+      .icon1 {
+        animation: icon-move 3s ease 2.9s infinite alternate;
+      }
+      .icon2 {
+        animation: icon-move 3s ease 1.9s infinite alternate;
+      }
+      .icon3 {
+        animation: icon-move 3s ease 0.6s infinite alternate;
+      }
+      @keyframes icon-move {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(10px, -40px, 0);
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+      @include responsive-desktop {
+        display: none;
+      }
+    }
+    #about-text {
+      width: 50%;
+      @include responsive-desktop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+      }
+      h2 {
+        @include title-section();
+        span {
+          color: $color-main;
+          font-size: 6rem;
+        }
+      }
+      p {
+        line-height: 3.2rem;
+        color: $color-gray;
+        font: {
+          family: $font-secondary;
+          size: 1.8rem;
+        }
+        &:nth-child(2) {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
