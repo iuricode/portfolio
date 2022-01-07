@@ -867,7 +867,6 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-services {
   padding: 100px 50px;
-  text-align: center;
   background-color: #110e1b;
 }
 
@@ -878,6 +877,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-services .grid-layout h2 {
+  text-align: center;
   padding-bottom: 20px;
   color: #fafafa;
   font-size: 4rem;
@@ -900,7 +900,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-services .grid-layout #services article {
-  text-align: center;
   height: auto;
   background-color: #0e091b;
   padding: 40px 30px;
@@ -919,11 +918,6 @@ header .grid-layout nav .nav-list li a:hover {
      border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
 }
 
-#s-services .grid-layout #services article .image-service {
-  width: 100px;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 1200px) {
   #s-services .grid-layout #services article {
     -ms-flex-preferred-size: calc(50% - 20px);
@@ -938,10 +932,22 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 
+#s-services .grid-layout #services article div {
+  height: 90px;
+}
+
+#s-services .grid-layout #services article div img {
+  width: 70px;
+}
+
+#s-services .grid-layout #services article div .icon-services-large {
+  width: 90px;
+}
+
 #s-services .grid-layout #services article h3 {
   padding: 20px 0px;
   color: #fafafa;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -955,6 +961,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-skills {
   padding: 100px 50px;
   background-color: #0e091b;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1136,7 +1143,7 @@ footer .grid-layout {
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
-  padding: 0px 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1144,16 +1151,18 @@ footer .grid-layout {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0px 20px;
   }
 }
 
+footer .grid-layout #direitos-autorais {
+  margin-top: 20px;
+}
+
 footer .grid-layout p {
-  margin-top: 24px;
   text-align: center;
   color: #72727e;
   font-family: "Cera Pro Regular";
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 footer .grid-layout div {
@@ -1164,7 +1173,11 @@ footer .grid-layout div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+}
+
+footer .grid-layout div img {
+  width: 24px;
+  margin-left: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1177,19 +1190,6 @@ footer .grid-layout div {
   footer .grid-layout div a:nth-child(1) {
     margin-left: 0px;
   }
-}
-
-footer .grid-layout div a {
-  margin-left: 30px;
-  padding: 10px;
-}
-
-footer .grid-layout div a img {
-  opacity: 0.6;
-}
-
-footer .grid-layout div a img:hover {
-  opacity: 1;
 }
 
 .typewriter:after {

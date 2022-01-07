@@ -1,9 +1,10 @@
 #s-services {
   @include spacing-section;
-  text-align: center;
+
   background-color: $bg-secondary;
   .grid-layout {
     h2 {
+      text-align: center;
       @include title-section();
       span {
         color: $color-main;
@@ -16,7 +17,6 @@
       flex-wrap: wrap;
       margin: 25px 0px;
       article {
-        text-align: center;
         height: auto;
         background-color: $bg-main;
         padding: 40px 30px;
@@ -33,21 +33,27 @@
             )
             1;
         }
-        .image-service {
-          width: 100px;
-          margin: 0 auto;
-        }
+
         @include responsive-desktop {
           flex-basis: calc(50% - 20px);
         }
         @include responsive-mobile {
           flex-basis: calc(100% - 20px);
         }
+        div {
+          height: 90px;
+          img {
+            width: 70px;
+          }
+          .icon-services-large {
+            width: 90px;
+          }
+        }
         h3 {
           padding: 20px 0px;
           color: $color-white;
           font: {
-            size: 1.8rem;
+            size: 2rem;
             weight: 500;
           }
         }

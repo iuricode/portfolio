@@ -1,6 +1,7 @@
 #s-skills {
   @include spacing-section;
   background-color: $bg-main;
+  padding-bottom: 50px;
   .grid-layout {
     #skills {
       @include flexbox;
