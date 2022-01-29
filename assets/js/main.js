@@ -1,9 +1,9 @@
 import { initScrollReveal } from "./scrollReveal.js";
 import { typeWrite } from "./typeWrite.js";
-import { writeDescription } from "./writeDescription.js";
+import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";
 
 menu();
-writeDescription();
+hoverChangeDescription();
 initScrollReveal();
 typeWrite(document.querySelector(".typewriter"));
