@@ -1,20 +1,14 @@
 export function writeDescription() {
   var changeDescription = document.querySelector(".changeDescription");
 
-  var closeChangeDescription = document.getElementsByClassName(
-    "closeChangeDescription"
-  );
-
   function hoverChangeDescription(nameCard, text) {
     document.querySelector(nameCard).addEventListener("mouseover", () => {
       changeDescription.innerHTML = text;
     });
 
-    for (let i = 0; i < closeChangeDescription.length; i++) {
-      closeChangeDescription[i].addEventListener("mouseout", () => {
-        changeDescription.innerHTML = `*passe o cursor do mouse no card para ler*`;
-      });
-    }
+    document.querySelector(nameCard).addEventListener("mouseout", () => {
+      changeDescription.innerHTML = `*passe o cursor do mouse no card para ler*`;
+    });
   }
 
   hoverChangeDescription(
