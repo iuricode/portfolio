@@ -3,19 +3,19 @@
   "name": "iuricode",
   "icons": [
     {
-      "src": "assets/image/logo-page.svg",
+      "src": "assets/image/logo-page.png",
       "type": "image/svg+xml",
       "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/image/logo-page.svg",
+      "src": "assets/image/logo-page.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/image/logo-page.svg",
+      "src": "assets/image/logo-page.png",
       "type": "image/png",
       "sizes": "124x124",
       "purpose": "any maskable"
