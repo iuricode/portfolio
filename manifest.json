@@ -5,17 +5,20 @@
     {
       "src": "assets/image/logo-page.svg",
       "type": "image/svg+xml",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/image/logo-page.svg",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/image/logo-page.svg",
       "type": "image/png",
-      "sizes": "124x124"
+      "sizes": "124x124",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "/?source=pwa",
