@@ -94,7 +94,7 @@ html {
 }
 
 header {
-  background: rgba 14, 9, 27, 0.6;
+  background: rgba(14, 9, 27, 0.7);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border-bottom: 1px solid rgba(114, 114, 126, 0.2);
@@ -141,7 +141,7 @@ header .grid-layout nav .nav-list li {
 }
 
 header .grid-layout nav .nav-list li a {
-  color: #bebebe;
+  color: #cccccc;
   font-size: 2rem;
   position: relative;
   font-family: "Cera Pro Medium";
@@ -318,18 +318,18 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 
-#s-home .grid-layout #home #home-container-text h2 {
+#s-home .grid-layout #home #home-container-text h1 {
   color: #fafafa;
   font-size: 2.5rem;
   font-weight: 500;
   font-family: "Cera Pro Regular";
 }
 
-#s-home .grid-layout #home #home-container-text h2 #home-name {
+#s-home .grid-layout #home #home-container-text h1 #home-name {
   font-size: 5.6rem;
 }
 
-#s-home .grid-layout #home #home-container-text h2 .typewriter {
+#s-home .grid-layout #home #home-container-text h1 .typewriter {
   font-family: "Cera Pro Regular";
 }
 
@@ -651,7 +651,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-about .grid-layout #about-text p {
   line-height: 3.2rem;
-  color: #bebebe;
+  color: #cccccc;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
@@ -748,7 +748,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-projects .grid-layout #projects > article p {
   line-height: 28px;
   margin-top: 20px;
-  color: #bebebe;
+  color: #cccccc;
   font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
@@ -953,7 +953,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-services .grid-layout #services article p {
   line-height: 28px;
-  color: #bebebe;
+  color: #cccccc;
   font-family: "Cera Pro Regular";
   font-size: 1.6rem;
 }
@@ -1018,7 +1018,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-skills .grid-layout #skills #skills-text p {
   max-width: 500px;
   line-height: 32px;
-  color: #bebebe;
+  color: #cccccc;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }
@@ -1124,7 +1124,6 @@ header .grid-layout nav .nav-list li a:hover {
 
 footer {
   text-align: center;
-  color: #fafafa;
   margin-top: 75px;
 }
 
@@ -1159,8 +1158,8 @@ footer .grid-layout #direitos-autorais {
 }
 
 footer .grid-layout p {
+  color: #cccccc;
   text-align: center;
-  color: #72727e;
   font-family: "Cera Pro Regular";
   font-size: 1.8rem;
 }

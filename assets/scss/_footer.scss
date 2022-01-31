@@ -1,6 +1,5 @@
 footer {
   text-align: center;
-  color: $color-white;
   margin-top: 75px;
   .grid-layout {
     border-top: 1px solid rgba(114, 114, 126, 0.2);
@@ -15,8 +14,8 @@ footer {
       margin-top: 20px;
     }
     p {
+      color: $color-gray;
       text-align: center;
-      color: rgb(114, 114, 126);
       font: {
         family: $font-secondary;
         size: 1.8rem;
@@ -25,7 +24,7 @@ footer {
     div {
       margin-top: 24px;
       display: flex;
-      align-items: center;  
+      align-items: center;
       img {
         width: 24px;
         margin-left: 12px;
