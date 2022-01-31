@@ -21,6 +21,6 @@
   "start_url": "/?source=pwa",
   "background_color": "#6610F2",
   "display": "standalone",
-  "scope": "/",
+  "scope": "index.html",
   "theme_color": "#6610F2"
 }
