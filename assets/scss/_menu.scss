@@ -8,16 +8,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  @include responsive-tablet() {
+    padding: 0px 25px;
+  }
   .grid-layout {
     nav {
-      padding: 0px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 8vh;
-      @include responsive-tablet() {
-        padding: 0px 25px;
-      }
+      padding: 0px 8px;
       img {
         width: 150px;
       }
@@ -28,9 +28,9 @@ header {
           margin-left: 50px;
           a {
             color: $color-gray;
-            font-size: 2rem;
             position: relative;
             font: {
+              size: 1.8rem;
               family: $font-main;
             }
             &::after {

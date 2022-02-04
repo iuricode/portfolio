@@ -13,12 +13,6 @@
         @include responsive-desktop {
           width: 100%;
         }
-        h2 {
-          span {
-            color: $color-main;
-            font-size: 6rem;
-          }
-        }
       }
       #skills-text {
         height: 300px;
@@ -27,7 +21,11 @@
           color: $color-white;
           font: {
             size: 3.2rem;
-            weight: 500px;
+            weight: 500;
+          }
+          span {
+            color: $color-main;
+            font-size: 6rem;
           }
         }
         p {
@@ -47,7 +45,6 @@
         @include responsive-desktop {
           margin-top: 50px;
         }
-
         article {
           @include flexbox();
           justify-content: center;

@@ -1,21 +1,5 @@
-@font-face {
-  font-family: "Cera Pro Medium";
-  src: local("Cera Pro Medium"), local("Cera Pro Medium"),
-    url("../fonts/CeraProMedium.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cera Pro Regular";
-  src: local("Cera Pro Regular"), local("Cera Pro Regular"),
-    url("../fonts/CeraProRegular.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
-$font-main: "Cera Pro Medium";
-$font-secondary: "Cera Pro Regular";
+$font-main: "IBM Plex Sans";
+$font-secondary: "DM Sans";
 
 $color-main: #6610f2;
 $color-main-hover: #5429cf;
@@ -25,6 +9,16 @@ $color-gray: #cccccc;
 
 $bg-main: #0e091b;
 $bg-secondary: #110e1b;
+
+$gap-1: 8px;
+$gap-2: 16px;
+$gap-3: 24px;
+$gap-4: 32px;
+$gap-5: 48px;
+$gap-6: 64px;
+$gap-7: 72px;
+$gap-8: 96px;
+$gap-9: 128px;
 
 @mixin responsive-desktop {
   @media screen and (max-width: 1200px) {

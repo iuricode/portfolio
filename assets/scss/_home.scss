@@ -26,12 +26,13 @@
         h1 {
           color: $color-white;
           font: {
-            size: 2.5rem;
-            weight: 500;
+            size: 2.4rem;
+            weight: 400;
             family: $font-secondary;
           }
           #home-name {
             font-size: 5.6rem;
+            font-weight: 600;
           }
           .typewriter {
             font: {

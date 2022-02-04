@@ -1,23 +1,9 @@
-@font-face {
-  font-family: "Cera Pro Medium";
-  src: local("Cera Pro Medium"), local("Cera Pro Medium"), url("../fonts/CeraProMedium.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cera Pro Regular";
-  src: local("Cera Pro Regular"), local("Cera Pro Regular"), url("../fonts/CeraProRegular.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Cera Pro Medium";
+  font-family: "IBM Plex Sans";
 }
 
 ::-moz-selection {
@@ -61,7 +47,7 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: "Cera Pro Medium";
+  font-family: "IBM Plex Sans";
 }
 
 button:focus,
@@ -70,7 +56,7 @@ input:focus {
 }
 
 body {
-  font-family: "Cera Pro Medium";
+  font-family: "IBM Plex Sans";
   background-color: #fafafa;
 }
 
@@ -105,8 +91,13 @@ header {
   left: 0;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    padding: 0px 25px;
+  }
+}
+
 header .grid-layout nav {
-  padding: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,12 +108,7 @@ header .grid-layout nav {
       -ms-flex-align: center;
           align-items: center;
   height: 8vh;
-}
-
-@media screen and (max-width: 992px) {
-  header .grid-layout nav {
-    padding: 0px 25px;
-  }
+  padding: 0px 8px;
 }
 
 header .grid-layout nav img {
@@ -142,9 +128,9 @@ header .grid-layout nav .nav-list li {
 
 header .grid-layout nav .nav-list li a {
   color: #cccccc;
-  font-size: 2rem;
   position: relative;
-  font-family: "Cera Pro Medium";
+  font-size: 1.8rem;
+  font-family: "IBM Plex Sans";
 }
 
 header .grid-layout nav .nav-list li a::after {
@@ -320,17 +306,18 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home #home-container-text h1 {
   color: #fafafa;
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "Cera Pro Regular";
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: "DM Sans";
 }
 
 #s-home .grid-layout #home #home-container-text h1 #home-name {
   font-size: 5.6rem;
+  font-weight: 600;
 }
 
 #s-home .grid-layout #home #home-container-text h1 .typewriter {
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
 }
 
 #s-home .grid-layout #home #home-container-text a {
@@ -356,7 +343,7 @@ header .grid-layout nav .nav-list li a:hover {
   margin-top: 30px;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
 }
 
 #s-home .grid-layout #home #home-container-text a:hover {
@@ -652,7 +639,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-about .grid-layout #about-text p {
   line-height: 3.2rem;
   color: #cccccc;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
   font-size: 1.8rem;
 }
 
@@ -749,7 +736,7 @@ header .grid-layout nav .nav-list li a:hover {
   line-height: 28px;
   margin-top: 20px;
   color: #cccccc;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
   font-size: 1.6rem;
 }
 
@@ -954,7 +941,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-services .grid-layout #services article p {
   line-height: 28px;
   color: #cccccc;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
   font-size: 1.6rem;
 }
 
@@ -998,12 +985,6 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 
-#s-skills .grid-layout #skills div h2 span,
-#s-skills .grid-layout #skills article h2 span {
-  color: #6610f2;
-  font-size: 6rem;
-}
-
 #s-skills .grid-layout #skills #skills-text {
   height: 300px;
 }
@@ -1012,14 +993,19 @@ header .grid-layout nav .nav-list li a:hover {
   margin-bottom: 30px;
   color: #fafafa;
   font-size: 3.2rem;
-  font-weight: 500px;
+  font-weight: 500;
+}
+
+#s-skills .grid-layout #skills #skills-text h2 span {
+  color: #6610f2;
+  font-size: 6rem;
 }
 
 #s-skills .grid-layout #skills #skills-text p {
   max-width: 500px;
   line-height: 32px;
   color: #cccccc;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
   font-size: 1.8rem;
 }
 
@@ -1160,7 +1146,7 @@ footer .grid-layout #direitos-autorais {
 footer .grid-layout p {
   color: #cccccc;
   text-align: center;
-  font-family: "Cera Pro Regular";
+  font-family: "DM Sans";
   font-size: 1.8rem;
 }
 
