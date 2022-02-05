@@ -1,12 +1,12 @@
 #s-skills {
   @include spacing-section;
   background-color: $bg-main;
-  padding-bottom: 50px;
+  padding-bottom: $gap-4;
   .grid-layout {
     #skills {
-      @include flexbox;
+      @include flexbox-between;
       height: auto;
-      padding: 10px;
+      padding: $gap-1;
       div,
       article {
         width: 50%;
@@ -15,9 +15,9 @@
         }
       }
       #skills-text {
-        height: 300px;
+        min-height: 300px;
         h2 {
-          margin-bottom: 30px;
+          margin-bottom: $gap-4;
           color: $color-white;
           font: {
             size: 3.2rem;
@@ -25,12 +25,15 @@
           }
           span {
             color: $color-main;
-            font-size: 6rem;
+            font-size: $gap-6;
           }
+        }
+        .changeDescription {
+          transition: 2s all ease;
         }
         p {
           max-width: 500px;
-          line-height: 32px;
+          line-height: 3.2rem;
           color: $color-gray;
           font: {
             family: $font-secondary;
@@ -41,28 +44,22 @@
       #skills-cards {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: $gap-3;
         @include responsive-desktop {
-          margin-top: 50px;
+          margin-top: $gap-5;
         }
         article {
-          @include flexbox();
+          @include flexbox-between;
           justify-content: center;
           width: 20%;
           flex-grow: 1;
           height: 130px;
           background-color: $bg-secondary;
-          border-radius: 5px;
           position: relative;
-          border: 1px solid $bg-secondary;
+          border: 1px solid $bg-main;
+          transition: 1s all ease;
           &:hover {
-            border: 1px solid $bg-secondary;
-            border-image: linear-gradient(
-                225deg,
-                rgba(102, 16, 242, 1) 0%,
-                $bg-secondary 100%
-              )
-              1;
+            border: 1px solid rgba(102, 16, 242, 1);
           }
           &:hover .skills-cards-name {
             display: block;
@@ -80,11 +77,8 @@
             transform: translate(-50%, 0%);
             background-color: $bg-secondary;
             width: 125px;
-            border-radius: 4px;
             color: $color-white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexbox-center;
             display: none;
             font-size: 1.8rem;
           }

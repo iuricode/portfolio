@@ -10,6 +10,7 @@ $color-gray: #cccccc;
 $bg-main: #0e091b;
 $bg-secondary: #110e1b;
 
+$gap-0: 0px;
 $gap-1: 8px;
 $gap-2: 16px;
 $gap-3: 24px;
@@ -39,17 +40,23 @@ $gap-9: 128px;
 }
 
 @mixin spacing-section() {
-  padding: 100px 50px;
+  padding: $gap-8 $gap-5;
   @include responsive-tablet {
-    padding: 50px 20px;
+    padding: $gap-5 $gap-2;
   }
 }
 
-@mixin flexbox() {
+@mixin flexbox-between() {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@mixin flexbox-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin grid-layout() {
@@ -57,44 +64,50 @@ $gap-9: 128px;
   margin: 0 auto;
 }
 
-@mixin button {
-  background: linear-gradient(
-    225deg,
-    rgba(102, 16, 242, 0.3) 0%,
-    rgba(102, 16, 242, 0) 100%
-  );
-  color: $color-white;
-  backdrop-filter: blur(10px);
-  padding: 15px 30px;
-  max-width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  border: 1px solid rgba(102, 16, 242, 0.5);
-  transition: all 0.7s ease;
-  margin-top: 30px;
-  font: {
-    size: 18px;
-    weight: 500;
-    family: $font-secondary;
-  }
-  &:hover {
-    padding: 15px 45px;
-    max-width: 280px;
-    background: linear-gradient(
-      225deg,
-      rgba(102, 16, 242, 0.6) 0%,
-      rgba(102, 16, 242, 0) 100%
-    );
-  }
-}
-
 @mixin title-section {
-  padding-bottom: 20px;
+  padding-bottom: $gap-3;
   color: $color-white;
   font: {
     size: 4rem;
     weight: 500;
+  }
+}
+
+@mixin hover-link {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@mixin block-article {
+  height: auto;
+  padding: $gap-4;
+  margin: $gap-1;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid $bg-main;
+  transition: 1s all ease;
+  &:hover {
+    border: 1px solid rgba(102, 16, 242, 1);
+  }
+
+  @include responsive-desktop {
+    flex-basis: calc(50% - 20px);
+  }
+  @include responsive-mobile {
+    flex-basis: calc(100% - 20px);
   }
 }

@@ -25,7 +25,6 @@ ol {
 
 a {
   text-decoration: none;
-  cursor: url("../image/cursor-pointer.svg"), pointer;
 }
 
 img {
@@ -63,11 +62,10 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  cursor: url("../image/cursor.svg"), auto;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -76,13 +74,13 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: #6610f2;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 header {
-  background: rgba(14, 9, 27, 0.7);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  background: rgba(14, 9, 27, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid rgba(114, 114, 126, 0.2);
   z-index: 999;
   width: 100%;
@@ -93,7 +91,7 @@ header {
 
 @media screen and (max-width: 992px) {
   header {
-    padding: 0px 25px;
+    padding: 0px 16px;
   }
 }
 
@@ -107,6 +105,8 @@ header .grid-layout nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 8vh;
   padding: 0px 8px;
 }
@@ -123,7 +123,13 @@ header .grid-layout nav .nav-list {
 }
 
 header .grid-layout nav .nav-list li {
-  margin-left: 50px;
+  margin-left: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  header .grid-layout nav .nav-list li {
+    margin-left: 0px;
+  }
 }
 
 header .grid-layout nav .nav-list li a {
@@ -146,10 +152,10 @@ header .grid-layout nav .nav-list li a::after {
   background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 header .grid-layout nav .nav-list li a:hover::after {
@@ -239,12 +245,12 @@ header .grid-layout nav .nav-list li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 100px;
+    padding-top: 96px;
     visibility: hidden;
   }
   header .grid-layout nav .nav-list li {
     opacity: 0;
-    margin: 0px 0px 50px 0px;
+    margin-bottom: 48px;
   }
   header .grid-layout nav .nav-list li a {
     font-size: 2.4rem;
@@ -330,13 +336,12 @@ header .grid-layout nav .nav-list li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid rgba(102, 16, 242, 0.5);
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -462,13 +467,13 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about {
-  padding: 100px 50px;
+  padding: 96px 48px;
   background-color: #110e1b;
 }
 
 @media screen and (max-width: 992px) {
   #s-about {
-    padding: 50px 20px;
+    padding: 48px 16px;
   }
 }
 
@@ -492,12 +497,12 @@ header .grid-layout nav .nav-list li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
@@ -516,59 +521,52 @@ header .grid-layout nav .nav-list li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #s-about .grid-layout #about-photo div img {
-  width: 45px;
+  width: 48px;
 }
 
-#s-about .grid-layout #about-photo #figura1 {
+#s-about .grid-layout #about-photo .about-figure {
   position: absolute;
+  background-color: #1d152c;
+  border-radius: 4px;
+  width: 72px;
+  height: 72px;
+}
+
+#s-about .grid-layout #about-photo .figure-one {
   top: 40px;
   right: 430px;
-  background-color: #1a132b;
-  border-radius: 10px;
-  width: 75px;
-  height: 75px;
 }
 
-#s-about .grid-layout #about-photo #figura2 {
-  position: absolute;
+#s-about .grid-layout #about-photo .figure-two {
   top: 100px;
   right: 150px;
-  background-color: #1a132b;
-  border-radius: 10px;
-  width: 75px;
-  height: 75px;
 }
 
-#s-about .grid-layout #about-photo #figura3 {
-  position: absolute;
+#s-about .grid-layout #about-photo .figure-three {
   top: 250px;
   right: 450px;
-  background-color: #1a132b;
-  border-radius: 10px;
-  width: 75px;
-  height: 75px;
 }
 
-#s-about .grid-layout #about-photo .icon1 {
+#s-about .grid-layout #about-photo .icon-one {
   -webkit-animation: icon-move 3s ease 2.9s infinite alternate;
           animation: icon-move 3s ease 2.9s infinite alternate;
 }
 
-#s-about .grid-layout #about-photo .icon2 {
+#s-about .grid-layout #about-photo .icon-two {
   -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
           animation: icon-move 3s ease 1.9s infinite alternate;
 }
 
-#s-about .grid-layout #about-photo .icon3 {
+#s-about .grid-layout #about-photo .icon-three {
   -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
           animation: icon-move 3s ease 0.6s infinite alternate;
 }
@@ -625,7 +623,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about-text h2 {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
@@ -633,7 +631,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-about .grid-layout #about-text h2 span {
   color: #6610f2;
-  font-size: 6rem;
+  font-size: 64px;
 }
 
 #s-about .grid-layout #about-text p {
@@ -643,24 +641,20 @@ header .grid-layout nav .nav-list li a:hover {
   font-size: 1.8rem;
 }
 
-#s-about .grid-layout #about-text p:nth-child(2) {
-  padding-bottom: 20px;
-}
-
 #s-projects {
-  padding: 100px 50px;
+  padding: 96px 48px;
   text-align: center;
   background-color: #0e091b;
 }
 
 @media screen and (max-width: 992px) {
   #s-projects {
-    padding: 50px 20px;
+    padding: 48px 16px;
   }
 }
 
 #s-projects .grid-layout h2 {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
@@ -668,11 +662,11 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-projects .grid-layout h2 span {
   color: #6610f2;
-  font-size: 6rem;
+  font-size: 64px;
 }
 
 #s-projects .grid-layout #projects {
-  margin: 25px 0px;
+  margin: 24px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,23 +682,22 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-projects .grid-layout #projects > article {
+  background-color: #110e1b;
   height: auto;
+  padding: 32px;
+  margin: 8px;
+  -ms-flex-preferred-size: calc(33% - 20px);
+      flex-basis: calc(33% - 20px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-preferred-size: calc(33% - 20px);
-      flex-basis: calc(33% - 20px);
-  background-color: #110e1b;
-  padding: 30px 25px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid #110e1b;
+  border: 1px solid #0e091b;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 #s-projects .grid-layout #projects > article:hover {
-  border-radius: 5px;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border: 1px solid #6610f2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -721,11 +714,6 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 
-#s-projects .grid-layout #projects > article img {
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
 #s-projects .grid-layout #projects > article h3 {
   color: #fafafa;
   font-size: 2.4rem;
@@ -733,97 +721,19 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-projects .grid-layout #projects > article p {
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 24px;
+  margin-top: 24px;
   color: #cccccc;
+  line-height: 3.2rem;
   font-family: "DM Sans";
-  font-size: 1.6rem;
-}
-
-#s-projects .grid-layout #projects > article > span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
-#s-projects .grid-layout #projects > article > span a {
-  width: 50%;
-}
-
-@media screen and (max-width: 992px) {
-  #s-projects .grid-layout #projects > article > span a {
-    width: 100%;
-  }
-}
-
-#s-projects .grid-layout #projects > article > span button {
-  background-color: #6610f2;
-  padding: 10px 25px;
-  color: #fafafa;
-  border: 0;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 992px) {
-  #s-projects .grid-layout #projects > article > span button {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-#s-projects .grid-layout #projects > article > span button:hover {
-  background-color: #5429cf;
-}
-
-#s-projects .grid-layout #projects > article .linguagensProjeto {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-}
-
-#s-projects .grid-layout #projects > article .linguagensProjeto span {
-  padding: 5px;
-  background-color: #0e091b;
-  border-radius: 5px;
-  color: #fafafa;
-  margin-bottom: 5px;
+  font-size: 1.8rem;
 }
 
 #s-projects .grid-layout a {
   color: #6610f2;
-  font-size: 18px;
   position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 #s-projects .grid-layout a::after {
@@ -839,10 +749,10 @@ header .grid-layout nav .nav-list li a:hover {
   background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 #s-projects .grid-layout a:hover::after {
@@ -853,19 +763,19 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-services {
-  padding: 100px 50px;
+  padding: 96px 48px;
   background-color: #110e1b;
 }
 
 @media screen and (max-width: 992px) {
   #s-services {
-    padding: 50px 20px;
+    padding: 48px 16px;
   }
 }
 
 #s-services .grid-layout h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   color: #fafafa;
   font-size: 4rem;
   font-weight: 500;
@@ -873,7 +783,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-services .grid-layout h2 span {
   color: #6610f2;
-  font-size: 6rem;
+  font-size: 64px;
 }
 
 #s-services .grid-layout #services {
@@ -883,26 +793,26 @@ header .grid-layout nav .nav-list li a:hover {
   height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 25px 0px;
+  margin: 24px 0px;
 }
 
 #s-services .grid-layout #services article {
-  height: auto;
   background-color: #0e091b;
-  padding: 40px 30px;
-  border-radius: 5px;
-  margin: 10px;
-  -ms-flex-preferred-size: calc(25% - 20px);
-      flex-basis: calc(25% - 20px);
+  height: auto;
+  padding: 32px;
+  margin: 8px;
+  -ms-flex-preferred-size: calc(33% - 20px);
+      flex-basis: calc(33% - 20px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 1px solid #110e1b;
+  border: 1px solid #0e091b;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 #s-services .grid-layout #services article:hover {
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border: 1px solid #6610f2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -927,33 +837,29 @@ header .grid-layout nav .nav-list li a:hover {
   width: 70px;
 }
 
-#s-services .grid-layout #services article div .icon-services-large {
-  width: 90px;
-}
-
 #s-services .grid-layout #services article h3 {
-  padding: 20px 0px;
+  padding: 24px 0px;
   color: #fafafa;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
 #s-services .grid-layout #services article p {
-  line-height: 28px;
+  line-height: 3.2rem;
   color: #cccccc;
   font-family: "DM Sans";
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 #s-skills {
-  padding: 100px 50px;
+  padding: 96px 48px;
   background-color: #0e091b;
-  padding-bottom: 50px;
+  padding-bottom: 32px;
 }
 
 @media screen and (max-width: 992px) {
   #s-skills {
-    padding: 50px 20px;
+    padding: 48px 16px;
   }
 }
 
@@ -970,7 +876,7 @@ header .grid-layout nav .nav-list li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  padding: 10px;
+  padding: 8px;
 }
 
 #s-skills .grid-layout #skills div,
@@ -986,11 +892,11 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-skills .grid-layout #skills #skills-text {
-  height: 300px;
+  min-height: 300px;
 }
 
 #s-skills .grid-layout #skills #skills-text h2 {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: #fafafa;
   font-size: 3.2rem;
   font-weight: 500;
@@ -998,12 +904,17 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-skills .grid-layout #skills #skills-text h2 span {
   color: #6610f2;
-  font-size: 6rem;
+  font-size: 64px;
+}
+
+#s-skills .grid-layout #skills #skills-text .changeDescription {
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
 }
 
 #s-skills .grid-layout #skills #skills-text p {
   max-width: 500px;
-  line-height: 32px;
+  line-height: 3.2rem;
   color: #cccccc;
   font-family: "DM Sans";
   font-size: 1.8rem;
@@ -1015,12 +926,12 @@ header .grid-layout nav .nav-list li a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
 }
 
 @media screen and (max-width: 1200px) {
   #s-skills .grid-layout #skills #skills-cards {
-    margin-top: 50px;
+    margin-top: 48px;
   }
 }
 
@@ -1045,15 +956,14 @@ header .grid-layout nav .nav-list li a:hover {
           flex-grow: 1;
   height: 130px;
   background-color: #110e1b;
-  border-radius: 5px;
   position: relative;
-  border: 1px solid #110e1b;
+  border: 1px solid #0e091b;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 #s-skills .grid-layout #skills #skills-cards article:hover {
-  border: 1px solid #110e1b;
-  -o-border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
-     border-image: linear-gradient(225deg, #6610f2 0%, #110e1b 100%) 1;
+  border: 1px solid #6610f2;
 }
 
 #s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name, #s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name-high, #s-skills .grid-layout #skills #skills-cards article:hover .skills-cards-name-low {
@@ -1077,7 +987,6 @@ header .grid-layout nav .nav-list li a:hover {
           transform: translate(-50%, 0%);
   background-color: #110e1b;
   width: 125px;
-  border-radius: 4px;
   color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,7 +1019,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 footer {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 72px;
 }
 
 footer .grid-layout {
@@ -1128,7 +1037,7 @@ footer .grid-layout {
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1140,7 +1049,7 @@ footer .grid-layout {
 }
 
 footer .grid-layout #direitos-autorais {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 footer .grid-layout p {
@@ -1162,7 +1071,7 @@ footer .grid-layout div {
 
 footer .grid-layout div img {
   width: 24px;
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1172,14 +1081,11 @@ footer .grid-layout div img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .grid-layout div a:nth-child(1) {
-    margin-left: 0px;
-  }
 }
 
 .typewriter:after {
   content: "|";
-  margin-left: 5px;
+  margin-left: 8px;
   opacity: 1;
   -webkit-animation: blink 1s infinite;
           animation: blink 1s infinite;

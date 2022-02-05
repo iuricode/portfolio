@@ -16,7 +16,6 @@ ol {
 }
 a {
   text-decoration: none;
-  cursor: url("../image/cursor-pointer.svg"), pointer;
 }
 img {
   max-width: 100%;
@@ -47,15 +46,14 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  cursor: url("../image/cursor.svg"), auto;
 }
 ::-webkit-scrollbar {
-  width: 6px;
+  width: $gap-1;
 }
 ::-webkit-scrollbar-track {
   background-color: $bg-main;
 }
 ::-webkit-scrollbar-thumb {
   background-color: $color-main;
-  border-radius: 6px;
+  border-radius: $gap-1;
 }
