@@ -3,14 +3,12 @@
   background-color: $bg-secondary;
   .grid-layout {
     #about {
-      @include flexbox;
+      @include flexbox-between;
     }
     #about-photo {
       width: 50%;
       padding-right: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexbox-center;
       position: relative;
       transition: 1s all ease;
       #photo-iuricode {
@@ -20,47 +18,37 @@
         transform: scale(1.1);
       }
       div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox-center;
         img {
-          width: 45px;
+          width: $gap-5;
         }
       }
-      #figura1 {
+      .about-figure {
         position: absolute;
+        background-color: #1d152c;
+        border-radius: 4px;
+        width: $gap-7;
+        height: $gap-7;
+      }
+      .figure-one {
         top: 40px;
         right: 430px;
-        background-color: #1a132b;
-        border-radius: 10px;
-        width: 75px;
-        height: 75px;
       }
-      #figura2 {
-        position: absolute;
+      .figure-two {
         top: 100px;
         right: 150px;
-        background-color: #1a132b;
-        border-radius: 10px;
-        width: 75px;
-        height: 75px;
       }
-      #figura3 {
-        position: absolute;
+      .figure-three {
         top: 250px;
         right: 450px;
-        background-color: #1a132b;
-        border-radius: 10px;
-        width: 75px;
-        height: 75px;
       }
-      .icon1 {
+      .icon-one {
         animation: icon-move 3s ease 2.9s infinite alternate;
       }
-      .icon2 {
+      .icon-two {
         animation: icon-move 3s ease 1.9s infinite alternate;
       }
-      .icon3 {
+      .icon-three {
         animation: icon-move 3s ease 0.6s infinite alternate;
       }
       @keyframes icon-move {
@@ -91,7 +79,7 @@
         @include title-section();
         span {
           color: $color-main;
-          font-size: 6rem;
+          font-size: $gap-6;
         }
       }
       p {
@@ -100,9 +88,6 @@
         font: {
           family: $font-secondary;
           size: 1.8rem;
-        }
-        &:nth-child(2) {
-          padding-bottom: 20px;
         }
       }
     }

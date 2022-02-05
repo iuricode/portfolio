@@ -3,7 +3,7 @@
 
 .typewriter:after {
   content: "|";
-  margin-left: 5px;
+  margin-left: $gap-1;
   opacity: 1;
   animation: blink 1s infinite;
   color: $color-main;
