@@ -79,7 +79,7 @@
         @include title-section();
         span {
           color: $color-main;
-          font-size: $gap-6;
+          font-size: 4.8rem;
         }
       }
       p {
@@ -87,7 +87,8 @@
         color: $color-gray;
         font: {
           family: $font-secondary;
-          size: 1.8rem;
+          size: 2rem;
+          line-height: 160%;
         }
       }
     }

@@ -1,14 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "IBM Plex Sans";
-}
-
-::-moz-selection {
-  background-color: #6610f2;
-  color: #fafafa;
+  box-sizing: border-box;
+  font-family: "Saira";
 }
 
 ::selection {
@@ -46,7 +40,7 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: "IBM Plex Sans";
+  font-family: "Saira";
 }
 
 button:focus,
@@ -55,7 +49,7 @@ input:focus {
 }
 
 body {
-  font-family: "IBM Plex Sans";
+  font-family: "Saira";
   background-color: #fafafa;
 }
 
@@ -69,7 +63,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0e091b;
+  background-color: #080713;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,7 +72,7 @@ html {
 }
 
 header {
-  background: rgba(14, 9, 27, 0.8);
+  background: rgba(10, 10, 25, 0.7);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid rgba(114, 114, 126, 0.2);
@@ -96,17 +90,10 @@ header {
 }
 
 header .grid-layout nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   height: 8vh;
   padding: 0px 8px;
 }
@@ -117,8 +104,6 @@ header .grid-layout nav img {
 
 header .grid-layout nav .nav-list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -133,36 +118,28 @@ header .grid-layout nav .nav-list li {
 }
 
 header .grid-layout nav .nav-list li a {
-  color: #cccccc;
+  color: #909090;
   position: relative;
   font-size: 1.8rem;
-  font-family: "IBM Plex Sans";
+  font-family: "Saira";
 }
 
 header .grid-layout nav .nav-list li a::after {
   content: "";
   position: absolute;
   width: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   height: 1px;
   bottom: -7px;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#6610f2), to(#17161d));
   background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transform-origin: bottom right;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 header .grid-layout nav .nav-list li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 header .grid-layout nav .nav-list li a:hover {
@@ -178,45 +155,27 @@ header .grid-layout nav .nav-list li a:hover {
   height: 1px;
   background-color: #fafafa;
   margin: 8px;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .nav-list.active {
   visibility: initial;
-  -webkit-transition: 1s all ease;
   transition: 1s all ease;
-}
-
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
 }
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 .mobile-menu.active .line1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-          transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
 
 .mobile-menu.active .line2 {
@@ -224,8 +183,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 .mobile-menu.active .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-          transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 
 @media screen and (max-width: 992px) {
@@ -240,11 +198,8 @@ header .grid-layout nav .nav-list li a:hover {
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    background-color: #110e1b;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    background-color: #0b0a17;
+    flex-direction: column;
     padding-top: 96px;
     visibility: hidden;
   }
@@ -262,7 +217,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home {
   padding: 0px 50px;
-  background-color: #0e091b;
+  background-color: #080713;
   position: relative;
 }
 
@@ -273,12 +228,8 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 90vh;
   overflow: hidden;
   width: 100%;
@@ -286,24 +237,14 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home #home-container-text {
   width: 60%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 992px) {
   #s-home .grid-layout #home #home-container-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
     padding: 0px;
@@ -314,41 +255,33 @@ header .grid-layout nav .nav-list li a:hover {
   color: #fafafa;
   font-size: 2.4rem;
   font-weight: 400;
-  font-family: "DM Sans";
+  font-family: "Saira";
 }
 
 #s-home .grid-layout #home #home-container-text h1 #home-name {
   font-size: 5.6rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #s-home .grid-layout #home #home-container-text h1 .typewriter {
-  font-family: "DM Sans";
+  font-family: "Saira";
 }
 
 #s-home .grid-layout #home #home-container-text a {
   background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
   color: #fafafa;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   padding: 15px 30px;
   max-width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(102, 16, 242, 0.5);
-  -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 500;
-  font-family: "DM Sans";
+  font-family: "Saira";
 }
 
 #s-home .grid-layout #home #home-container-text a:hover {
@@ -374,8 +307,7 @@ header .grid-layout nav .nav-list li a:hover {
   position: absolute;
   top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
 }
 
 @media screen and (max-width: 992px) {
@@ -387,19 +319,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-home .grid-layout #home #home-container-photo #logo-lab #luz-logo,
 #s-home .grid-layout #home #home-container-photo #logo-lab #logo-iuricode {
   opacity: 1;
-  -webkit-animation: light 8s ease infinite alternate;
-          animation: light 8s ease infinite alternate;
-}
-
-@-webkit-keyframes light {
-  0%,
-  55% {
-    opacity: 0;
-  }
-  60%,
-  100% {
-    opacity: 1;
-  }
+  animation: light 8s ease infinite alternate;
 }
 
 @keyframes light {
@@ -415,19 +335,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home #home-container-photo #logo-lab #luz_2 {
   opacity: 1;
-  -webkit-animation: lightDelay 8s ease infinite alternate;
-          animation: lightDelay 8s ease infinite alternate;
-}
-
-@-webkit-keyframes lightDelay {
-  0%,
-  60% {
-    opacity: 0;
-  }
-  65%,
-  100% {
-    opacity: 1;
-  }
+  animation: lightDelay 8s ease infinite alternate;
 }
 
 @keyframes lightDelay {
@@ -442,18 +350,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-photo .object {
-  -webkit-animation: MoveUpDown 4s linear infinite;
-          animation: MoveUpDown 4s linear infinite;
-}
-
-@-webkit-keyframes MoveUpDown {
-  0%,
-  100% {
-    top: 34vh;
-  }
-  50% {
-    top: 38vh;
-  }
+  animation: MoveUpDown 4s linear infinite;
 }
 
 @keyframes MoveUpDown {
@@ -468,7 +365,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-about {
   padding: 96px 48px;
-  background-color: #110e1b;
+  background-color: #0b0a17;
 }
 
 @media screen and (max-width: 992px) {
@@ -478,33 +375,19 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #s-about .grid-layout #about-photo {
   width: 50%;
   padding-right: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
@@ -513,20 +396,13 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about-photo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #s-about .grid-layout #about-photo div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #s-about .grid-layout #about-photo div img {
@@ -557,39 +433,23 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about-photo .icon-one {
-  -webkit-animation: icon-move 3s ease 2.9s infinite alternate;
-          animation: icon-move 3s ease 2.9s infinite alternate;
+  animation: icon-move 3s ease 2.9s infinite alternate;
 }
 
 #s-about .grid-layout #about-photo .icon-two {
-  -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
-          animation: icon-move 3s ease 1.9s infinite alternate;
+  animation: icon-move 3s ease 1.9s infinite alternate;
 }
 
 #s-about .grid-layout #about-photo .icon-three {
-  -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
-          animation: icon-move 3s ease 0.6s infinite alternate;
-}
-
-@-webkit-keyframes icon-move {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(10px, -40px, 0);
-            transform: translate3d(10px, -40px, 0);
-  }
+  animation: icon-move 3s ease 0.6s infinite alternate;
 }
 
 @keyframes icon-move {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(10px, -40px, 0);
-            transform: translate3d(10px, -40px, 0);
+    transform: translate3d(10px, -40px, 0);
   }
 }
 
@@ -611,13 +471,8 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 1200px) {
   #s-about .grid-layout #about-text {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-left: 0px;
   }
 }
@@ -631,20 +486,21 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-about .grid-layout #about-text h2 span {
   color: #6610f2;
-  font-size: 64px;
+  font-size: 4.8rem;
 }
 
 #s-about .grid-layout #about-text p {
   line-height: 3.2rem;
-  color: #cccccc;
-  font-family: "DM Sans";
-  font-size: 1.8rem;
+  color: #909090;
+  font-family: "Saira";
+  font-size: 2rem;
+  font-line-height: 160%;
 }
 
 #s-projects {
   padding: 96px 48px;
   text-align: center;
-  background-color: #0e091b;
+  background-color: #080713;
 }
 
 @media screen and (max-width: 992px) {
@@ -667,32 +523,21 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-projects .grid-layout #projects {
   margin: 24px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: left;
 }
 
 #s-projects .grid-layout #projects > article {
-  background-color: #110e1b;
+  background-color: #0b0a17;
   height: auto;
   padding: 32px;
   margin: 8px;
-  -ms-flex-preferred-size: calc(33% - 20px);
-      flex-basis: calc(33% - 20px);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border: 1px solid #0e091b;
-  -webkit-transition: 1s all ease;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid #080713;
   transition: 1s all ease;
 }
 
@@ -702,15 +547,13 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 1200px) {
   #s-projects .grid-layout #projects > article {
-    -ms-flex-preferred-size: calc(50% - 20px);
-        flex-basis: calc(50% - 20px);
+    flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
   #s-projects .grid-layout #projects > article {
-    -ms-flex-preferred-size: calc(100% - 20px);
-        flex-basis: calc(100% - 20px);
+    flex-basis: calc(100% - 20px);
   }
 }
 
@@ -723,9 +566,9 @@ header .grid-layout nav .nav-list li a:hover {
 #s-projects .grid-layout #projects > article p {
   line-height: 24px;
   margin-top: 24px;
-  color: #cccccc;
+  color: #909090;
   line-height: 3.2rem;
-  font-family: "DM Sans";
+  font-family: "Saira";
   font-size: 1.8rem;
 }
 
@@ -740,31 +583,23 @@ header .grid-layout nav .nav-list li a:hover {
   content: "";
   position: absolute;
   width: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   height: 1px;
   bottom: -7px;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#6610f2), to(#17161d));
   background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  transform-origin: bottom right;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 #s-projects .grid-layout a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #s-services {
   padding: 96px 48px;
-  background-color: #110e1b;
+  background-color: #0b0a17;
 }
 
 @media screen and (max-width: 992px) {
@@ -787,27 +622,20 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-services .grid-layout #services {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 24px 0px;
 }
 
 #s-services .grid-layout #services article {
-  background-color: #0e091b;
+  background-color: #080713;
   height: auto;
   padding: 32px;
   margin: 8px;
-  -ms-flex-preferred-size: calc(33% - 20px);
-      flex-basis: calc(33% - 20px);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border: 1px solid #0e091b;
-  -webkit-transition: 1s all ease;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid #080713;
   transition: 1s all ease;
 }
 
@@ -817,15 +645,13 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 1200px) {
   #s-services .grid-layout #services article {
-    -ms-flex-preferred-size: calc(50% - 20px);
-        flex-basis: calc(50% - 20px);
+    flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
   #s-services .grid-layout #services article {
-    -ms-flex-preferred-size: calc(100% - 20px);
-        flex-basis: calc(100% - 20px);
+    flex-basis: calc(100% - 20px);
   }
 }
 
@@ -846,14 +672,14 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-services .grid-layout #services article p {
   line-height: 3.2rem;
-  color: #cccccc;
-  font-family: "DM Sans";
+  color: #909090;
+  font-family: "Saira";
   font-size: 1.8rem;
 }
 
 #s-skills {
   padding: 96px 48px;
-  background-color: #0e091b;
+  background-color: #080713;
   padding-bottom: 32px;
 }
 
@@ -864,17 +690,10 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-skills .grid-layout #skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   height: auto;
   padding: 8px;
 }
@@ -908,24 +727,20 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-skills .grid-layout #skills #skills-text .changeDescription {
-  -webkit-transition: 2s all ease;
   transition: 2s all ease;
 }
 
 #s-skills .grid-layout #skills #skills-text p {
   max-width: 500px;
   line-height: 3.2rem;
-  color: #cccccc;
-  font-family: "DM Sans";
+  color: #909090;
+  font-family: "Saira";
   font-size: 1.8rem;
 }
 
 #s-skills .grid-layout #skills #skills-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -936,29 +751,17 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-skills .grid-layout #skills #skills-cards article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 20%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   height: 130px;
-  background-color: #110e1b;
+  background-color: #0b0a17;
   position: relative;
-  border: 1px solid #0e091b;
-  -webkit-transition: 1s all ease;
+  border: 1px solid #080713;
   transition: 1s all ease;
 }
 
@@ -983,20 +786,13 @@ header .grid-layout nav .nav-list li a:hover {
   height: auto;
   position: absolute;
   padding: 5px;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  background-color: #110e1b;
+  transform: translate(-50%, 0%);
+  background-color: #0b0a17;
   width: 125px;
   color: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   display: none;
   font-size: 1.8rem;
 }
@@ -1024,17 +820,10 @@ footer {
 
 footer .grid-layout {
   border-top: 1px solid rgba(114, 114, 126, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   width: 100%;
   padding: 8px;
@@ -1042,9 +831,7 @@ footer .grid-layout {
 
 @media screen and (max-width: 768px) {
   footer .grid-layout {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -1053,20 +840,16 @@ footer .grid-layout #direitos-autorais {
 }
 
 footer .grid-layout p {
-  color: #cccccc;
+  color: #909090;
   text-align: center;
-  font-family: "DM Sans";
+  font-family: "Saira";
   font-size: 1.8rem;
 }
 
 footer .grid-layout div {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 footer .grid-layout div img {
@@ -1077,9 +860,7 @@ footer .grid-layout div img {
 @media screen and (max-width: 768px) {
   footer .grid-layout div {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -1087,19 +868,8 @@ footer .grid-layout div img {
   content: "|";
   margin-left: 8px;
   opacity: 1;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
   color: #6610f2;
-}
-
-@-webkit-keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
 }
 
 @keyframes blink {

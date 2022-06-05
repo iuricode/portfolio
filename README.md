@@ -1,17 +1,14 @@
 <h1 align="center">
-  💻<br>Meu Portfólio
+  💻<br>Portfólio - Iuri Silva
 </h1>
-
-<h4 align="center">
-  Portfólio criado com o intuito de mostrar meus projetos ao decorrer da minha carreira.
-</h4>
 
 ![Resultado final do projeto](assets/image/preview.png)
 
 <h4 align="center"><a href="https://www.iuricode.com/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
-O site é composto por 5 seções diferentes:
+
+O site é composto por cinco seções:
 
 - **Home:** Nele temos uma breve apresentação;
 - **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
@@ -22,17 +19,20 @@ O site é composto por 5 seções diferentes:
 ---
 
 ## 💼 Tecnologias utilizadas
+
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 - HTML;
 - Sass;
 - JavaScript;
 - ScrollReveal;
-- SVGInject;
+- SVG Inject;
+- Typed.js;
 
 ---
 
-## 🦄 Autor<br>
+<h2>🦄 Autor</h2>
+
 <table>
   <tr>
     <td align="center">
