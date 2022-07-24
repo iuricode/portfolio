@@ -27,7 +27,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - JavaScript;
 - ScrollReveal;
 - SVG Inject;
-- Typed.js;
 
 ---
 
