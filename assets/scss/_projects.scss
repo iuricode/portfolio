@@ -14,8 +14,15 @@
       margin: $gap-3 0px;
       @include flexbox-between;
       text-align: left;
+      .teslabank {
+        border: 1px solid #e51d37;
+        &:hover {
+          border: 1px solid #e51d37;
+        }
+      }
       > article {
         background-color: $bg-secondary;
+
         @include block-article;
         h3 {
           color: $color-white;
@@ -26,7 +33,7 @@
         }
         p {
           line-height: $gap-3;
-          margin-top: $gap-3;
+          margin: $gap-3 $gap-0;
           color: $color-gray;
           line-height: 3.2rem;
           font: {
@@ -36,13 +43,33 @@
         }
       }
     }
+    #teslabank {
+      color: #e51d37;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+        background: linear-gradient(270deg, #e51d37 0%, #17161d 100%);
+        transform-origin: bottom right;
+        transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
     a {
       color: $color-main;
       position: relative;
       @include hover-link();
       font: {
         size: 1.8rem;
-        weight: 500;
+        weight: 400;
       }
     }
   }

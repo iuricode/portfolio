@@ -73,7 +73,7 @@ $gap-9: 128px;
   }
 }
 
-@mixin hover-link {
+@mixin hover-link() {
   &::after {
     content: "";
     position: absolute;
