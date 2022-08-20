@@ -13,6 +13,7 @@
     #projects {
       margin: $gap-3 0px;
       @include flexbox-between;
+
       text-align: left;
       .teslabank {
         border: 1px solid #e51d37;
@@ -20,10 +21,18 @@
           border: 1px solid #e51d37;
         }
       }
+
+      .naped {
+        border: 1px solid #00a3ff;
+        &:hover {
+          border: 1px solid #00a3ff;
+        }
+      }
       > article {
         background-color: $bg-secondary;
 
         @include block-article;
+        min-height: 275px;
         h3 {
           color: $color-white;
           font: {
@@ -47,6 +56,23 @@
       color: #e51d37;
 
       &::after {
+        background: linear-gradient(270deg, #e51d37 0%, #17161d 100%);
+      }
+    }
+
+    #naped {
+      color: #00a3ff;
+
+      &::after {
+        background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%);
+      }
+    }
+
+    a {
+      color: $color-main;
+      position: relative;
+      @include hover-link();
+      &::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -54,22 +80,17 @@
         height: 1px;
         bottom: -7px;
         left: 0;
-        background: linear-gradient(270deg, #e51d37 0%, #17161d 100%);
+
         transform-origin: bottom right;
         transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      font: {
+        size: 1.8rem;
+        weight: 400;
       }
       &:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
-      }
-    }
-    a {
-      color: $color-main;
-      position: relative;
-      @include hover-link();
-      font: {
-        size: 1.8rem;
-        weight: 400;
       }
     }
   }
