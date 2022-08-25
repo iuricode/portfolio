@@ -1,6 +1,6 @@
 #s-skills {
   @include spacing-section;
-  background-color: $bg-main;
+  background-color: $bg-secondary;
   padding-bottom: $gap-4;
   .grid-layout {
     #skills {
@@ -54,12 +54,12 @@
           width: 20%;
           flex-grow: 1;
           height: 130px;
-          background-color: $bg-secondary;
+          background-color: $bg-main;
           position: relative;
           border: 1px solid $bg-main;
           transition: 1s all ease;
           &:hover {
-            border: 1px solid rgba(102, 16, 242, 1);
+            border: 1px solid #00A3FF;
           }
           &:hover .skills-cards-name {
             display: block;
@@ -75,7 +75,7 @@
             position: absolute;
             padding: 5px;
             transform: translate(-50%, 0%);
-            background-color: $bg-secondary;
+            background-color: $bg-main;
             width: 125px;
             color: $color-white;
             @include flexbox-center;

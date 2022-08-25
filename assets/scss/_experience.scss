@@ -1,0 +1,79 @@
+#s-experience {
+  background-color: $bg-main;
+  color: $color-white;
+  @include spacing-section;
+  .grid-layout {
+    h2 {
+      @include title-section();
+      span {
+        color: $color-main;
+        font-size: 4.8rem;
+      }
+    }
+    #experience {
+      margin-top: $gap-4;
+      display: flex;
+      @include responsive-desktop {
+        flex-wrap: wrap;
+      }
+
+      gap: 40px;
+      .option-experience {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        @include responsive-desktop {
+          width: 100%;
+        }
+        > div {
+          padding: $gap-3 $gap-4;
+          text-align: left;
+          background-color: $bg-secondary;
+          border-left: 4px solid $bg-main;
+          &:hover {
+            cursor: pointer;
+            border-left: 4px solid $color-main;
+          }
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .text-experience {
+        width: 75%;
+        @include responsive-desktop {
+          width: 100%;
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include responsive-desktop {
+            flex-wrap: wrap;
+            gap: $gap-4;
+          }
+          h4 {
+            font-size: 2.4rem;
+            font-weight: 400;
+          }
+          p {
+            font-size: 1.8rem;
+            color: $color-gray;
+          }
+        }
+        h5 {
+          font-size: 1.8rem;
+          margin: $gap-4 $gap-0;
+          font-weight: 400;
+          color: $color-main;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 160%;
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}

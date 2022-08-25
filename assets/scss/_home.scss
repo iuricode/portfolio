@@ -41,30 +41,26 @@
           }
         }
         a {
-          background: linear-gradient(
-            225deg,
-            rgba(102, 16, 242, 0.3) 0%,
-            rgba(102, 16, 242, 0) 100%
-          );
+          background: linear-gradient(89.16deg, #06090F -7.21%, #00A3FF 148.5%);
           color: $color-white;
           backdrop-filter: blur(10px);
           padding: 15px 30px;
           max-width: 250px;
           @include flexbox-center;
-          border: 1px solid rgba(102, 16, 242, 0.5);
-          transition: all 0.7s ease;
+          border: 1px solid #00A3FF;
+          transition: all 0.4s ease;
           margin-top: 30px;
           font: {
             size: 18px;
-            weight: 500;
+            weight: 400;
             family: $font-secondary;
           }
           &:hover {
             padding: 15px 45px;
-            max-width: 280px;
+            max-width: 270px;
             background: linear-gradient(
               225deg,
-              rgba(102, 16, 242, 0.6) 0%,
+              #00A3FF 0%,
               rgba(102, 16, 242, 0) 100%
             );
           }

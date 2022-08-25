@@ -1,7 +1,7 @@
 #s-projects {
   @include spacing-section;
   text-align: center;
-  background-color: $bg-main;
+  background-color: $bg-secondary;
   .grid-layout {
     h2 {
       @include title-section();
@@ -29,7 +29,7 @@
         }
       }
       > article {
-        background-color: $bg-secondary;
+        background-color: $bg-main;
 
         @include block-article;
         min-height: 275px;

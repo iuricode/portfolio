@@ -1,14 +1,14 @@
 $font-main: "Saira";
 $font-secondary: "Saira";
 
-$color-main: #6610f2;
-$color-main-hover: #5429cf;
+$color-main: #00a3ff;
+$color-main-hover: #0054c6;
 
 $color-white: #fafafa;
 $color-gray: #b0b0b0;
 
-$bg-main: #080713;
-$bg-secondary: #0b0a17;
+$bg-main: #06090f;
+$bg-secondary: #080c13;
 
 $gap-0: 0px;
 $gap-1: 8px;
@@ -82,7 +82,7 @@ $gap-9: 128px;
     height: 1px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+    background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%);
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -101,7 +101,7 @@ $gap-9: 128px;
   border: 1px solid $bg-main;
   transition: 1s all ease;
   &:hover {
-    border: 1px solid rgba(102, 16, 242, 1);
+    border: 1px solid #00a3ff;
   }
 
   @include responsive-desktop {
