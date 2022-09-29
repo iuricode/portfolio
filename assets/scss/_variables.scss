@@ -1,14 +1,12 @@
-$font-main: "Saira";
-$font-secondary: "Saira";
+$font-main: "Archivo";
 
-$color-main: #00a3ff;
-$color-main-hover: #0054c6;
+$color-main: #ff3a5e;
 
-$color-white: #fafafa;
-$color-gray: #b0b0b0;
+$color-white: #fff;
+$color-gray: #d8d8d8;
 
-$bg-main: #06090f;
-$bg-secondary: #080c13;
+$bg-main: #040405;
+$bg-secondary: #09090b;
 
 $gap-0: 0px;
 $gap-1: 8px;
@@ -42,7 +40,7 @@ $gap-9: 128px;
 @mixin spacing-section() {
   padding: $gap-8 $gap-5;
   @include responsive-tablet {
-    padding: $gap-5 $gap-2;
+    padding: $gap-5 $gap-3;
   }
 }
 
@@ -82,7 +80,7 @@ $gap-9: 128px;
     height: 1px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%);
+    background: linear-gradient(270deg, #ff3a5e 0%, #17161d 100%);
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -101,7 +99,7 @@ $gap-9: 128px;
   border: 1px solid $bg-main;
   transition: 1s all ease;
   &:hover {
-    border: 1px solid #00a3ff;
+    border: 1px solid #ff3a5e;
   }
 
   @include responsive-desktop {

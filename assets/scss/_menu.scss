@@ -1,20 +1,21 @@
 header {
-  background: rgba(10, 10, 25, 0.7);
+  padding: 0px 50px;
+  background: $bg-main;
   backdrop-filter: blur($gap-3);
   -webkit-backdrop-filter: blur($gap-3);
-  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+  border-bottom: 1px solid #101013;
   z-index: 999;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   @include responsive-tablet() {
-    padding: 0px $gap-2;
+    padding: 0px $gap-3;
   }
   .grid-layout {
     nav {
       @include flexbox-between;
-      height: 8vh;
+      height: 100px;
       padding: 0px $gap-1;
       img {
         width: 150px;
@@ -32,7 +33,6 @@ header {
             position: relative;
             font: {
               size: 1.8rem;
-              family: $font-main;
             }
             @include hover-link();
             &:hover {
@@ -84,7 +84,7 @@ header {
   .nav-list {
     text-align: center;
     position: absolute;
-    top: 8vh;
+    top: 100px;
     right: 0;
     width: 100vw;
     height: 100vh;

@@ -79,14 +79,12 @@
         @include title-section();
         span {
           color: $color-main;
-          font-size: 4.8rem;
         }
       }
       p {
         line-height: 3.2rem;
         color: $color-gray;
         font: {
-          family: $font-secondary;
           size: 2rem;
           line-height: 160%;
         }

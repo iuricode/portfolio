@@ -9,16 +9,16 @@
 <stop offset="1" stop-color="white" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint1_linear_2173_250" x1="17.9746" y1="19.7613" x2="11.7208" y2="31.3754" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00a3ff"/>
-<stop offset="1" stop-color="#00a3ff" stop-opacity="0"/>
+<stop stop-color="#ff3a5e"/>
+<stop offset="1" stop-color="#ff3a5e" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint2_linear_2173_250" x1="38.9694" y1="21.1014" x2="32.2689" y2="33.1622" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00a3ff"/>
-<stop offset="1" stop-color="#00a3ff" stop-opacity="0"/>
+<stop stop-color="#ff3a5e"/>
+<stop offset="1" stop-color="#ff3a5e" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint3_linear_2173_250" x1="36.7358" y1="15.2943" x2="37.6158" y2="33.4949" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00a3ff"/>
-<stop offset="1" stop-color="#00a3ff" stop-opacity="0"/>
+<stop stop-color="#ff3a5e"/>
+<stop offset="1" stop-color="#ff3a5e" stop-opacity="0"/>
 </linearGradient>
 </defs>
 </svg>

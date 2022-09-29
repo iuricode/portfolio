@@ -12,7 +12,7 @@
       content="sites, web, desenvolvimento, frontend, iuri silva, ui designer, programador, iuricode, front-end, designer, ui, iuri, freelancer, freela, website, portfólio"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00a3ff" />
+    <meta name="theme-color" content="#ff3a5e" />
     <meta name="copyright" content="Iuri Silva 2022" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="manifest" href="manifest.json" />
@@ -57,6 +57,7 @@
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
+            <li><a href="#s-home">Ínicio</a></li>
             <li><a href="#s-about">Quem sou</a></li>
             <li>
               <a href="#s-projects">Projetos</a>
@@ -78,12 +79,15 @@
           <div id="home">
             <div id="home-container-text">
               <h1 class="delayMediumReveal">
-                Olá, eu sou<br />
-                <span id="home-name">Iuri Silva.</span><br />
-                <span class="typewriter">
-                  Front-end developer e UI Designer.
-                </span>
+                Ajudando empresas a construírem
+                <span>produtos digitais</span> de forma moderna e de alta
+                qualidade.
               </h1>
+              <p class="typewriter">
+                Uma mistura de Design, Desenvolvimento Front-end e habilidade
+                profissional que vão destacar seu produto no mercado.
+              </p>
+
               <a
                 href="https://www.instagram.com/iuricode/"
                 rel="noopener"
@@ -93,19 +97,15 @@
                 Instagram
               </a>
             </div>
-            <div id="home-container-photo">
-              <div id="home-photo">
-                <img
-                  src="assets/image/logo-svg-lab.svg"
-                  alt="Logo iuricode"
-                  onload="SVGInject(this)"
-                  id="logo-lab"
-                  class="object"
-                  width="500px"
-                  height="500px"
-                />
-              </div>
-            </div>
+
+            <img
+              src="assets/image/logo.svg"
+              alt="Logo iuricode"
+              onload="SVGInject(this)"
+              id="logo"
+              width="500px"
+              height="500px"
+            />
           </div>
         </div>
       </section>
@@ -166,18 +166,18 @@
         <div class="grid-layout">
           <h2 class="delaySmallReveal">Experiência <span>.</span></h2>
           <div id="experience">
-            <div class="option-experience intervalCardReveal">
-              <div class="digitalhouse activeExperience">
+            <div class="option-experience intervalCardReveal" id="experience-company">
+              <div class="company digitalhouse activeExperience">
                 <h3>Digital House</h3>
               </div>
-              <div class="zuplae">
+              <div class="company zuplae">
                 <h3>Zuplae</h3>
               </div>
-              <div class="codigofontetv">
-                <h3>Código Fonte TV</h3>
-              </div>
-              <div class="contweb">
+              <div class="company contweb">
                 <h3>ContWeb</h3>
+              </div>
+              <div class="company codigofontetv">
+                <h3>Código Fonte TV</h3>
               </div>
             </div>
             <div class="text-experience intervalCardReveal">
@@ -185,7 +185,7 @@
                 <h4 class="titleExperience">
                   Professor conteudista em Frontend
                 </h4>
-                <p class="dateExperience">Nov 2021 - Atual</p>
+                <p class="dateExperience">Nov 2021 - Atual (Quase 1 ano)</p>
               </div>
               <h5 class="companyExperience">Digital House</h5>
               <p class="changeExperience">

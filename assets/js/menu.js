@@ -7,6 +7,7 @@ export function menu() {
       this.navLinks2 = document.querySelectorAll(navLinks2);
       this.activeClass = "active";
       this.handleClick = this.handleClick.bind(this);
+      this.animateLinks();
     }
 
     animateLinks() {
@@ -22,7 +23,6 @@ export function menu() {
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
     }
 
     addClickEvent() {

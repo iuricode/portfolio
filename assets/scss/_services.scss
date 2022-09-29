@@ -7,7 +7,6 @@
       @include title-section();
       span {
         color: $color-main;
-        font-size: $gap-6;
       }
     }
     #services {
@@ -36,7 +35,6 @@
           line-height: 3.2rem;
           color: $color-gray;
           font: {
-            family: $font-secondary;
             size: 1.8rem;
           }
         }

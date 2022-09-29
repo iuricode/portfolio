@@ -7,13 +7,11 @@
       @include title-section();
       span {
         color: $color-main;
-        font-size: $gap-6;
       }
     }
     #projects {
       margin: $gap-3 0px;
       @include flexbox-between;
-
       text-align: left;
       .teslabank {
         border: 1px solid #e51d37;
@@ -21,7 +19,6 @@
           border: 1px solid #e51d37;
         }
       }
-
       .naped {
         border: 1px solid #00a3ff;
         &:hover {
@@ -46,7 +43,6 @@
           color: $color-gray;
           line-height: 3.2rem;
           font: {
-            family: $font-secondary;
             size: 1.8rem;
           }
         }

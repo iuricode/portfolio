@@ -17,7 +17,7 @@ hoverChangeExperience(
   GraphQL, Next.js, MUI, React Hook Form e styled-components.`,
   "Professor conteudista em Frontend",
   "Digital House",
-  "Nov 2021 - Atual"
+  "Nov 2021 - Atual (Quase 1 ano)"
 );
 
 hoverChangeExperience(
@@ -27,7 +27,7 @@ hoverChangeExperience(
   programação para a comunidade dev através das redes sociais.`,
   "Social Media e UI Designer",
   "Zuplae",
-  "Jan 2022 - Abril 2022"
+  "Jan 2022 - Abril 2022 (4 meses)"
 );
 
 hoverChangeExperience(
@@ -37,7 +37,7 @@ hoverChangeExperience(
   para a comunidade dev através das redes sociais do CDF.`,
   "Social Media e Designer",
   "Código Fonte TV",
-  "Jun 2021 - Jan 2022"
+  "Jun 2021 - Jan 2022 (8 meses)"
 );
 
 hoverChangeExperience(
@@ -47,7 +47,7 @@ hoverChangeExperience(
   desenvolvimento frontend criei os designs da nova plataforma da empresa.`,
   "Developer frontend e UI Designer",
   "ContWeb",
-  "Set 2021 - Nov 2021"
+  "Set 2021 - Nov 2021 (3 meses)"
 );
 
 hoverChangeDescription(

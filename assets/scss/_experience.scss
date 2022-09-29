@@ -7,17 +7,15 @@
       @include title-section();
       span {
         color: $color-main;
-        font-size: 4.8rem;
       }
     }
     #experience {
       margin-top: $gap-4;
       display: flex;
+      gap: 40px;
       @include responsive-desktop {
         flex-wrap: wrap;
       }
-
-      gap: 40px;
       .option-experience {
         display: flex;
         width: 25%;
@@ -25,14 +23,18 @@
         @include responsive-desktop {
           width: 100%;
         }
+        .activeExperience {
+          border-left: 4px solid $color-main;
+          color: $color-main;
+        }
         > div {
           padding: $gap-3 $gap-4;
           text-align: left;
           background-color: $bg-secondary;
           border-left: 4px solid $bg-main;
+
           &:hover {
             cursor: pointer;
-            border-left: 4px solid $color-main;
           }
           h3 {
             font-size: 1.8rem;
@@ -45,6 +47,7 @@
         @include responsive-desktop {
           width: 100%;
         }
+
         > div {
           display: flex;
           align-items: center;

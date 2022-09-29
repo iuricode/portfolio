@@ -42,6 +42,7 @@ input {
 body {
   font-family: $font-main;
   background-color: $color-white;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;

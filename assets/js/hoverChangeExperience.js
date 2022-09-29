@@ -15,6 +15,19 @@ export function hoverChangeExperience(
     varCompanyExperience.innerHTML = companyExperience;
     varTitleExperience.innerHTML = titleExperience;
     varDateExperience.innerHTML = dateExperience;
-    document.querySelector(nameCard).classList.toggle("activeExperience");
+  });
+}
+
+const header = document.getElementById("experience-company");
+const btns = header.getElementsByClassName("company");
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    const current = document.getElementsByClassName("activeExperience");
+    current[0].className = current[0].className.replace(
+      " activeExperience",
+      ""
+    );
+    this.className += " activeExperience";
   });
 }
