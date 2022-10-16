@@ -9,7 +9,11 @@
     #home {
       display: flex;
       align-items: center;
-      height: 90vh;
+      min-height: 90vh;
+      padding: 200px 0px;
+      @include responsive-tablet {
+        padding: 0px;
+      }
       overflow: hidden;
       width: 100%;
       #home-container-text {
