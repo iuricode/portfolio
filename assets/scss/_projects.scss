@@ -25,6 +25,12 @@
           border: 1px solid #00a3ff;
         }
       }
+      .pokedex {
+        border: 1px solid #5856d6;
+        &:hover {
+          border: 1px solid #5856d6;
+        }
+      }
       > article {
         background-color: $bg-main;
 
@@ -61,6 +67,14 @@
 
       &::after {
         background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%);
+      }
+    }
+
+    #pokedex {
+      color: #5856d6;
+
+      &::after {
+        background: linear-gradient(270deg, #5856d6 0%, #17161d 100%);
       }
     }
 
