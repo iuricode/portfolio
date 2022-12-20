@@ -25,17 +25,17 @@
           border: 1px solid #00a3ff;
         }
       }
-      .pokedex {
-        border: 1px solid #5856d6;
+      .efront {
+        border: 1px solid #a6fb98;
         &:hover {
-          border: 1px solid #5856d6;
+          border: 1px solid #a6fb98;
         }
       }
       > article {
         background-color: $bg-main;
 
         @include block-article;
-        min-height: 275px;
+        height: auto;
         h3 {
           color: $color-white;
           font: {
@@ -70,11 +70,11 @@
       }
     }
 
-    #pokedex {
-      color: #5856d6;
+    #efront {
+      color: #a6fb98;
 
       &::after {
-        background: linear-gradient(270deg, #5856d6 0%, #17161d 100%);
+        background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%);
       }
     }
 
@@ -95,7 +95,7 @@
         transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
       }
       font: {
-        size: 1.8rem;
+        size: 2rem;
         weight: 400;
       }
       &:hover::after {
