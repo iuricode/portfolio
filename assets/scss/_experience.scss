@@ -1,5 +1,5 @@
 #s-experience {
-  background-color: $bg-main;
+  background-color: $bg-secondary;
   color: $color-white;
   @include spacing-section;
   .grid-layout {
@@ -26,11 +26,15 @@
         .activeExperience {
           border-left: 4px solid $color-main;
           color: $color-main;
+
+          h3 {
+            font-weight: 600;
+          }
         }
         > div {
           padding: $gap-3 $gap-4;
           text-align: left;
-          background-color: $bg-secondary;
+          background-color: $bg-main;
           border-left: 4px solid $bg-main;
 
           &:hover {
@@ -66,15 +70,16 @@
           }
         }
         h5 {
-          font-size: 1.8rem;
+          font-size: 2rem;
           margin: $gap-4 $gap-0;
-          font-weight: 400;
+          font-weight: 500;
           color: $color-main;
         }
         p {
-          font-size: 1.8rem;
+          font-size: 2rem;
           line-height: 160%;
           color: $color-gray;
+          font-weight: 400;
         }
       }
     }

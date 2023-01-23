@@ -1,36 +1,43 @@
 footer {
-  text-align: center;
-  margin-top: $gap-7;
+  width: 100%;
+  height: auto;
+  background-color: $bg-secondary;
+  color: $color-white;
+
   .grid-layout {
-    border-top: 1px solid rgba(114, 114, 126, 0.2);
-    @include flexbox-between;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: $gap-1;
-    @include responsive-mobile {
-      justify-content: center;
+  }
+
+  p {
+    font-size: 1.8rem;
+    a {
+      font-weight: 500;
+      color: $color-main;
     }
-    #direitos-autorais {
-      margin-top: $gap-3;
-    }
-    p {
-      color: $color-gray;
+  }
+
+  svg {
+    width: 32px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: $gap-2;
+  }
+
+  @include responsive-desktop {
+    .grid-layout {
       text-align: center;
-      font: {
-        size: 1.8rem;
-      }
-    }
-    div {
-      margin-top: $gap-3;
-      display: flex;
-      align-items: center;
-      img {
-        width: $gap-3;
-        margin-left: $gap-1;
-      }
-      @include responsive-mobile {
-        width: 100%;
-        justify-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $gap-5;
+
+      div {
+        display: none;
       }
     }
   }

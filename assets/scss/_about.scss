@@ -1,92 +1,127 @@
 #s-about {
-  @include spacing-section;
-  background-color: $bg-secondary;
+  padding: $gap-7 0px;
+  background-color: $bg-main;
+
+  @include responsive-desktop {
+    padding: $gap-7 0px;
+  }
+
   .grid-layout {
-    #about {
-      @include flexbox-between;
-    }
-    #about-photo {
-      width: 50%;
-      padding-right: 100px;
-      @include flexbox-center;
-      position: relative;
-      transition: 1s all ease;
-      #photo-iuricode {
-        width: 400px;
+    > div {
+      background-color: $bg-secondary;
+      border: 2px solid $bg-border;
+      padding: $gap-3;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-4;
       }
-      &:hover {
-        transform: scale(1.1);
-      }
-      div {
-        @include flexbox-center;
-        img {
-          width: $gap-5;
-        }
-      }
-      .about-figure {
-        position: absolute;
-        background-color: $bg-main;
+
+      #creator-photo {
+        width: 47%;
+        background-image: url("../image/foto-iuricode.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         border-radius: 4px;
-        width: $gap-7;
-        height: $gap-7;
-      }
-      .figure-one {
-        top: 40px;
-        right: 430px;
-      }
-      .figure-two {
-        top: 100px;
-        right: 150px;
-      }
-      .figure-three {
-        top: 250px;
-        right: 450px;
-      }
-      .icon-one {
-        animation: icon-move 3s ease 2.9s infinite alternate;
-      }
-      .icon-two {
-        animation: icon-move 3s ease 1.9s infinite alternate;
-      }
-      .icon-three {
-        animation: icon-move 3s ease 0.6s infinite alternate;
-      }
-      @keyframes icon-move {
-        0% {
-          transform: translate3d(0, 0, 0);
+        height: 500px;
+
+        @include responsive-desktop {
+          width: 100%;
+          height: 400px;
         }
-        100% {
-          transform: translate3d(10px, -40px, 0);
+
+        @include responsive-tablet {
+          height: 350px;
+        }
+
+        @include responsive-mobile {
+          height: 300px;
+        }
+
+        h3 {
+          color: $bg-main;
+          background-color: $color-white;
+          padding: $gap-1;
+          border-radius: 16px;
+          width: 180px;
+          text-align: center;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin: $gap-2;
         }
       }
-      img {
-        width: 100%;
-        max-width: 400px;
-      }
-      @include responsive-desktop {
-        display: none;
-      }
-    }
-    #about-text {
-      width: 50%;
-      @include responsive-desktop {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
-      }
-      h2 {
-        @include title-section();
-        span {
+
+      div:nth-child(2) {
+        width: 49%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 500;
+          margin: $gap-2 $gap-0;
+          color: $color-white;
+
+          @include responsive-tablet {
+            font-size: 3.2rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 300;
+          margin-bottom: $gap-2;
+          color: $color-white;
+        }
+
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
           color: $color-main;
         }
-      }
-      p {
-        line-height: 3.2rem;
-        color: $color-gray;
-        font: {
-          size: 2rem;
+
+        p {
+          font-size: 1.8rem;
+          color: $color-gray;
           line-height: 160%;
+          margin: $gap-4 0px $gap-5 0px;
+        }
+
+        nav {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: $gap-2;
+
+            @include responsive-desktop {
+              flex-wrap: wrap;
+            }
+
+            a {
+              background-color: $bg-main;
+              border: 2px solid $bg-border;
+              border-radius: 6px;
+              padding: $gap-2;
+
+              @include responsive-desktop {
+                img {
+                  width: 40px;
+                }
+              }
+
+              &:hover {
+                border-color: $color-main;
+              }
+            }
+          }
         }
       }
     }

@@ -1,7 +1,7 @@
 #s-skills {
   @include spacing-section;
-  background-color: $bg-secondary;
-  padding-bottom: $gap-4;
+  background-color: $bg-main;
+
   .grid-layout {
     #skills {
       @include flexbox-between;
@@ -52,47 +52,23 @@
           width: 20%;
           flex-grow: 1;
           height: 130px;
-          background-color: $bg-main;
+          background-color: $bg-secondary;
           position: relative;
-          border: 1px solid $bg-main;
+          border: 1px solid $bg-border;
+          border-radius: 4px;
           transition: 1s all ease;
           &:hover {
-            border: 1px solid #FF3A5E;
-          }
-          &:hover .skills-cards-name {
-            display: block;
-            text-align: center;
+            border: 1px solid #ff3a5e;
           }
           @include responsive-mobile {
             width: 40%;
             margin: 20px 0px;
           }
-          .skills-cards-name {
-            left: 50%;
-            height: auto;
-            position: absolute;
-            padding: 5px;
-            transform: translate(-50%, 0%);
-            background-color: $bg-main;
-            width: 125px;
-            color: $color-white;
-            @include flexbox-center;
-            display: none;
-            font-size: 1.8rem;
-          }
-          .skills-cards-name-high {
-            @extend .skills-cards-name;
-            top: -50px;
-          }
-          .skills-cards-name-low {
-            @extend .skills-cards-name;
-            bottom: -50px;
-          }
           .aumento-hover {
             bottom: -75px;
           }
           .skills-icons {
-            width: 60px;
+            width: 56px;
           }
         }
       }

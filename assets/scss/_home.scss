@@ -29,7 +29,7 @@
         }
         h1 {
           color: $color-white;
-          max-width: 700px;
+          max-width: 650px;
           line-height: 140%;
           font: {
             size: 4rem;
@@ -47,8 +47,8 @@
           font-size: 2rem;
           max-width: 600px;
           margin: 40px 0px;
-          font-weight: 400;
-          line-height: 140%;
+          font-weight: 300;
+          line-height: 160%;
         }
         a {
           background: #ff3a5e;
@@ -56,12 +56,13 @@
           backdrop-filter: blur(10px);
           padding: 20px 32px;
           max-width: 250px;
+          border-radius: 4px;
           @include flexbox-center;
           transition: all 0.4s ease;
           margin-top: 30px;
           font: {
             size: 18px;
-            weight: 500;
+            weight: 400;
           }
           &:hover {
             padding: 20px 45px;
