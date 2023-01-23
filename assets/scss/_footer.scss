@@ -3,6 +3,7 @@ footer {
   height: auto;
   background-color: $bg-secondary;
   color: $color-white;
+  padding: $gap-3 0px;
 
   .grid-layout {
     display: flex;
@@ -19,7 +20,7 @@ footer {
     }
   }
 
-  svg {
+  img {
     width: 32px;
   }
 

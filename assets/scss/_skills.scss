@@ -15,7 +15,12 @@
         }
       }
       #skills-text {
-        min-height: 300px;
+        min-height: 400px;
+
+        @include responsive-mobile {
+          min-height: auto;
+        }
+
         h2 {
           margin-bottom: $gap-4;
           color: $color-white;
@@ -29,6 +34,9 @@
         }
         .changeDescription {
           transition: 2s all ease;
+          @include responsive-mobile {
+            display: none;
+          }
         }
         p {
           max-width: 500px;
@@ -62,13 +70,6 @@
           }
           @include responsive-mobile {
             width: 40%;
-            margin: 20px 0px;
-          }
-          .aumento-hover {
-            bottom: -75px;
-          }
-          .skills-icons {
-            width: 56px;
           }
         }
       }
