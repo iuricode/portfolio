@@ -3,7 +3,7 @@
   background-color: $bg-main;
 
   @include responsive-desktop {
-    padding: $gap-7 0px;
+    padding: $gap-7 20px;
   }
 
   .grid-layout {
@@ -24,7 +24,7 @@
 
       #creator-photo {
         width: 47%;
-        background-image: url("../image/foto-iuricode.jpg");
+        background-image: url("../image/foto-iuricode.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
