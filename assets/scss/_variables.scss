@@ -1,13 +1,13 @@
 $font-main: "Archivo";
 
-$color-main: #ff3a5e;
+$color-main: #986dff;
 
-$color-white: #fff;
-$color-gray: #d8d8d8;
+$color-white: #ffffff;
+$color-gray: #9ca3af;
 
-$bg-main: #040405;
-$bg-secondary: #09090b;
-$bg-border: #101013;
+$bg-main: #111111;
+$bg-secondary: #151515;
+$bg-border: #1f1f1f;
 
 $gap-0: 0px;
 $gap-1: 8px;
@@ -81,7 +81,7 @@ $gap-9: 128px;
     height: 1px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #ff3a5e 0%, #17161d 100%);
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -100,7 +100,7 @@ $gap-9: 128px;
   border: 1px solid $bg-main;
   transition: 1s all ease;
   &:hover {
-    border: 1px solid #ff3a5e;
+    border: 1px solid #986dff;
   }
 
   @include responsive-desktop {
