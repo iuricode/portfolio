@@ -2,23 +2,28 @@
   padding: 0px 50px;
   background-color: $bg-main;
   position: relative;
+
   @include responsive-tablet {
     padding: 100px 20px 0px 20px;
   }
+
   .grid-layout {
     #home {
       display: flex;
       align-items: center;
       min-height: 90vh;
       padding: 200px 0px;
+      overflow: hidden;
+      width: 100%;
+
       @include responsive-tablet {
         padding: 0px;
       }
-      overflow: hidden;
-      width: 100%;
+
       #home-container-text {
         width: 100%;
         flex-direction: column;
+
         @include responsive-tablet {
           display: flex;
           flex-direction: column;
@@ -27,21 +32,26 @@
           text-align: center;
           padding: 0px;
         }
+
         h1 {
           color: $color-white;
           max-width: 650px;
           line-height: 140%;
+
           font: {
             size: 4rem;
             weight: 500;
           }
+
           @include responsive-tablet {
             font-size: 3.2rem;
           }
+
           span {
             color: $color-main;
           }
         }
+
         p {
           color: $color-gray;
           font-size: 2rem;
@@ -50,26 +60,30 @@
           font-weight: 300;
           line-height: 160%;
         }
+
         a {
+          @include flexbox-center;
           background: #986dff;
           color: $color-white;
           backdrop-filter: blur(10px);
           padding: 20px 32px;
           max-width: 250px;
           border-radius: 4px;
-          @include flexbox-center;
           transition: all 0.4s ease;
           margin-top: 30px;
+
           font: {
             size: 18px;
             weight: 400;
           }
+
           &:hover {
             padding: 20px 45px;
             max-width: 270px;
           }
         }
       }
+      
       #logo {
         position: absolute;
         right: -50px;

@@ -1,10 +1,8 @@
 $font-main: "Archivo";
 
 $color-main: #986dff;
-
 $color-white: #ffffff;
 $color-gray: #9ca3af;
-
 $bg-main: #111111;
 $bg-secondary: #151515;
 $bg-border: #1f1f1f;
@@ -85,6 +83,7 @@ $gap-9: 128px;
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
+
   &:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -99,6 +98,7 @@ $gap-9: 128px;
   flex-grow: 1;
   border: 1px solid $bg-main;
   transition: 1s all ease;
+
   &:hover {
     border: 1px solid #986dff;
   }
@@ -106,6 +106,7 @@ $gap-9: 128px;
   @include responsive-desktop {
     flex-basis: calc(50% - 20px);
   }
+
   @include responsive-mobile {
     flex-basis: calc(100% - 20px);
   }

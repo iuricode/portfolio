@@ -9,32 +9,41 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+
   @include responsive-tablet() {
     padding: 0px $gap-3;
   }
+
   .grid-layout {
     nav {
       @include flexbox-between;
       height: 100px;
       padding: 0px $gap-1;
+
       img {
         width: 150px;
       }
+
       .nav-list {
         list-style: none;
         display: flex;
+
         li {
           margin-left: $gap-5;
+
           @include responsive-tablet() {
             margin-left: $gap-0;
           }
+
           a {
+            @include hover-link();
             color: $color-gray;
             position: relative;
+
             font: {
               size: 1.8rem;
             }
-            @include hover-link();
+
             &:hover {
               color: $color-white;
             }
@@ -44,8 +53,10 @@ header {
     }
   }
 }
+
 .mobile-menu {
   display: none;
+
   div {
     width: $gap-4;
     height: 1px;
@@ -54,33 +65,41 @@ header {
     transition: 0.4s;
   }
 }
+
 .nav-list.active {
   visibility: initial;
   transition: 1s all ease;
 }
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
+
 .mobile-menu.active .line2 {
   opacity: 0;
 }
+
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
+
 @include responsive-tablet() {
   body {
     overflow-x: hidden;
   }
+
   .nav-list {
     text-align: center;
     position: absolute;
@@ -94,13 +113,16 @@ header {
     padding-top: $gap-8;
     visibility: hidden;
   }
+
   header .grid-layout nav .nav-list li {
     opacity: 0;
     margin-bottom: $gap-5;
+
     a {
       font-size: 2.4rem;
     }
   }
+
   .mobile-menu {
     display: block;
   }

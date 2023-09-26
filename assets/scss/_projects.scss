@@ -2,58 +2,83 @@
   @include spacing-section;
   text-align: center;
   background-color: $bg-main;
+
   .grid-layout {
     h2 {
       @include title-section();
+
       span {
         color: $color-main;
       }
     }
+
     #projects {
       margin: $gap-3 0px;
-      @include flexbox-between;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
       text-align: left;
+
       .teslabank {
         border: 1px solid #e51d37;
+
         &:hover {
           border: 1px solid #e51d37;
         }
       }
+
       .naped {
         border: 1px solid #00a3ff;
+
         &:hover {
           border: 1px solid #00a3ff;
         }
       }
+
       .efront {
         border: 1px solid #a6fb98;
+
         &:hover {
           border: 1px solid #a6fb98;
         }
       }
-      > article {
-        background-color: $bg-secondary;
 
+      .steam {
+        border: 1px solid #536fed;
+
+        &:hover {
+          border: 1px solid #536fed;
+        }
+      }
+
+      > article {
         @include block-article;
+        background-color: $bg-secondary;
         height: auto;
+
         h3 {
           color: $color-white;
+
           font: {
             size: 2.4rem;
             weight: 500;
           }
         }
+
         p {
           line-height: $gap-3;
           margin: $gap-3 $gap-0;
           color: $color-gray;
           line-height: 3.2rem;
+
           font: {
             size: 1.8rem;
           }
         }
       }
     }
+
     #teslabank {
       color: #e51d37;
 
@@ -78,10 +103,19 @@
       }
     }
 
+    #steam {
+      color: #536fed;
+
+      &::after {
+        background: linear-gradient(270deg, #536fed 0%, #17161d 100%);
+      }
+    }
+
     a {
+      @include hover-link();
       color: $color-main;
       position: relative;
-      @include hover-link();
+
       &::after {
         content: "";
         position: absolute;
@@ -90,14 +124,15 @@
         height: 1px;
         bottom: -7px;
         left: 0;
-
         transform-origin: bottom right;
         transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
       }
+
       font: {
         size: 2rem;
         weight: 400;
       }
+
       &:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;

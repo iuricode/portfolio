@@ -4,24 +4,29 @@
   box-sizing: border-box;
   font-family: $font-main;
 }
+
 ::selection {
   background-color: $color-main;
   color: $color-white;
 }
+
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 p,
 h1,
 h2,
@@ -31,29 +36,36 @@ h5,
 h6 {
   margin: 0;
 }
+
 button,
 input {
   border: 0;
   font-family: $font-main;
+
   &:focus {
     border: 0;
   }
 }
+
 body {
   font-family: $font-main;
   background-color: $color-white;
   overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
 ::-webkit-scrollbar {
   width: $gap-1;
 }
+
 ::-webkit-scrollbar-track {
   background-color: $bg-main;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: $color-main;
   border-radius: $gap-1;
