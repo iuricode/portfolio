@@ -67,7 +67,7 @@
           color: $color-white;
           backdrop-filter: blur(10px);
           padding: 20px 32px;
-          max-width: 250px;
+          max-width: 300px;
           border-radius: 4px;
           transition: all 0.4s ease;
           margin-top: 30px;
@@ -79,7 +79,7 @@
 
           &:hover {
             padding: 20px 45px;
-            max-width: 270px;
+            max-width: 325px;
           }
         }
       }
