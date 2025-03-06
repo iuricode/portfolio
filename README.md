@@ -1,5 +1,5 @@
 <h1 align="center">
-  💻<br>Portfólio - Iuri Silva
+  💻<br>Portfólio // Iuri Silva
 </h1>
 
 ![Resultado final do projeto](assets/image/preview.png)
@@ -26,8 +26,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - HTML;
 - Sass;
 - JavaScript;
-- ScrollReveal;
-- SVG Inject;
 
 ---
 

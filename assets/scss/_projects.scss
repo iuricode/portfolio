@@ -28,15 +28,7 @@
         }
       }
 
-      .naped {
-        border: 1px solid #00a3ff;
-
-        &:hover {
-          border: 1px solid #00a3ff;
-        }
-      }
-
-      .efront {
+      .codelab {
         border: 1px solid #a6fb98;
 
         &:hover {
@@ -87,15 +79,8 @@
       }
     }
 
-    #naped {
-      color: #00a3ff;
 
-      &::after {
-        background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%);
-      }
-    }
-
-    #efront {
+    #codelab {
       color: #a6fb98;
 
       &::after {
