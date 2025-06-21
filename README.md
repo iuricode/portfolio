@@ -29,17 +29,10 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 ---
 
-<h2>🦄 Autor</h2>
+## Disponível para freelas - #OpenToWork 🚀
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/iuricode">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Iuri Silva</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+Atualmente estou aberto para oportunidades como Desenvolvedor Frontend e UI/UX Designer. Se você precisa de alguém para transformar ideias em interfaces bonitas, responsivas e funcionais, podemos trabalhar juntos!
+
+📬 Entre em contato:
+📧 iuricold99@gmail.com
+💼 [Linkedin](https://www.linkedin.com/in/iuricode/)
