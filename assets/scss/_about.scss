@@ -1,127 +1,63 @@
 #s-about {
-  padding: $gap-7 0px;
-  background-color: $bg-main;
+  padding: 120px 0px;
 
   @include responsive-desktop {
     padding: $gap-7 20px;
   }
 
   .grid-layout {
-    > div {
-      background-color: $bg-secondary;
-      border: 2px solid $bg-border;
-      padding: $gap-3;
-      border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive-tablet {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #565656;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-top: 12px;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    > div:nth-child(2) {
+      width: 70%;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: auto;
+      gap: 24px;
+      flex-direction: column;
+
+      @include responsive-tablet {
+        width: 100%;
+      }
 
       @include responsive-desktop {
         flex-wrap: wrap;
         gap: $gap-4;
       }
 
-      #creator-photo {
-        width: 47%;
-        background-image: url("../image/foto-iuricode.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 4px;
-        height: 500px;
-
-        @include responsive-desktop {
-          width: 100%;
-          height: 400px;
-        }
+      h4 {
+        font-size: 3.2rem;
+        font-weight: 500;
 
         @include responsive-tablet {
-          height: 350px;
-        }
-
-        @include responsive-mobile {
-          height: 300px;
-        }
-
-        h3 {
-          color: $bg-main;
-          background-color: $color-white;
-          padding: $gap-1;
-          border-radius: 16px;
-          width: 180px;
-          text-align: center;
-          font-size: 1.4rem;
-          font-weight: 500;
-          margin: $gap-2;
+          font-size: 2.8rem;
         }
       }
 
-      div:nth-child(2) {
-        width: 49%;
+      p {
+        font-size: 1.8rem;
+        color: #565656;
+        line-height: 150%;
 
-        @include responsive-desktop {
-          width: 100%;
-        }
-
-        h2 {
-          font-size: 4rem;
-          font-weight: 500;
-          margin: $gap-2 $gap-0;
-          color: $color-white;
-
-          @include responsive-tablet {
-            font-size: 3.2rem;
-          }
-        }
-
-        h3 {
-          font-size: 1.8rem;
-          font-weight: 300;
-          margin-bottom: $gap-2;
-          color: $color-white;
-        }
-
-        h4 {
-          font-size: 2rem;
-          font-weight: 500;
-          color: $color-main;
-        }
-
-        p {
-          font-size: 1.8rem;
-          color: $color-gray;
-          line-height: 160%;
-          margin: $gap-4 0px $gap-5 0px;
-        }
-
-        nav {
-          ul {
-            display: flex;
-            align-items: center;
-            gap: $gap-2;
-
-            @include responsive-desktop {
-              flex-wrap: wrap;
-            }
-
-            a {
-              background-color: $bg-main;
-              border: 2px solid $bg-border;
-              border-radius: 6px;
-              padding: $gap-2;
-
-              @include responsive-desktop {
-                img {
-                  width: 40px;
-                }
-              }
-
-              &:hover {
-                border-color: $color-main;
-              }
-            }
-          }
+        b {
+          color: #232323;
         }
       }
     }

@@ -1,23 +1,37 @@
-@import "./variables", "./reset", "./menu", "./home", "./about", "./experience",
-  "./projects", "./services", "./skills", "./footer";
-
-.typewriter:after {
-  content: "|";
-  margin-left: $gap-1;
-  opacity: 1;
-  animation: blink 1s infinite;
-  color: $color-main;
-}
-
-@keyframes blink {
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
+@import "./variables", "./reset", "./faq", "./menu", "./home", "./about",
+  "./projects", "./footer";
 
 .grid-layout {
   @include grid-layout();
+}
+
+#whatsapp-floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+
+  img {
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+  }
+
+  &:hover {
+    background-color: #1ebe5d;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }

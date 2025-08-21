@@ -58,15 +58,3 @@ html {
   font-size: 62.5%;
 }
 
-::-webkit-scrollbar {
-  width: $gap-1;
-}
-
-::-webkit-scrollbar-track {
-  background-color: $bg-main;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: $color-main;
-  border-radius: $gap-1;
-}

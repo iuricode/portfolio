@@ -1,48 +1,32 @@
 #s-projects {
-  @include spacing-section;
-  text-align: center;
-  background-color: $bg-main;
+  padding: 120px 0;
+
+  @include responsive-desktop {
+    padding: $gap-7 20px;
+  }
 
   .grid-layout {
     h2 {
-      @include title-section();
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #565656;
+      text-transform: uppercase;
+    }
 
-      span {
-        color: $color-main;
-      }
+    h3 {
+      margin-top: 12px;
+      font-size: 4rem;
+      font-weight: 500;
     }
 
     #projects {
-      margin: $gap-3 0px;
+      margin-top: 56px;
       display: flex;
       justify-content: space-between;
       align-items: stretch;
       flex-wrap: wrap;
       text-align: left;
-
-      .teslabank {
-        border: 1px solid #e51d37;
-
-        &:hover {
-          border: 1px solid #e51d37;
-        }
-      }
-
-      .codelab {
-        border: 1px solid #a6fb98;
-
-        &:hover {
-          border: 1px solid #a6fb98;
-        }
-      }
-
-      .steam {
-        border: 1px solid #536fed;
-
-        &:hover {
-          border: 1px solid #536fed;
-        }
-      }
+      gap: 24px;
 
       > article {
         @include block-article;
@@ -68,31 +52,6 @@
             size: 1.8rem;
           }
         }
-      }
-    }
-
-    #teslabank {
-      color: #e51d37;
-
-      &::after {
-        background: linear-gradient(270deg, #e51d37 0%, #17161d 100%);
-      }
-    }
-
-
-    #codelab {
-      color: #a6fb98;
-
-      &::after {
-        background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%);
-      }
-    }
-
-    #steam {
-      color: #536fed;
-
-      &::after {
-        background: linear-gradient(270deg, #536fed 0%, #17161d 100%);
       }
     }
 

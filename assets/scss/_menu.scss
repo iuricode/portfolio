@@ -1,12 +1,9 @@
 header {
   padding: 0px 50px;
-  background: $bg-main;
-  backdrop-filter: blur($gap-3);
-  -webkit-backdrop-filter: blur($gap-3);
-  border-bottom: 1px solid #101013;
+  background: transparent;
   z-index: 999;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 
@@ -21,7 +18,7 @@ header {
       padding: 0px $gap-1;
 
       img {
-        width: 150px;
+        width: 124px;
       }
 
       .nav-list {
@@ -37,11 +34,11 @@ header {
 
           a {
             @include hover-link();
-            color: $color-gray;
+            color: #fff;
             position: relative;
 
             font: {
-              size: 1.8rem;
+              size: 2rem;
             }
 
             &:hover {
@@ -69,18 +66,6 @@ header {
 .nav-list.active {
   visibility: initial;
   transition: 1s all ease;
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .mobile-menu.active .line1 {

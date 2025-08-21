@@ -1,4 +1,4 @@
-$font-main: "Epilogue";
+$font-main: "Plus Jakarta Sans";
 
 $color-main: #986dff;
 $color-white: #ffffff;
@@ -79,7 +79,7 @@ $gap-9: 128px;
     height: 1px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    background: linear-gradient(270deg, #986dff 0%, #986dff 100%);
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -93,15 +93,8 @@ $gap-9: 128px;
 @mixin block-article {
   height: auto;
   padding: $gap-4;
-  margin: $gap-1;
-  flex-basis: calc(33% - 20px);
+  flex-basis: 30%;
   flex-grow: 1;
-  border: 1px solid $bg-main;
-  transition: 1s all ease;
-
-  &:hover {
-    border: 1px solid #986dff;
-  }
 
   @include responsive-desktop {
     flex-basis: calc(50% - 20px);

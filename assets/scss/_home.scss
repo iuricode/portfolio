@@ -1,6 +1,9 @@
 #s-home {
-  padding: 0px 50px;
-  background-color: $bg-main;
+  padding: 0px 32px;
+  background-image: url("../image/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
 
   @include responsive-tablet {
@@ -35,16 +38,21 @@
 
         h1 {
           color: $color-white;
-          max-width: 700px;
-          line-height: 140%;
+          max-width: 800px;
+          line-height: 120%;
+
+          b {
+            color: #986dff;
+            font-weight: 600;
+          }
 
           font: {
-            size: 4rem;
-            weight: 500;
+            size: 9.6rem;
+            weight: 600;
           }
 
           @include responsive-tablet {
-            font-size: 3.2rem;
+            font-size: 4.8rem;
           }
 
           span {
@@ -52,46 +60,29 @@
           }
         }
 
-        p {
-          color: $color-gray;
-          font-size: 2.2rem;
-          max-width: 700px;
-          margin: 40px 0px;
-          font-weight: 400;
-          line-height: 160%;
-        }
-
-        a {
-          @include flexbox-center;
-          background: #986dff;
-          color: $bg-main;
-          backdrop-filter: blur(10px);
-          padding: 20px 32px;
-          max-width: 300px;
-          border-radius: 4px;
-          transition: all 0.4s ease;
-          margin-top: 30px;
+        h2 {
+          color: $color-white;
+          line-height: 140%;
+          max-width: 550px;
+          margin-top: 48px;
 
           font: {
-            size: 2rem;
+            size: 2.4rem;
             weight: 500;
           }
 
-          &:hover {
-            padding: 20px 45px;
-            max-width: 325px;
+          @include responsive-tablet {
+            font-size: 2rem;
           }
         }
-      }
-      
-      #logo {
-        position: absolute;
-        right: -50px;
-        top: 50%;
-        transform: translate(0%, -50%);
 
-        @include responsive-desktop {
-          display: none;
+        p {
+          color: #fff;
+          font-size: 1.8rem;
+          max-width: 550px;
+          margin: 16px 0px;
+          font-weight: 400;
+          line-height: 160%;
         }
       }
     }
