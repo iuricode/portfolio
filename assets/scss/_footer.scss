@@ -50,6 +50,23 @@ footer {
     font-weight: 600;
   }
 
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include responsive-tablet {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      color: #232323;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -57,12 +74,6 @@ footer {
 
     @include responsive-tablet {
       width: 100%;
-    }
-
-    h3 {
-      color: #232323;
-      font-size: 2rem;
-      font-weight: 600;
     }
 
     li {
@@ -77,20 +88,10 @@ footer {
     }
   }
 
-  div {
-    display: flex;
-    align-items: center;
-    gap: $gap-2;
-  }
-
   @include responsive-desktop {
     .grid-layout {
       flex-wrap: wrap;
       gap: $gap-5;
-
-      div {
-        display: none;
-      }
     }
   }
 }
